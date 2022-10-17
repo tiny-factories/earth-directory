@@ -17,8 +17,22 @@ export const getStaticProps: GetStaticProps = async () => {
       },
     },
   });
+
+  let data = feed.reduce((r, e) => {
+    let group = e.title[0];
+    if (!r[group]) r[group] = { group, children: [e] };
+    else r[group].children.push(e);
+    return r;
+  }, {});
+
+  let result = Object.values(data);
+
+  {
+    /* console.log(result); */
+  }
+
   return {
-    props: { feed },
+    props: { result },
     revalidate: 10,
   };
 };
@@ -28,26 +42,47 @@ type Props = {
 };
 
 const Blog: React.FC<Props> = (props) => {
+  console.log(props);
+
   return (
     <Layout>
       <div className="page">
-        <h1>Public Feed</h1>
         <main className="snap-y">
-          {props.feed
-            .sort(function (a, b) {
-              if (a.title < b.title) {
-                return -1;
-              }
-              if (a.title > b.title) {
-                return 1;
-              }
-              return 0;
-            })
-            .map((post) => (
-              <div key={post.id} className="post">
-                <Post post={post} />
-              </div>
-            ))}
+          {/* <div>Hero {props.feed.length} </div> */}
+          <div className="">
+            {props.result
+              .sort(function (a, b) {
+                if (a.group < b.group) {
+                  return -1;
+                }
+                if (a.group > b.group) {
+                  return 1;
+                }
+                return 0;
+              })
+              .map((post) => (
+                <div className="">
+                  <div className="text-lg font-bold font-satoshi ">
+                    {post.group}
+                  </div>
+                  {post.children
+                    .sort(function (a, b) {
+                      if (a.group < b.group) {
+                        return -1;
+                      }
+                      if (a.group > b.group) {
+                        return 1;
+                      }
+                      return 0;
+                    })
+                    .map((term) => (
+                      <div key={term.id} className="post">
+                        <Post post={term} />
+                      </div>
+                    ))}
+                </div>
+              ))}
+          </div>
         </main>
       </div>
     </Layout>
