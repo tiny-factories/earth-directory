@@ -1,4 +1,4 @@
-const nextConfig = {
+module.exports = {
   // other stuff
   i18n: {
     defaultLocale: "en",

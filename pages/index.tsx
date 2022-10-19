@@ -39,6 +39,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
 type Props = {
   result: PostProps[];
+  group: [];
 };
 
 const Blog: React.FC<Props> = (props) => {
@@ -60,8 +61,8 @@ const Blog: React.FC<Props> = (props) => {
                 }
                 return 0;
               })
-              .map((post) => (
-                <div className="">
+              .map((post, index) => (
+                <div className="" key={index}>
                   <div className="text-lg font-bold text-gray-500 font-satoshi ">
                     {post.group}
                   </div>

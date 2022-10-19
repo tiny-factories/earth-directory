@@ -1,12 +1,11 @@
 import Link from "next/link";
 const navigation = {
   main: [
-    { name: "Contrinute ", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "about", href: "#" },
-    { name: "newsletter", href: "#" },
-
-    { name: "Tiny Factories", href: "#" },
+    {
+      name: "work with us",
+      href: "https://github.com/orgs/tiny-factories/teams/made-for-earth",
+    },
+    { name: "newsletter", href: "https://buttondown.email/madeforearth" },
   ],
   social: [
     {
@@ -75,49 +74,38 @@ const navigation = {
 
 export default function Example() {
   return (
-    <footer className="bg-white">
+    <footer className="">
       <div className="mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
-        <nav
-          className="-mx-5 -my-2 flex flex-wrap justify-center"
-          aria-label="Footer"
-        >
-          {navigation.main.map((item) => (
-            <div key={item.name} className="px-5 py-2">
-              <a
-                href={item.href}
-                className="text-base text-gray-500 hover:text-gray-900"
-              >
-                {item.name}
+        <div className="border-t border-black py-12">
+          <div
+            className="-mx-5 -my-2 flex flex-wrap justify-center"
+            aria-label="Footer"
+          >
+            {navigation.main.map((item) => (
+              <div key={item.name} className="px-5 py-2">
+                <a
+                  href={item.href}
+                  className="text-base text-gray-500 hover:text-gray-900"
+                >
+                  {item.name}
+                </a>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-8 text-center text-base text-gray-400">
+            Part of{" "}
+            <Link href="https://madefor.earth">
+              <a className="underline underline-offset-2">
+                Made for <span>Earth</span>
               </a>
-            </div>
-          ))}
-        </nav>
-        <div className="mt-8 flex justify-center space-x-6">
-          {navigation.social.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-gray-400 hover:text-gray-500"
-            >
-              <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
-            </a>
-          ))}
+            </Link>{" "}
+            by{" "}
+            <Link href="https://tinyfactories.space">
+              <a className="underline underline-offset-2">Tiny Factories</a>
+            </Link>
+          </p>
         </div>
-        <p className="mt-8 text-center text-base text-gray-400">
-          Part of project{" "}
-          <Link href="/blog/hello-world">
-            <a className="underline underline-offset-2">Zero</a>
-          </Link>{" "}
-          made by{" "}
-          <Link href="https://tinyfactories.space">
-            <a className="underline underline-offset-2">Tiny Factories</a>
-          </Link>
-        </p>
-        <p className="mt-8 text-center text-base text-gray-400">
-          This project is registered under CC and if your looking to contrunute
-          we would love to work with you!
-        </p>
       </div>
     </footer>
   );
