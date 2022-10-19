@@ -7,16 +7,16 @@ export default async function handle(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const postId = req.query.id;
+  const termId = req.query.id;
 
   const session = await getSession({ req });
 
   if (req.method === "DELETE") {
     if (session) {
-      const post = await prisma.term.delete({
-        where: { id: String(postId) },
+      const term = await prisma.term.delete({
+        where: { id: String(termId) },
       });
-      res.json(post);
+      res.json(term);
     } else {
       res.status(401).send({ message: "Unauthorized" });
     }

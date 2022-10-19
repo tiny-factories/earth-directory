@@ -3,4 +3,7 @@ module.exports = {
     locales: ["en", "fr", "de"],
     defaultLocale: "en",
   },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
 };

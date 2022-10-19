@@ -1,7 +1,7 @@
 import React from "react";
 import type { GetStaticProps } from "next";
 import Layout from "../components/Layout";
-import Post, { PostProps } from "../components/Post";
+import Term, { TermProps } from "../components/Term";
 import prisma from "../lib/prisma";
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -38,8 +38,8 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 type Props = {
-  result: PostProps[];
-  group: [];
+  result: TermProps[],
+  group: string,
 };
 
 const Blog: React.FC<Props> = (props) => {
@@ -61,12 +61,12 @@ const Blog: React.FC<Props> = (props) => {
                 }
                 return 0;
               })
-              .map((post, index) => (
+              .map((term, index) => (
                 <div className="" key={index}>
                   <div className="text-lg font-bold text-gray-500 font-satoshi ">
-                    {post.group}
+                    {term.group}
                   </div>
-                  {post.children
+                  {term.children
                     .sort(function (a, b) {
                       if (a.group < b.group) {
                         return -1;
@@ -76,9 +76,9 @@ const Blog: React.FC<Props> = (props) => {
                       }
                       return 0;
                     })
-                    .map((term) => (
-                      <div key={term.id} className="post">
-                        <Post post={term} />
+                    .map((term, index) => (
+                      <div key={term.id}>
+                        <Term term={term} />
                       </div>
                     ))}
                 </div>
