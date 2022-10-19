@@ -1,7 +1,7 @@
 import React from "react";
 import type { GetStaticProps } from "next";
 import Layout from "../components/Layout";
-import Post, { PostProps } from "../components/Post";
+import Term, { TermProps } from "../components/Term";
 import prisma from "../lib/prisma";
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -38,7 +38,8 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 type Props = {
-  feed: PostProps[];
+  result: TermProps[],
+  group: string,
 };
 
 const Blog: React.FC<Props> = (props) => {
@@ -48,7 +49,7 @@ const Blog: React.FC<Props> = (props) => {
     <Layout>
       <div className="page">
         <main className="snap-y">
-          {/* <div>Hero {props.feed.length} </div> */}
+          {/* <div>Hero {props.result.length} </div> */}
           <div className="">
             {props.result
               .sort(function (a, b) {
@@ -60,12 +61,12 @@ const Blog: React.FC<Props> = (props) => {
                 }
                 return 0;
               })
-              .map((post) => (
-                <div className="">
-                  <div className="text-lg font-bold font-satoshi ">
-                    {post.group}
+              .map((term, index) => (
+                <div className="" key={index}>
+                  <div className="text-lg font-bold text-gray-500 font-satoshi ">
+                    {term.group}
                   </div>
-                  {post.children
+                  {term.children
                     .sort(function (a, b) {
                       if (a.group < b.group) {
                         return -1;
@@ -75,9 +76,9 @@ const Blog: React.FC<Props> = (props) => {
                       }
                       return 0;
                     })
-                    .map((term) => (
-                      <div key={term.id} className="post">
-                        <Post post={term} />
+                    .map((term, index) => (
+                      <div key={term.id}>
+                        <Term term={term} />
                       </div>
                     ))}
                 </div>

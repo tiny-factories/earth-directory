@@ -3,14 +3,14 @@ import type { GetStaticProps } from "next";
 import ReactMarkdown from "react-markdown";
 import Layout from "../../components/Layout";
 import Router from "next/router";
-import { PostProps } from "../../components/Post";
-import prisma from '../../lib/prisma'
+import { TermProps } from "../../components/Term";
+import prisma from "../../lib/prisma";
 import { useSession } from "next-auth/react";
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const post = await prisma.post.findUnique({
+  const term = await prisma.term.findUnique({
     where: {
-      id: String(params?.id) ,
+      id: String(params?.id),
     },
     include: {
       author: {
@@ -19,32 +19,39 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     },
   });
   return {
-    props: post,
+    props: term,
     revalidate: 10,
   };
 };
 
-async function publishPost(id: number): Promise<void> {
+export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
+  return {
+    paths: [], //indicates that no page needs be created at build time
+    fallback: "blocking", //indicates the type of fallback
+  };
+};
+
+async function publishTerm(id: number): Promise<void> {
   await fetch(`/api/publish/${id}`, {
     method: "PUT",
   });
-  await Router.push("/")
+  await Router.push("/");
 }
 
-async function deletePost(id: number): Promise<void> {
-  await fetch(`/api/post/${id}`, {
+async function deleteTerm(id: number): Promise<void> {
+  await fetch(`/api/term/${id}`, {
     method: "DELETE",
   });
-  await Router.push("/")
+  await Router.push("/");
 }
 
-const Post: React.FC<PostProps> = (props) => {
+const Term: React.FC<TermProps> = (props) => {
   const { data: session, status } = useSession();
-  if (status === 'loading') {
+  if (status === "loading") {
     return <div>Authenticating ...</div>;
   }
   const userHasValidSession = Boolean(session);
-  const postBelongsToUser = session?.user?.email === props.author?.email;
+  const termBelongsToUser = session?.user?.email === props.author?.email;
   let title = props.title;
   if (!props.published) {
     title = `${title} (Draft)`;
@@ -53,14 +60,13 @@ const Post: React.FC<PostProps> = (props) => {
   return (
     <Layout>
       <div>
-        <h2>{title}</h2>
-        <p>By {props?.author?.name || "Unknown author"}</p>
-        <ReactMarkdown children={props.content} />
-        {!props.published && userHasValidSession && postBelongsToUser && (
-          <button onClick={() => publishPost(props.id)}>Publish</button>
+        <h2 className="text-lg font-bold font-satoshi ">{title}</h2>
+        <p>{props?.content || "Undefinded Term"}</p>
+        {!props.published && userHasValidSession && termBelongsToUser && (
+          <button onClick={() => publishTerm(props.id)}>Publish</button>
         )}
-        {userHasValidSession && postBelongsToUser && (
-          <button onClick={() => deletePost(props.id)}>Delete</button>
+        {userHasValidSession && termBelongsToUser && (
+          <button onClick={() => deleteTerm(props.id)}>Delete</button>
         )}
       </div>
       <style jsx>{`
@@ -68,18 +74,15 @@ const Post: React.FC<PostProps> = (props) => {
           background: white;
           padding: 2rem;
         }
-
         .actions {
           margin-top: 2rem;
         }
-
         button {
           background: #ececec;
           border: 0;
           border-radius: 0.125rem;
           padding: 1rem 2rem;
         }
-
         button + button {
           margin-left: 1rem;
         }
@@ -88,4 +91,4 @@ const Post: React.FC<PostProps> = (props) => {
   );
 };
 
-export default Post;
+export default Term;

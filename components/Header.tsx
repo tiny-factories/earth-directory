@@ -17,6 +17,12 @@ const Header: React.FC = () => {
           ClimateDictionary/
         </a>
       </Link>
+
+      <select>
+        <option value="en">🇺🇸 English</option>
+        <option value="zh-CN">🇨🇳 中文</option>
+        <option value="sv">🇸🇪 Swedish</option>
+      </select>
     </div>
   );
 
@@ -66,9 +72,9 @@ const Header: React.FC = () => {
   if (!session) {
     right = (
       <div className="right">
-        <Link href="/api/auth/signin">
+        {/* <Link href="/api/auth/signin">
           <a data-active={isActive("/signup")}>Log in</a>
-        </Link>
+        </Link> */}
         <style jsx>{`
           a {
             text-decoration: none;
@@ -102,9 +108,7 @@ const Header: React.FC = () => {
             Feed
           </a>
         </Link>
-        <Link href="/drafts">
-          <a data-active={isActive("/drafts")}>My drafts</a>
-        </Link>
+
         <style jsx>{`
           .bold {
             font-weight: bold;
@@ -133,7 +137,7 @@ const Header: React.FC = () => {
         </p>
         <Link href="/create">
           <button>
-            <a>New post</a>
+            <a>New term</a>
           </button>
         </Link>
         <button onClick={() => signOut()}>
