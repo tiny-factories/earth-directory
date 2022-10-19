@@ -108,9 +108,7 @@ const Header: React.FC = () => {
             Feed
           </a>
         </Link>
-        <Link href="/drafts">
-          <a data-active={isActive("/drafts")}>My drafts</a>
-        </Link>
+
         <style jsx>{`
           .bold {
             font-weight: bold;

@@ -38,7 +38,7 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 type Props = {
-  feed: PostProps[];
+  result: PostProps[];
 };
 
 const Blog: React.FC<Props> = (props) => {
@@ -48,7 +48,7 @@ const Blog: React.FC<Props> = (props) => {
     <Layout>
       <div className="page">
         <main className="snap-y">
-          <div>Hero {props.result.length} </div>
+          {/* <div>Hero {props.result.length} </div> */}
           <div className="">
             {props.result
               .sort(function (a, b) {
