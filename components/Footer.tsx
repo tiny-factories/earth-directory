@@ -1,11 +1,12 @@
+import Link from "next/link";
 const navigation = {
   main: [
-    { name: "About", href: "#" },
+    { name: "Contrinute ", href: "#" },
     { name: "Blog", href: "#" },
-    { name: "Jobs", href: "#" },
-    { name: "Press", href: "#" },
-    { name: "Accessibility", href: "#" },
-    { name: "Partners", href: "#" },
+    { name: "about", href: "#" },
+    { name: "newsletter", href: "#" },
+
+    { name: "Tiny Factories", href: "#" },
   ],
   social: [
     {
@@ -104,7 +105,18 @@ export default function Example() {
           ))}
         </div>
         <p className="mt-8 text-center text-base text-gray-400">
-          &copy; 2020 Your Company, Inc. All rights reserved.
+          Part of project{" "}
+          <Link href="/blog/hello-world">
+            <a className="underline underline-offset-2">Zero</a>
+          </Link>{" "}
+          made by{" "}
+          <Link href="https://tinyfactories.space">
+            <a className="underline underline-offset-2">Tiny Factories</a>
+          </Link>
+        </p>
+        <p className="mt-8 text-center text-base text-gray-400">
+          This project is registered under CC and if your looking to contrunute
+          we would love to work with you!
         </p>
       </div>
     </footer>

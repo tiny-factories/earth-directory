@@ -8,25 +8,49 @@ datasource db {
 }
 
 model Term {
-  id        String  @id @default(cuid())
+  id        String     @id @default(cuid())
   title     String
   content   String?
-  image     String? @db.Text
-  published Boolean @default(false)
-  author    User?   @relation(fields: [authorId], references: [id])
+  image     String?    @db.Text
+  published Boolean    @default(false)
+  author    User?      @relation(fields: [authorId], references: [id])
   authorId  String?
   tags      Tag[]
+  source Source[]
+  languages Language[]
 }
 
 model Tag {
-  id      String  @id @default(cuid())
-  title   String
-  content String?
-  image   String? @db.Text
-  published Boolean @default(false)
-  author    User?   @relation(fields: [authorId], references: [id])
-  authorId  String?
+  id        String     @id @default(cuid())
+  title     String
+  content   String?
+  image     String?    @db.Text
+  published Boolean    @default(false)
   terms     Term[]
+  languages Language[]
+  User   User?   @relation(fields: [userId], references: [id])
+  userId String?
+}
+
+model Source {
+  id        String     @id @default(cuid())
+  title     String
+  content   String?
+  href   String?
+  image     String?    @db.Text
+  published Boolean    @default(false)
+  terms     Term[]
+}
+
+model Language {
+  id        String  @id @default(cuid())
+  title     String
+  i18n      String?
+  image     String? @db.Text
+  published Boolean @default(false)
+  terms     Term[]
+  Tag       Tag?    @relation(fields: [tagId], references: [id])
+  tagId     String?
 }
 
 model Account {
@@ -72,9 +96,8 @@ model User {
   terms         Term[]
   accounts      Account[]
   sessions      Session[]
-
-  @@map(name: "users")
   Tag Tag[]
+  @@map(name: "users")
 }
 
 model VerificationToken {
@@ -85,3 +108,4 @@ model VerificationToken {
   @@unique([identifier, token])
   @@map("verificationtokens")
 }
+

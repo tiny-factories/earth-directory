@@ -17,6 +17,12 @@ const Header: React.FC = () => {
           ClimateDictionary/
         </a>
       </Link>
+
+      <select>
+        <option value="en">🇺🇸 English</option>
+        <option value="zh-CN">🇨🇳 中文</option>
+        <option value="sv">🇸🇪 Swedish</option>
+      </select>
     </div>
   );
 

@@ -48,7 +48,7 @@ const Blog: React.FC<Props> = (props) => {
     <Layout>
       <div className="page">
         <main className="snap-y">
-          {/* <div>Hero {props.feed.length} </div> */}
+          <div>Hero {props.result.length} </div>
           <div className="">
             {props.result
               .sort(function (a, b) {
@@ -62,7 +62,7 @@ const Blog: React.FC<Props> = (props) => {
               })
               .map((post) => (
                 <div className="">
-                  <div className="text-lg font-bold font-satoshi ">
+                  <div className="text-lg font-bold text-gray-500 font-satoshi ">
                     {post.group}
                   </div>
                   {post.children
