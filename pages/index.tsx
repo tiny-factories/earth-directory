@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import type { GetStaticProps } from "next";
 import Layout from "../components/Layout";
@@ -38,15 +39,46 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 type Props = {
-  result: TermProps[],
-  group: string,
+  result: TermProps[];
+  group: string;
 };
 
-const Blog: React.FC<Props> = (props) => {
+const Home: React.FC<Props> = (props) => {
   console.log(props);
 
   return (
     <Layout>
+      <div className="w-full py-9 text-h1 font-sans">
+        We at{" "}
+        <Link href="https://madefor.earth">
+          <a className="font-bold hover:underline hover:underline-offset-2">
+            Made For <span className="text-green">Earth</span>
+          </a>
+        </Link>{" "}
+        think that a shared source of truth is required to build a better
+        future. So we started a glossary of terms, technologies, policies, and
+        regulations around climate change. Please help us grow the glossary by{" "}
+        <Link href="#">
+          <a className="hover:underline hover:underline-offset-2">
+            recommending missing terms
+          </a>
+        </Link>{" "}
+        or{" "}
+        <Link href="#">
+          <a className="hover:underline hover:underline-offset-2">
+            helping us translate our project
+          </a>
+        </Link>{" "}
+        into more languages.
+      </div>
+
+      <div className="w-full py-9 text-h2">
+        {props.result.length} terms across, {props.result.length} languages,{" "}
+        {props.result.length} Topics
+      </div>
+
+      <div className="w-full">Search</div>
+
       <div className="page">
         <main className="snap-y">
           {/* <div>Hero {props.result.length} </div> */}
@@ -63,7 +95,7 @@ const Blog: React.FC<Props> = (props) => {
               })
               .map((term, index) => (
                 <div className="" key={index}>
-                  <div className="text-lg font-bold text-gray-500 font-satoshi ">
+                  <div className="text-h2 font-bold text-gray-500 font-satoshi ">
                     {term.group}
                   </div>
                   {term.children
@@ -90,4 +122,4 @@ const Blog: React.FC<Props> = (props) => {
   );
 };
 
-export default Blog;
+export default Home;

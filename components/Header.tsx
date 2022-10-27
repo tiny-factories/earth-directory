@@ -14,15 +14,15 @@ const Header: React.FC = () => {
     <div className="left">
       <Link href="/">
         <a className="bold" data-active={isActive("/")}>
-          ClimateDictionary/
+          Climate Glossary
         </a>
       </Link>
 
-      <select>
+      {/* <select>
         <option value="en">🇺🇸 English</option>
         <option value="zh-CN">🇨🇳 中文</option>
         <option value="sv">🇸🇪 Swedish</option>
-      </select>
+      </select> */}
     </div>
   );
 
