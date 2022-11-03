@@ -9,7 +9,7 @@ type Props = {
 const Layout: React.FC<Props> = (props) => (
   <div>
     <Header />
-    <div className="layout">{props.children}</div>
+    <div className="mx-auto p-9">{props.children}</div>
     <Footer />
     <style jsx global>{`
       html {
