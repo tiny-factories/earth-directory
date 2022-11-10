@@ -44,11 +44,12 @@ type Props = {
 };
 
 const Home: React.FC<Props> = (props) => {
-  console.log(props);
+  // log term grouping
+  // console.log(props);
 
   return (
     <Layout>
-      <div className="w-full py-9 text-h1 font-sans">
+      <div className="w-full mb-9 sm:py-9 text-h4 sm:text-h3 md:sm:text-h1 font-sans">
         We at{" "}
         <Link href="https://madefor.earth">
           <a className="font-bold hover:underline hover:underline-offset-2">
@@ -58,26 +59,26 @@ const Home: React.FC<Props> = (props) => {
         think that a shared source of truth is required to build a better
         future. So we started a glossary of terms, technologies, policies, and
         regulations around climate change. Please help us grow the glossary by{" "}
-        <Link href="#">
-          <a className="hover:underline hover:underline-offset-2">
+        <Link href="mailto:will@madefor.earth?subject=MFE → New Term for Glossary">
+          <a className="hover:underline hover:underline-offset-2 italic">
             recommending missing terms
           </a>
         </Link>{" "}
         or{" "}
-        <Link href="#">
-          <a className="hover:underline hover:underline-offset-2">
+        <Link href="mailto:will@madefor.earth?subject=MFE → Help Translate Glossary">
+          <a className="hover:underline hover:underline-offset-2 italic">
             helping us translate our project
           </a>
         </Link>{" "}
         into more languages.
       </div>
 
-      <div className="w-full py-9 text-h2">
+      {/* <div className="w-full py-9 text-h2">
         {props.result.length} terms across, {props.result.length} languages,{" "}
         {props.result.length} Topics
-      </div>
+      </div> */}
 
-      <div className="w-full">Search</div>
+      {/* <div className="w-full">Search</div> */}
 
       <div className="page">
         <main className="snap-y">
@@ -109,7 +110,7 @@ const Home: React.FC<Props> = (props) => {
                       return 0;
                     })
                     .map((term, index) => (
-                      <div key={term.id}>
+                      <div key={term.id} className="">
                         <Term term={term} />
                       </div>
                     ))}

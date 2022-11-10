@@ -40,15 +40,22 @@ const Term: React.FC<TermProps> = (props) => {
     <>
       <Head>
         <title>{title}</title>
-        <meta
-          property="og:image"
-          content={`https://my-og-img.vercel.app/api/og?title=${title}`}
-        />
+        <meta property="og:image" content={`/api/og?title=${title}`} />
       </Head>
       <Layout>
-        <div>
-          <h2 className="text-lg font-bold font-satoshi ">{title}</h2>
-          <p>{props?.content || "Undefinded Term"}</p>
+        <div className="mx-auto max-w-7xl ">
+          <div className="text-h4 sm:text-h3 md:sm:text-h1 font-bold font-satoshi ">
+            {title}
+          </div>
+          <div className="text-h4 sm:text-h3 md:sm:text-h2">
+            {props?.content || "Undefinded Term"}
+          </div>
+
+          {/* <div>From a Scientist</div> */}
+
+          {/* <div>Related Terms</div> */}
+
+          <div></div>
         </div>
         <style jsx>{`
           .page {
