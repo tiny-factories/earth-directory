@@ -1,6 +1,7 @@
+import type { GetStaticProps } from "next";
+import { useState } from "react";
 import Link from "next/link";
 import React from "react";
-import type { GetStaticProps } from "next";
 import Layout from "../components/Layout";
 import Term, { TermProps } from "../components/Term";
 import prisma from "../lib/prisma";
@@ -49,7 +50,7 @@ const Home: React.FC<Props> = (props) => {
 
   return (
     <Layout>
-      <div className="w-full mb-9 sm:py-9 text-h4 sm:text-h3 md:sm:text-h1 font-sans">
+      <div className="w-full mb-9 sm:py-9 text-h4 sm:text-h3 md:text-h1 font-sans">
         We at{" "}
         <Link href="https://madefor.earth">
           <a className="font-bold hover:underline hover:underline-offset-2">
@@ -58,19 +59,7 @@ const Home: React.FC<Props> = (props) => {
         </Link>{" "}
         think that a shared source of truth is required to build a better
         future. So we started a glossary of terms, technologies, policies, and
-        regulations around climate change. Please help us grow the glossary by{" "}
-        <Link href="mailto:will@madefor.earth?subject=MFE → New Term for Glossary">
-          <a className="hover:underline hover:underline-offset-2 italic">
-            recommending missing terms
-          </a>
-        </Link>{" "}
-        or{" "}
-        <Link href="mailto:will@madefor.earth?subject=MFE → Help Translate Glossary">
-          <a className="hover:underline hover:underline-offset-2 italic">
-            helping us translate our project
-          </a>
-        </Link>{" "}
-        into more languages.
+        regulations around climate change.
       </div>
 
       {/* <div className="w-full py-9 text-h2">
@@ -78,7 +67,28 @@ const Home: React.FC<Props> = (props) => {
         {props.result.length} Topics
       </div> */}
 
-      {/* <div className="w-full">Search</div> */}
+      <div className="flex w-full justify-between hover:bold">
+       {props.result
+       .sort(function (a, b) {
+         if (a.group < b.group) {
+           return -1;
+         }
+         if (a.group > b.group) {
+           return 1;
+         }
+         return 0;
+       })
+       .map((term, index) => (
+         <div className="" key={index}>
+           <Link href={`#${term.group}`}>
+             <a className="inline-block  text-gray-500 font-satoshi hover:font-bold">{term.group}</a>
+           </Link>
+           <div className=" ">
+           </div>
+           
+         </div>
+       ))}
+      </div>
 
       <div className="page">
         <main className="snap-y">
@@ -96,7 +106,7 @@ const Home: React.FC<Props> = (props) => {
               })
               .map((term, index) => (
                 <div className="" key={index}>
-                  <div className="text-h2 font-bold text-gray-500 font-satoshi ">
+                  <div id={term.group} className="text-h2 font-bold text-gray-500 font-satoshi">
                     {term.group}
                   </div>
                   {term.children
