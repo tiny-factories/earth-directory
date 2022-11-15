@@ -3,7 +3,7 @@ const navigation = {
   main: [
     {
       name: "about",
-      href: "https://madefor.earth/about",
+      href: "/about",
     },
     {
       name: "support us",

@@ -82,10 +82,7 @@ const Home: React.FC<Props> = (props) => {
          <div className="" key={index}>
            <Link href={`#${term.group}`}>
              <a className="inline-block  text-gray-500 font-satoshi hover:font-bold">{term.group}</a>
-           </Link>
-           <div className=" ">
-           </div>
-           
+           </Link>         
          </div>
        ))}
       </div>
