@@ -3,7 +3,7 @@ const navigation = {
   main: [
     {
       name: "about",
-      href: "https://madefor.earth/about",
+      href: "/about",
     },
     {
       name: "support us",
@@ -18,10 +18,13 @@ const navigation = {
   ],
   contribute: [
     {
-      name: "Help Translate",
-      href: "https://glossary.madeforearth/translate",
+      name: "help translate",
+      href: "mailto:will@madefor.earth?subject=MFE → Help Translate Glossary",
     },
-    { name: "Add Term", href: "https://glossary.madeforearth/add" },
+    {
+      name: "add term",
+      href: "mailto:will@madefor.earth?subject=MFE → New Term for Glossary",
+    },
     {
       name: "GitHub ↗",
       href: "https://github.com/orgs/tiny-factories/teams/made-for-earth",
@@ -40,17 +43,13 @@ const navigation = {
       name: "GitHub ↗",
       href: "https://github.com/tiny-factories/climate-dictionary",
     },
-    {
-      name: "Disscord ↗",
-      href: "#",
-    },
   ],
 };
 
 export default function Example() {
   return (
-    <footer className="">
-      <div className="border-t border-black py-12 mx-auto max-w-7xl overflow-hidden">
+    <footer className="p-9">
+      <div className="border-t border-black py-12 mx-auto  overflow-hidden">
         <div className="grid grid-cols-4 gap-4">
           <div className="...">
             <div className="font-bold">

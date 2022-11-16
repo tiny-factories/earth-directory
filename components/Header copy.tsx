@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   const { data: session, status } = useSession();
 
   let left = (
-    <div className="left">
+    <div className="">
       <Link href="/">
         <a className="bold" data-active={isActive("/")}>
           Climate Glossary
