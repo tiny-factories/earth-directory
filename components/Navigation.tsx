@@ -1,12 +1,16 @@
 import Head from "next/head";
 import Link from "next/link";
 
+export type SearchProps = {
+  id: string;
+  title: string;
+};
 
-export default function Example() {
+export default function Navigation() {
   return (
     <>
       <Head>
-        <title>Climate Glossary [alpha]</title>
+        <title>Climate Glossary [a]</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <script
           async
@@ -20,7 +24,9 @@ export default function Example() {
           <div className="flex">
             <div className="flex flex-shrink-0 items-center">
               <Link href="/">
-                <a className="font-bold">G.</a>
+                <a className="font-bold hover:underline">
+                  <span className="">G.</span>
+                </a>
               </Link>
             </div>
           </div>
@@ -45,18 +51,18 @@ export default function Example() {
               </div>
             </div>
           </div>
-          {/* <div className="flex md:absolute md:inset-y-0 md:left-0 lg:static xl:col-span-2">
+          <div className="flex md:absolute md:inset-y-0 md:left-0 lg:static xl:col-span-2">
             <div className="flex flex-shrink-0 items-center">
-              <Link href="/">
-                <a className="font-bold pr-3">contribute</a>
+              <Link href="/contribute">
+                <a className="font-bold hover:underline pr-3">contribute</a>
               </Link>
             </div>
             <div className="flex flex-shrink-0 items-center">
-              <Link href="/">
-                <a className="font-bold">about</a>
+              <Link href="/about">
+                <a className="font-bold hover:underline">about</a>
               </Link>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </>
