@@ -14,12 +14,8 @@ const navigation = {
       href: "/translate",
     },
     {
-      name: "add term",
-      href: "add",
-    },
-    {
-      name: "GitHub ↗",
-      href: "https://github.com/orgs/tiny-factories/teams/made-for-earth",
+      name: "add a term",
+      href: "/add",
     },
   ],
   social: [

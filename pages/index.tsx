@@ -99,7 +99,7 @@ const Home: React.FC<Props> = (props) => {
       </div> */}
 
       <div className="w-full mb-9 sm:py-9 font-sans">
-        <div className="flex flex-wrap py-9">
+        <div className="flex flex-wrap py-24">
           <div className="w-full sm:w-1/2 ">
             <div className="text-h4 sm:text-h3 md:text-h2 font-bold">
               Add a Term
@@ -112,7 +112,7 @@ const Home: React.FC<Props> = (props) => {
           <div className="w-full sm:w-1/2">image</div>
         </div>
 
-        <div className="flex flex-wrap py-9">
+        <div className="flex flex-wrap py-24">
           <div className="w-full sm:w-1/2">m3</div>
           <div className="w-full sm:w-1/2">
             <div className="text-h4 sm:text-h3 md:text-h2 font-bold">
