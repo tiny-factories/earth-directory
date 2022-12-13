@@ -6,7 +6,7 @@ import Layout from "../components/Layout";
 const AboutPage: React.FC = () => {
   return (
     <Layout>
-      <div className="w-full mb-9 sm:py-9 text-h4 sm:text-h3 md:text-h1 font-sans">
+      <div className="w-full mb-9 sm:py-9 text-h4 sm:text-h3 font-sans">
         We at{" "}
         <Link href="https://madefor.earth">
           <a className="font-bold hover:underline hover:underline-offset-2">
@@ -16,13 +16,13 @@ const AboutPage: React.FC = () => {
         think that a shared source of truth is required to build a better
         future. So we started a glossary of terms, technologies, policies, and
         regulations around climate change. Please help us grow the glossary by{" "}
-        <Link href="mailto:will@madefor.earth?subject=MFE → New Term for Glossary">
+        <Link href="/add">
           <a className="hover:underline hover:underline-offset-2 italic">
             recommending missing terms
           </a>
         </Link>{" "}
         or{" "}
-        <Link href="mailto:will@madefor.earth?subject=MFE → Help Translate Glossary">
+        <Link href="/translate">
           <a className="hover:underline hover:underline-offset-2 italic">
             helping us translate our project
           </a>

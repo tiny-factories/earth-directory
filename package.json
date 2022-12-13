@@ -1,10 +1,15 @@
 {
-  "name": "hello-next",
+  "name": "glossary-made-for-earth",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "license": "MIT",
-  "author": "",
+  "description": "A shared source of truth to build a better future.",
+  "keywords": [
+    "dictionary",
+    "words",
+    "terms",
+    "glossary"
+  ],
+  "license": "GNU GPLv3",
+  "author": "Made For Earth",
   "scripts": {
     "dev": "next",
     "build": "npx prisma migrate deploy && next build",

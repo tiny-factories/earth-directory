@@ -5,25 +5,17 @@ const navigation = {
       name: "about",
       href: "/about",
     },
-    {
-      name: "support us",
-      href: "https://madefor.earth/support",
-    },
 
-    {
-      name: "work with us",
-      href: "https://madefor.earth/work",
-    },
     { name: "newsletter", href: "https://buttondown.email/madeforearth" },
   ],
   contribute: [
     {
       name: "help translate",
-      href: "mailto:will@madefor.earth?subject=MFE → Help Translate Glossary",
+      href: "/translate",
     },
     {
       name: "add term",
-      href: "mailto:will@madefor.earth?subject=MFE → New Term for Glossary",
+      href: "add",
     },
     {
       name: "GitHub ↗",
@@ -33,7 +25,7 @@ const navigation = {
   social: [
     {
       name: "Twitter ↗",
-      href: "https://twitter.com/madeforearth1",
+      href: "https://twitter.com/mdfrearth",
     },
     {
       name: "Are.na  ↗",
@@ -41,7 +33,7 @@ const navigation = {
     },
     {
       name: "GitHub ↗",
-      href: "https://github.com/tiny-factories/climate-dictionary",
+      href: "https://github.com/tiny-factories/mfe-climate-glossary",
     },
   ],
 };
@@ -54,7 +46,7 @@ export default function Example() {
           <div className="...">
             <div className="font-bold">
               By{" "}
-              <Link href="/blog/hello-world">
+              <Link href="https://tinyfactories.space">
                 <a className="underline underline-offset-2">Tiny Factories</a>
               </Link>
             </div>

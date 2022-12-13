@@ -14,13 +14,13 @@ const App = ({ Component, pageProps }: AppProps) => {
   const { push } = useRouter();
   const [commandBarReady, setCommandBarReady] = useState(false);
 
-  useEffect(() => {
-    window.CommandBar.boot("me").then(() => {
-      setCommandBarReady(true);
-    });
-
-    return window.CommandBar.shutdown;
-  }, []);
+  //   useEffect(() => {
+  //     window.CommandBar.boot("me").then(() => {
+  //       setCommandBarReady(true);
+  //     });
+  //
+  //     return window.CommandBar.shutdown;
+  //   }, []);
 
   useEffect(() => {
     if (commandBarReady) {
