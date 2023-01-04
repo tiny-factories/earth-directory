@@ -112,7 +112,7 @@ const Layout: React.FC<Props> = (props) => {
                 </div>
               </div>
             </div>
-            <div className="flex md:absolute md:inset-y-0 md:left-0 lg:static xl:col-span-2">
+            <div className="flex inset-y-0 left-0 static col-span-2">
               <div className="flex flex-shrink-0 items-center">
                 <Link href="/terms">
                   <a className="font-bold hover:underline pr-3">terms</a>
