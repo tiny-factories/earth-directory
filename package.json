@@ -8,7 +8,7 @@
     "terms",
     "glossary"
   ],
-  "license": "GNU GPLv3",
+  "license": "CC0 1.0 Universal",
   "author": "Made For Earth",
   "scripts": {
     "dev": "next",
@@ -18,6 +18,10 @@
     "db:up": "docker-compose up -d",
     "db:down": "docker-compose down",
     "studio": "prisma studio"
+  },
+  "engines" : { 
+    "npm" : ">=8.0.0 <9.0.0",
+    "node" : ">=16.0.0 <17.0.0"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.4",

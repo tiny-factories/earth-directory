@@ -6,16 +6,16 @@ const navigation = {
       href: "/about",
     },
 
-    { name: "newsletter", href: "https://buttondown.email/madeforearth" },
+    { name: "newsletter ↗", href: "https://buttondown.email/madeforearth" },
   ],
   contribute: [
     {
-      name: "help translate",
-      href: "/translate",
+      name: "help translate ↗",
+      href: "https://form.typeform.com/to/hV9yuh6J",
     },
     {
-      name: "add a term",
-      href: "/add",
+      name: "add a term ↗",
+      href: "https://form.typeform.com/to/lowIfjl5",
     },
   ],
   social: [
