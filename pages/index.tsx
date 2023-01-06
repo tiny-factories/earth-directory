@@ -17,7 +17,7 @@ export const getStaticProps: GetStaticProps = async () => {
   //   };
   //   console.log("today");
 
-  const apiToday = await fetch("http://localhost:3001/api/today");
+  const apiToday = await fetch("http://api.madefor.earth/api/today");
   const todaysatmosphericReadings = await apiToday.json();
 
   const feed = await prisma.term.findMany({
