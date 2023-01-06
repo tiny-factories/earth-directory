@@ -1,7 +1,7 @@
 import React from "react";
 import Router from "next/router";
 
-export type TermProps = {
+export type EarthAPIProps = {
   id: string;
   title: string;
   author: {
@@ -12,7 +12,7 @@ export type TermProps = {
   published: boolean;
 };
 
-const Term: React.FC<{ term: TermProps }> = ({ term }) => {
+const Term: React.FC<{ term: EarthAPIProps }> = ({ term }) => {
   return (
     <div
       className="text-h4 sm:text-h3 md:sm:text-h1 font-satoshi border-t border-black snap-center py-3"

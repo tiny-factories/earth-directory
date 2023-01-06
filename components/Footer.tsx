@@ -5,35 +5,23 @@ const navigation = {
       name: "about",
       href: "/about",
     },
-    {
-      name: "support us",
-      href: "https://madefor.earth/support",
-    },
 
-    {
-      name: "work with us",
-      href: "https://madefor.earth/work",
-    },
-    { name: "newsletter", href: "https://buttondown.email/madeforearth" },
+    { name: "newsletter ↗", href: "https://buttondown.email/madeforearth" },
   ],
   contribute: [
     {
-      name: "help translate",
-      href: "mailto:will@madefor.earth?subject=MFE → Help Translate Glossary",
+      name: "help translate ↗",
+      href: "https://form.typeform.com/to/hV9yuh6J",
     },
     {
-      name: "add term",
-      href: "mailto:will@madefor.earth?subject=MFE → New Term for Glossary",
-    },
-    {
-      name: "GitHub ↗",
-      href: "https://github.com/orgs/tiny-factories/teams/made-for-earth",
+      name: "add a term ↗",
+      href: "https://form.typeform.com/to/lowIfjl5",
     },
   ],
   social: [
     {
       name: "Twitter ↗",
-      href: "https://twitter.com/madeforearth1",
+      href: "https://twitter.com/mdfrearth",
     },
     {
       name: "Are.na  ↗",
@@ -41,20 +29,20 @@ const navigation = {
     },
     {
       name: "GitHub ↗",
-      href: "https://github.com/tiny-factories/climate-dictionary",
+      href: "https://github.com/tiny-factories/mfe-climate-glossary",
     },
   ],
 };
 
 export default function Example() {
   return (
-    <footer className="p-9">
+    <footer className="p-9 inset-x-0 bottom-0">
       <div className="border-t border-black py-12 mx-auto  overflow-hidden">
         <div className="grid grid-cols-4 gap-4">
           <div className="...">
             <div className="font-bold">
               By{" "}
-              <Link href="/blog/hello-world">
+              <Link href="https://tinyfactories.space">
                 <a className="underline underline-offset-2">Tiny Factories</a>
               </Link>
             </div>
