@@ -36,6 +36,32 @@ const Term: React.FC<TermProps> = (props) => {
     title = `${title} (Draft)`;
   }
 
+  // Send to LogSnag
+  var myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+  myHeaders.append("Authorization", "Bearer 38bda3ca0d6426843a5198606b89019b");
+
+  var raw = JSON.stringify({
+    project: "made-for-earth",
+    channel: "glossary",
+    event: "Term Viewed",
+    description: title,
+    icon: "📚",
+    notify: false,
+  });
+
+  var requestOptions = {
+    method: "POST",
+    headers: myHeaders,
+    body: raw,
+    redirect: "follow",
+  };
+
+  fetch("https://api.logsnag.com/v1/log", requestOptions)
+    .then((response) => response.text())
+    .then((result) => console.log(result))
+    .catch((error) => console.log("error", error));
+
   return (
     <>
       <Head>
