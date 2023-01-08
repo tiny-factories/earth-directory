@@ -9,23 +9,23 @@ const AboutPage: React.FC = () => {
       <div className="w-full mb-9 sm:py-9 text-h4 sm:text-h3 font-sans">
         We at{" "}
         <Link href="https://madefor.earth">
-          <a className="font-bold hover:underline hover:underline-offset-2">
+          <div className="font-bold hover:underline hover:underline-offset-2">
             Made For <span className="text-green">Earth</span>
-          </a>
+          </div>
         </Link>{" "}
         think that a shared source of truth is required to build a better
         future. So we started a glossary of terms, technologies, policies, and
         regulations around climate change. Please help us grow the glossary by{" "}
         <Link href="/add">
-          <a className="hover:underline hover:underline-offset-2 italic">
+          <div className="hover:underline hover:underline-offset-2 italic">
             recommending missing terms
-          </a>
+          </div>
         </Link>{" "}
         or{" "}
         <Link href="/translate">
-          <a className="hover:underline hover:underline-offset-2 italic">
+          <div className="hover:underline hover:underline-offset-2 italic">
             helping us translate our project
-          </a>
+          </div>
         </Link>{" "}
         into more languages.
       </div>

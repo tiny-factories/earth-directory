@@ -1,5 +1,4 @@
 import type { GetStaticProps } from "next";
-import { useState } from "react";
 import Link from "next/link";
 import React from "react";
 import Layout from "../components/Layout";
@@ -113,7 +112,10 @@ const Home: React.FC<Props> = (props) => {
         <div className="">GA GHG:</div>
         <div className="">
           <Link href="https://api.madefor.earth/data/ch4">
-            <a>
+            <div
+              id="widget-for-ch4-today-source-glossary"
+              className="umami--click--widget-for-ch4-today-source-glossary"
+            >
               {!props.atmosphericReadings[0].ch4 ? (
                 <>Loading CH₄</>
               ) : (
@@ -122,12 +124,15 @@ const Home: React.FC<Props> = (props) => {
                   <span>↗</span>
                 </>
               )}
-            </a>
+            </div>
           </Link>
         </div>
         <div className="">
           <Link href="https://api.madefor.earth/data/co2">
-            <a>
+            <div
+              id="widget-for-co2-today-source-glossary"
+              className="umami--click--widget-for-co2-today-source-glossary"
+            >
               {!props.atmosphericReadings[1].co2 ? (
                 <>Loading CO₂</>
               ) : (
@@ -136,13 +141,16 @@ const Home: React.FC<Props> = (props) => {
                   <span>↗</span>
                 </>
               )}
-            </a>
+            </div>
           </Link>
         </div>
 
         <div className="">
           <Link href="https://api.madefor.earth/data/n2o">
-            <a>
+            <div
+              id="widget-for-n2o-today-source-glossary"
+              className="umami--click--widget-for-n2o-today-source-glossary"
+            >
               {!props.atmosphericReadings[2].n2o ? (
                 <>Loading N₂O</>
               ) : (
@@ -151,13 +159,16 @@ const Home: React.FC<Props> = (props) => {
                   <span>↗</span>
                 </>
               )}
-            </a>
+            </div>
           </Link>
         </div>
 
         <div className="">
           <Link href="https://api.madefor.earth/data/sf6">
-            <a>
+            <div
+              id="widget-for-sf6-today-source-glossary"
+              className="umami--click--widget-for-sf6-today-source-glossary"
+            >
               {!props.atmosphericReadings[3].sf6 ? (
                 <>Loading SF₆</>
               ) : (
@@ -166,7 +177,7 @@ const Home: React.FC<Props> = (props) => {
                   <span>↗</span>
                 </>
               )}
-            </a>
+            </div>
           </Link>
         </div>
       </div>
@@ -207,7 +218,7 @@ const Home: React.FC<Props> = (props) => {
             We take seggestions from our community and verify them before adding
             them to the glossary, Anyone can recommend a term via this{" "}
             <Link href="https://form.typeform.com/to/lowIfjl5">
-              <a className="underline underline-offset-2">tiny form ↗</a>
+              <div className="underline underline-offset-2">tiny form ↗</div>
             </Link>
             .
           </div>
@@ -282,11 +293,11 @@ const Home: React.FC<Props> = (props) => {
         <div className="">
           give you self a{" "}
           <Link href="#">
-            <a className="underline underline-offset-2">🖐️</a>
+            <div className="underline underline-offset-2">🖐️</div>
           </Link>{" "}
           and learn a{" "}
           <Link href="#">
-            <a className="underline underline-offset-2">new cliamte term</a>
+            <div className="underline underline-offset-2">new cliamte term</div>
           </Link>
         </div>
       </div>
@@ -308,9 +319,9 @@ const Home: React.FC<Props> = (props) => {
               .map((term, index) => (
                 <div className="" key={index}>
                   <Link href={`/terms#${term.group}`}>
-                    <a className="inline-block  text-gray-500 font-satoshi hover:font-bold">
+                    <div className="inline-block  text-gray-500 font-satoshi hover:font-bold">
                       {term.group}
-                    </a>
+                    </div>
                   </Link>
                 </div>
               ))}

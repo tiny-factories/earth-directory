@@ -43,7 +43,12 @@ export default function Example() {
             <div className="font-bold">
               By{" "}
               <Link href="https://tinyfactories.space">
-                <a className="underline underline-offset-2">Tiny Factories</a>
+                <div
+                  id="link-to-tiny-factories"
+                  className="umami--click--link-to-tiny-factories underline underline-offset-2"
+                >
+                  Tiny Factories
+                </div>
               </Link>
             </div>
             <div className="py-2">
@@ -53,40 +58,43 @@ export default function Example() {
           </div>
           <div className="...">
             <div className="font-bold">Made For Earth</div>
-            {navigation.main.map((item) => (
-              <div key={item.name} className="py-2">
-                <a
+            {navigation.main.map((item, i) => (
+              <div key={item.i} className="py-2">
+                <div
+                  id={`link-to-${item.name}`}
                   href={item.href}
-                  className="text-base text-gray-500 hover:text-gray-900"
+                  className={`umami--click--link-to-${item.name} text-base text-gray-500 hover:text-gray-900`}
                 >
                   {item.name}
-                </a>
+                </div>
               </div>
             ))}
           </div>
           <div className="...">
             <div className="font-bold">Contribute</div>
-            {navigation.contribute.map((item) => (
-              <div key={item.name} className="py-2">
-                <a
+            {navigation.contribute.map((item, i) => (
+              <div key={item.i} className="py-2">
+                <div
+                  id={`link-to-${item.name}`}
                   href={item.href}
-                  className="umami--<LinkClick>--<TestClick> text-base text-gray-500 hover:text-gray-900"
+                  className={`umami--click--link-to-${item.name} text-base text-gray-500 hover:text-gray-900`}
                 >
                   {item.name}
-                </a>
+                </div>
               </div>
             ))}
           </div>
           <div className="...">
             <div className="font-bold">Social</div>
-            {navigation.social.map((item) => (
-              <div key={item.name} className="py-2">
-                <a
+            {navigation.social.map((item, i) => (
+              <div key={item.i} className="py-2">
+                <div
+                  id={`link-to-${item.name}`}
                   href={item.href}
-                  className="text-base text-gray-500 hover:text-gray-900"
+                  className={`umami--click--link-to-${item.name} text-base text-gray-500 hover:text-gray-900`}
                 >
                   {item.name}
-                </a>
+                </div>
               </div>
             ))}
           </div>
@@ -98,12 +106,13 @@ export default function Example() {
           >
             {navigation.main.map((item) => (
               <div key={item.name} className="px-5 py-2">
-                <a
+                <div
+                  id={`link-to-${item.name}`}
                   href={item.href}
-                  className="text-base text-gray-500 hover:text-gray-900"
+                  className={`umami--click--link-to-${item.name} text-base text-gray-500 hover:text-gray-900`}
                 >
                   {item.name}
-                </a>
+                </div>
               </div>
             ))}
           </div>
@@ -111,13 +120,13 @@ export default function Example() {
           <p className="mt-8 text-center text-base text-gray-400">
             Part of{" "}
             <Link href="https://madefor.earth">
-              <a className="underline underline-offset-2">
+              <div className="underline underline-offset-2">
                 Made for <span>Earth</span>
-              </a>
+              </div>
             </Link>{" "}
             by{" "}
             <Link href="https://tinyfactories.space">
-              <a className="underline underline-offset-2">Tiny Factories</a>
+              <div className="underline underline-offset-2">Tiny Factories</div>
             </Link>
           </p>
         </div> */}

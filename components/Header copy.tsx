@@ -13,9 +13,9 @@ const Header: React.FC = () => {
   let left = (
     <div className="">
       <Link href="/">
-        <a className="bold" data-active={isActive("/")}>
+        <div className="bold" data-active={isActive("/")}>
           Climate Glossary
-        </a>
+        </div>
       </Link>
 
       {/* <select>
@@ -32,9 +32,9 @@ const Header: React.FC = () => {
     left = (
       <div className="left">
         <Link href="/">
-          <a className="bold" data-active={isActive("/")}>
+          <div className="bold" data-active={isActive("/")}>
             Feed
-          </a>
+          </div>
         </Link>
         <style jsx>{`
           .bold {
@@ -73,7 +73,7 @@ const Header: React.FC = () => {
     right = (
       <div className="right">
         {/* <Link href="/api/auth/signin">
-          <a data-active={isActive("/signup")}>Log in</a>
+          <div data-active={isActive("/signup")}>Log in</div>
         </Link> */}
         <style jsx>{`
           a {
@@ -104,9 +104,9 @@ const Header: React.FC = () => {
     left = (
       <div className="left">
         <Link href="/">
-          <a className="bold" data-active={isActive("/")}>
+          <div className="bold" data-active={isActive("/")}>
             Feed
-          </a>
+          </div>
         </Link>
 
         <style jsx>{`
@@ -137,11 +137,11 @@ const Header: React.FC = () => {
         </p>
         <Link href="/create">
           <button>
-            <a>New term</a>
+            <div>New term</div>
           </button>
         </Link>
         <button onClick={() => signOut()}>
-          <a>Log out</a>
+          <div>Log out</div>
         </button>
         <style jsx>{`
           a {

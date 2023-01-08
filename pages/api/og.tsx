@@ -2,7 +2,7 @@ import { ImageResponse } from "@vercel/og";
 import { NextRequest } from "next/server";
 
 export const config = {
-  runtime: "experimental-edge",
+  runtime: "edge",
 };
 
 export default function handler(req: NextRequest) {
@@ -35,12 +35,10 @@ export default function handler(req: NextRequest) {
             style={{
               display: "flex",
               alignItems: "center",
-              alignContent: "center",
               justifyContent: "center",
               justifyItems: "center",
             }}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               alt="Vercel"
               height={200}
@@ -71,7 +69,7 @@ export default function handler(req: NextRequest) {
       }
     );
   } catch (e: any) {
-    // console.log(`${e.message}`);
+    console.log(`${e.message}`);
     return new Response(`Failed to generate the image`, {
       status: 500,
     });
