@@ -70,7 +70,7 @@ export default function Example() {
               <div key={item.name} className="py-2">
                 <a
                   href={item.href}
-                  className="text-base text-gray-500 hover:text-gray-900"
+                  className="umami--<LinkClick>--<TestClick> text-base text-gray-500 hover:text-gray-900"
                 >
                   {item.name}
                 </a>

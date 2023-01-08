@@ -88,7 +88,7 @@ type Props = {
 };
 
 const Home: React.FC<Props> = (props) => {
-  console.log(props);
+  // console.log(props);
   // const checkRoleExistence = (roleParam) =>
   //   roles.some(({ role }) => role == roleParam);
   //
@@ -172,8 +172,8 @@ const Home: React.FC<Props> = (props) => {
       </div>
 
       {/* Search By */}
-      <div className="py-24">
-        <div className="text-h4 sm:text-h3 md:text-h2 font-bold lowercase">
+      <div className="bg-red-300">
+        <div className="text-h4 sm:text-h3 md:text-h2 font-bold lowercase ">
           search by
         </div>
         <div className="flex flex-wrap">
@@ -232,7 +232,7 @@ const Home: React.FC<Props> = (props) => {
       </div>
 
       {/* by the numbers */}
-      <div className="py-24">
+      <div className="py-24 ">
         <div className="text-h4 sm:text-h3 md:text-h2 font-bold lowercase">
           by the numbers
         </div>
