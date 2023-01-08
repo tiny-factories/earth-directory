@@ -15,9 +15,9 @@ Platform:
 
 Trace: 
   SyntaxError: /Users/gndclouds/cloud/Tiny Factories/projects/ClimateDictionary/package.json: Unexpected string in JSON at position 605
-      at JSON.parse (<anonymous>)
+      at JSON.parse (<divnonymous>)
       at /opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:1629:59
-      at Generator.next (<anonymous>)
+      at Generator.next (<divnonymous>)
       at step (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:310:30)
       at /opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:321:13
 
