@@ -2,7 +2,6 @@ import type { GetStaticProps } from "next";
 import Link from "next/link";
 import React from "react";
 import Layout from "../components/Layout";
-import Term, { TermProps } from "../components/Term";
 import prisma from "../lib/prisma";
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -108,8 +107,8 @@ const Home: React.FC<Props> = (props) => {
       </div>
 
       {/* Atmospheric Readings */}
-      <div className="py-24 rounded flex flex-wrap justify-between">
-        <div className="">GA GHG:</div>
+      <div className="my-24 rounded flex flex-wrap justify-between border">
+        <div className="">Atmospheric Readings:</div>
         <div className="">
           <Link href="https://api.madefor.earth/data/ch4">
             <div
@@ -183,7 +182,7 @@ const Home: React.FC<Props> = (props) => {
       </div>
 
       {/* Search By */}
-      <div className="bg-red-300">
+      <div className="my-24 border-t">
         <div className="text-h4 sm:text-h3 md:text-h2 font-bold lowercase ">
           search by
         </div>
@@ -208,7 +207,7 @@ const Home: React.FC<Props> = (props) => {
       </div>
 
       {/* missing something? */}
-      <div className="py-24">
+      <div className="my-24 border-t">
         <div className="text-h4 sm:text-h3 md:text-h2 font-bold lowercase">
           missing something?
         </div>
@@ -228,7 +227,7 @@ const Home: React.FC<Props> = (props) => {
       </div>
 
       {/* translation */}
-      <div className="py-24">
+      <div className="my-24 border-t">
         <div className="text-h4 sm:text-h3 md:text-h2 font-bold lowercase">
           glossary translation
         </div>
@@ -243,7 +242,7 @@ const Home: React.FC<Props> = (props) => {
       </div>
 
       {/* by the numbers */}
-      <div className="py-24 ">
+      <div className="my-24 border-t">
         <div className="text-h4 sm:text-h3 md:text-h2 font-bold lowercase">
           by the numbers
         </div>
@@ -285,7 +284,7 @@ const Home: React.FC<Props> = (props) => {
       </div>
 
       {/* you made it*/}
-      <div className="py-24">
+      <div className="my-24 border-t">
         <div className="text-h4 sm:text-h3 md:text-h2 font-bold lowercase">
           you made it to the bottom!
         </div>

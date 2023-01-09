@@ -41,17 +41,17 @@ export default function Example() {
         <div className="grid grid-cols-4 gap-4">
           <div className="...">
             <div className="font-bold">
-              By{" "}
+              <div className="inline-block">By </div>
               <Link href="https://tinyfactories.space">
                 <div
                   id="link-to-tiny-factories"
-                  className="umami--click--link-to-tiny-factories underline underline-offset-2"
+                  className="umami--click--link-to-tiny-factories inline-block underline underline-offset-2"
                 >
                   Tiny Factories
                 </div>
               </Link>
             </div>
-            <div className="py-2">
+            <div className="">
               Made on a pale blue dot for the Earth, the only known place in the
               universe to house life.
             </div>
@@ -59,7 +59,7 @@ export default function Example() {
           <div className="...">
             <div className="font-bold">Made For Earth</div>
             {navigation.main.map((item, i) => (
-              <div key={item.i} className="py-2">
+              <div key={item.i} className="">
                 <div
                   id={`link-to-${item.name}`}
                   href={item.href}
@@ -73,7 +73,7 @@ export default function Example() {
           <div className="...">
             <div className="font-bold">Contribute</div>
             {navigation.contribute.map((item, i) => (
-              <div key={item.i} className="py-2">
+              <div key={item.i} className="">
                 <div
                   id={`link-to-${item.name}`}
                   href={item.href}
@@ -87,7 +87,7 @@ export default function Example() {
           <div className="...">
             <div className="font-bold">Social</div>
             {navigation.social.map((item, i) => (
-              <div key={item.i} className="py-2">
+              <div key={item.i} className="">
                 <div
                   id={`link-to-${item.name}`}
                   href={item.href}
