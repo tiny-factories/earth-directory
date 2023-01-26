@@ -7,14 +7,19 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: [
-        "satoshi",
+        "inter",
+
+        {
+          fontFeatureSettings:
+            '"zero", "ss01" , "dlig", "ccmp", "frac", "calt", "tnum", "case"',
+        },
+
         "ui-sans-serif",
         "system-ui",
         "-apple-system",
         "BlinkMacSystemFont",
         "Helvetica",
         "Arial",
-        "sans-serif",
       ],
       serif: ["ui-serif", "Georgia"],
       mono: ["ui-monospace", "SFMono-Regular"],
