@@ -38,7 +38,7 @@ export default function Example() {
   return (
     <footer className="p-9 inset-x-0 bottom-0">
       <div className="border-t border-black py-12 mx-auto  overflow-hidden">
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           <div className="...">
             <div className="font-bold">
               <div className="inline-block">By </div>
