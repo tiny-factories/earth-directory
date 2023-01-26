@@ -72,6 +72,7 @@ const Layout: React.FC<Props> = (props) => {
           src="https://umami.tinyfactories.space/umami.js"
         ></script>
       </Head>
+
       <div className="bg-[#F2F2F2]  min-h-screen">
         <div className="mx-auto py-3 px-9 ">
           <div className="relative flex justify-between ">
@@ -79,7 +80,7 @@ const Layout: React.FC<Props> = (props) => {
               <div className="flex flex-shrink-0 items-center">
                 <Link href="/">
                   <div className="font-bold hover:underline">
-                    <span className="">G.</span>
+                    <span className="">Glossary</span>
                   </div>
                 </Link>
               </div>
