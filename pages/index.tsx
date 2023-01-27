@@ -220,7 +220,7 @@ const Home: React.FC<Props> = (props) => {
             search by
           </div>
           <div className="flex flex-wrap">
-            <div className="w-full sm:w-1/3">
+            <div className="w-full sm:w-1/2">
               As awareness of the cliamte crysis increases, so does the noise
               and origin of informaiton.
               <br /> <br />
@@ -242,7 +242,7 @@ const Home: React.FC<Props> = (props) => {
         {/* missing something? */}
         <div className="my-24 border-t-2">
           <div className="pt-9 text-h4 sm:text-h3 md:text-h2 font-bold lowercase">
-            help us
+            grow the glossary
           </div>
           <div className="py-9">
             We take seggestions from our community and verify them before adding
@@ -250,30 +250,39 @@ const Home: React.FC<Props> = (props) => {
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
             <div className="">
-              <div className="">Term</div>
+              <div className="text-h4 py-2 font-bold">Add a Term</div>
 
               <div className="">
                 We take seggestions from our community and verify them before
-                adding them to the glossary, Anyone can recommend a term via
-                this{" "}
-                <Link href="https://form.typeform.com/to/lowIfjl5">
-                  <div className="underline underline-offset-2 inline">
-                    tiny form ↗
-                  </div>
-                </Link>
-                .
+                adding them to the glossary.
               </div>
 
-              <div className="">Button?</div>
+              <div className="">
+                <Link href="https://form.typeform.com/to/lowIfjl5">
+                  <button
+                    type="button"
+                    className="inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                  >
+                    Button text
+                  </button>
+                </Link>
+              </div>
             </div>
             <div className="">
-              <div className="">Term</div>
+              <div className="text-h4 py-2 font-bold">Help Translate</div>
               <div className="">
                 since the climate crysis is a global issue we are working on
                 translting our glossary into multiple launguages with context
                 specific examples for given regions.
               </div>
-              <div className="">Button?</div>
+              <div className="">
+                <button
+                  type="button"
+                  className="inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                >
+                  Button text
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -282,19 +291,18 @@ const Home: React.FC<Props> = (props) => {
 
         {/* by the numbers */}
         <div className="my-24 border-t-2">
-          <div className="pt-9 text-h4 sm:text-h3 md:text-h2 font-bold lowercase">
+          <div className="py-9 text-h4 sm:text-h3 md:text-h2 font-bold lowercase">
             by the numbers
           </div>
 
           <div className="flex flex-wrap">
-            <div className="w-full sm:w-1/3">
+            <div className="w-full sm:w-1/2">
               As awareness of the cliamte crysis increases, so does the noise
               and origin of informaiton. We are working to make a glossary of
               terms, agreements, companies, orginizations and more.
             </div>
-            <div className="w-full sm:w-1/3 "></div>
 
-            <div className="w-full sm:w-1/3 ">
+            <div className="w-full sm:w-1/2 ">
               <div className="">
                 {" "}
                 <div className=" text-h4 sm:text-h3 md:text-h1  font-bold block">
