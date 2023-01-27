@@ -41,19 +41,21 @@ export default function Example() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           <div className="...">
             <div className="font-bold">
-              <div className="inline-block">By </div>
-              <Link href="https://tinyfactories.space">
-                <div
-                  id="link-to-tiny-factories"
-                  className="umami--click--link-to-tiny-factories inline-block underline underline-offset-2"
-                >
-                  Tiny Factories
-                </div>
-              </Link>
+              <div className="inline-block">
+                By{" "}
+                <Link href="https://tinyfactories.space">
+                  <div
+                    id="link-to-tiny-factories"
+                    className="umami--click--link-to-tiny-factories inline-block underline underline-offset-2"
+                  >
+                    Tiny Factories
+                  </div>
+                </Link>
+              </div>
             </div>
             <div className="">
-              Made on a pale blue dot for the Earth, the only known place in the
-              universe to house life.
+              Made on a pale blue dot, the only known place in the universe to
+              house life.
             </div>
           </div>
           <div className="...">

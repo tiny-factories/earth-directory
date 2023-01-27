@@ -8,12 +8,10 @@ module.exports = {
     fontFamily: {
       sans: [
         "inter",
-
         {
           fontFeatureSettings:
             '"zero", "ss01" , "dlig", "ccmp", "frac", "calt", "tnum", "case"',
         },
-
         "ui-sans-serif",
         "system-ui",
         "-apple-system",
