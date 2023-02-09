@@ -7,11 +7,12 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: [
-        "inter",
+        "Inter var, sans-serif",
         {
           fontFeatureSettings:
             '"zero", "ss01" , "dlig", "ccmp", "frac", "calt", "tnum", "case"',
         },
+
         "ui-sans-serif",
         "system-ui",
         "-apple-system",
@@ -20,9 +21,7 @@ module.exports = {
         "Arial",
       ],
       serif: ["ui-serif", "Georgia"],
-      mono: ["ui-monospace", "SFMono-Regular"],
-      display: ["Oswald"],
-      body: ['"Open Sans"'],
+      mono: ["Fira Code", "ui-monospace", "SFMono-Regular"],
     },
     fontSize: {
       caption: "0.8rem",

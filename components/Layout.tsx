@@ -65,16 +65,15 @@ const Layout: React.FC<Props> = (props) => {
         )}
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta property="og:image" content={`/api/og?title=${title}`} />
-
-        <Script
-          async
-          defer
-          data-website-id="ba22ccb4-a53c-4978-bbd1-efe7ba466072"
-          src="https://umami.tinyfactories.space/umami.js"
-        />
       </Head>
+      <Script
+        async
+        defer
+        data-website-id="ba22ccb4-a53c-4978-bbd1-efe7ba466072"
+        src="https://umami.tinyfactories.space/umami.js"
+      />
 
-      <div className="bg-[#F2F2F2]  min-h-screen">
+      <div className="font-sans bg-[#F2F2F2] min-h-screen">
         <div className="mx-auto py-3 px-9 ">
           <div className="relative flex justify-between ">
             <div className="flex">

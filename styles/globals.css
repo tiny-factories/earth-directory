@@ -4,6 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
+
 /**
  * @license
  *
@@ -168,4 +170,68 @@
   font-weight: 900;
   font-display: swap;
   font-style: italic;
+}
+
+/* Locally Loading Inter */
+
+/**
+ * @license
+ *
+ * Font Family: Inter
+ * Designed by: TBD
+ * URL: TBD
+ * © 2022 TBD
+ *
+
+ *
+*/
+
+@font-face {
+  font-family: "Inter-VariableItalic";
+  src: url("../public/fonts/inter/Inter-VariableFont_slnt,wght.ttf")
+    format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Inter-Light";
+  src: url("../public/fonts/inter/static/Inter-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("../public/fonts/inter/static/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter-Medium";
+  src: url("../public/fonts/inter/static/Inter-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("../public/fonts/inter/static/Inter-Bold.ttf") format("truetype");
+
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter-Black";
+  src: url("../public/fonts/inter/static/Inter-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
 }
