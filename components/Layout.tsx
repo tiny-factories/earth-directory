@@ -1,5 +1,6 @@
 import React, { ReactNode, useEffect, useState } from "react";
 import Link from "next/link";
+import Script from "next/script";
 import Head from "next/head";
 import Footer from "./Footer";
 import Term from "./Term";
@@ -65,12 +66,12 @@ const Layout: React.FC<Props> = (props) => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta property="og:image" content={`/api/og?title=${title}`} />
 
-        <script
+        <Script
           async
           defer
           data-website-id="ba22ccb4-a53c-4978-bbd1-efe7ba466072"
           src="https://umami.tinyfactories.space/umami.js"
-        ></script>
+        />
       </Head>
 
       <div className="bg-[#F2F2F2]  min-h-screen">
