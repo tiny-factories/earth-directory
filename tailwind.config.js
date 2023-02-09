@@ -7,19 +7,21 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: [
-        "satoshi",
+        "Inter var, sans-serif",
+        {
+          fontFeatureSettings:
+            '"zero", "ss01" , "dlig", "ccmp", "frac", "calt", "tnum", "case"',
+        },
+
         "ui-sans-serif",
         "system-ui",
         "-apple-system",
         "BlinkMacSystemFont",
         "Helvetica",
         "Arial",
-        "sans-serif",
       ],
       serif: ["ui-serif", "Georgia"],
-      mono: ["ui-monospace", "SFMono-Regular"],
-      display: ["Oswald"],
-      body: ['"Open Sans"'],
+      mono: ["Fira Code", "ui-monospace", "SFMono-Regular"],
     },
     fontSize: {
       caption: "0.8rem",
@@ -39,5 +41,6 @@ module.exports = {
     require("@tailwindcss/typography"),
     require("@tailwindcss/line-clamp"),
     require("@tailwindcss/forms"),
+    require("@tailwindcss/aspect-ratio"),
   ],
 };

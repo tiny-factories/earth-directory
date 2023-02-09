@@ -1,10 +1,10 @@
 import React, { ReactNode, useEffect, useState } from "react";
 import Link from "next/link";
-import Navigation from "./Navigation";
+import Script from "next/script";
+import Head from "next/head";
 import Footer from "./Footer";
 import Term from "./Term";
 import useDebounce from "../hooks/useDebounce";
-import { XMarkIcon } from "@heroicons/react/24/outline";
 
 type Props = {
   children: ReactNode;
@@ -29,6 +29,8 @@ const Layout: React.FC<Props> = (props) => {
   const [search, setSearch] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
+  let title = "Climate Glossary MFE";
+
   const debouncedSearch = useDebounce(search, 500);
 
   useEffect(() => {
@@ -51,42 +53,35 @@ const Layout: React.FC<Props> = (props) => {
 
   return (
     <div>
-      {/* <div className="relative bg-indigo-600">
-        <div className="mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8">
-          <div className="pr-16 sm:px-16 sm:text-center">
-            <p className="font-medium text-white">
-              <span className="md:hidden">We announced a new product!</span>
-              <span className="hidden md:inline">
-                Big news! We're excited to announce a brand new product.
-              </span>
-              <span className="block sm:ml-2 sm:inline-block">
-                <a href="#" className="font-bold text-white underline">
-                  Learn more
-                  <span aria-hidden="true"> &rarr;</span>
-                </a>
-              </span>
-            </p>
-          </div>
-          <div className="absolute inset-y-0 right-0 flex items-start pt-1 pr-1 sm:items-start sm:pt-1 sm:pr-2">
-            <button
-              type="button"
-              className="flex rounded-md p-2 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-white"
-            >
-              <span className="sr-only">Dismiss</span>
-              <XMarkIcon className="h-6 w-6 text-white" aria-hidden="true" />
-            </button>
-          </div>
-        </div>
-      </div> */}
-      <div className="bg-[#F2F2F2] min-h-screen">
+      <Head>
+        {process.env.UMAMI != "DEVELOPMENT" ? (
+          <>
+            <title>Climate Glossary MFE [PREVIEW]</title>
+          </>
+        ) : (
+          <>
+            <title>Climate Glossary MFE</title>
+          </>
+        )}
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta property="og:image" content={`/api/og?title=${title}`} />
+      </Head>
+      <Script
+        async
+        defer
+        data-website-id="ba22ccb4-a53c-4978-bbd1-efe7ba466072"
+        src="https://umami.tinyfactories.space/umami.js"
+      />
+
+      <div className="font-sans bg-[#F2F2F2] min-h-screen">
         <div className="mx-auto py-3 px-9 ">
           <div className="relative flex justify-between ">
             <div className="flex">
               <div className="flex flex-shrink-0 items-center">
                 <Link href="/">
-                  <a className="font-bold hover:underline">
-                    <span className="">G.</span>
-                  </a>
+                  <div className="font-bold hover:underline">
+                    <span className="">Glossary</span>
+                  </div>
                 </Link>
               </div>
             </div>
@@ -115,30 +110,31 @@ const Layout: React.FC<Props> = (props) => {
             <div className="flex inset-y-0 left-0 static col-span-2">
               <div className="flex flex-shrink-0 items-center">
                 <Link href="/terms">
-                  <a className="font-bold hover:underline pr-3">terms</a>
+                  <div className="font-bold hover:underline pr-3">terms</div>
                 </Link>
               </div>
               <div className="flex flex-shrink-0 items-center">
                 <Link href="/about">
-                  <a className="font-bold hover:underline">about</a>
+                  <div className="font-bold hover:underline">about</div>
                 </Link>
               </div>
             </div>
           </div>
         </div>
 
-        {!search && <div className="mx-auto p-9">{props.children}</div>}
+        {!search && (
+          <div className="mx-auto p-9 max-w-screen-xl">{props.children}</div>
+        )}
 
         <div className="mx-auto p-9">
           {notices.map((term, i) => {
             return (
-              <div key={term.id} className="">
+              <div key={term.i} className="">
                 <Term term={term} />
               </div>
             );
           })}
         </div>
-
         <Footer />
       </div>
     </div>
