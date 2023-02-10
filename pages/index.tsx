@@ -79,10 +79,6 @@ type Props = {
 };
 
 const Home: React.FC<Props> = (props) => {
-  // console.log(props);
-  // const checkRoleExistence = (roleParam) =>
-  //   roles.some(({ role }) => role == roleParam);
-  //
   return (
     <>
       <div className="relative bg-[#101010] text-[#F2F2F2]">

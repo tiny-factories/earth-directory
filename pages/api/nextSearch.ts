@@ -11,7 +11,6 @@ export default async function handle(
   res: NextApiResponse
 ) {
   const { searchString } = req.query;
-  // console.log("🔍 Searching for " + searchString);
   const searchData = await prisma.term.findMany({
     where: {
       title: {
@@ -19,8 +18,6 @@ export default async function handle(
       },
     },
   });
-  // console.log("📑 Results for " + JSON.stringify(searchData);
-  // console.log(searchData);
 
   res.json(searchData);
 }

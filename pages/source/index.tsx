@@ -22,10 +22,6 @@ export const getStaticProps: GetStaticProps = async () => {
 
   let result = Object.values(data);
 
-  {
-    /* console.log(result); */
-  }
-
   return {
     props: { result },
     revalidate: 10,
@@ -38,9 +34,6 @@ type Props = {
 };
 
 const Home: React.FC<Props> = (props) => {
-  // log  source grouping
-  // console.log(props);
-
   return (
     <Layout>
       <div className="flex w-full justify-between hover:bold">
