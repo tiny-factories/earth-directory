@@ -102,7 +102,7 @@ const Home: React.FC<Props> = (props) => {
                         <>
                           Atmospheric CO₂{" "}
                           {props.atmosphericReadings[1].co2.measurement} ppm{" "}
-                          <span>↗</span>
+                          <span className="font-mono"> ↗</span>
                         </>
                       )}
                     </div>
@@ -122,7 +122,7 @@ const Home: React.FC<Props> = (props) => {
                       ) : (
                         <>
                           CH₄ {props.atmosphericReadings[0].ch4.measurement} ppt
-                          <span>↗</span>
+                          <span className="font-mono"> ↗</span>
                         </>
                       )}
                     </div>
@@ -139,7 +139,7 @@ const Home: React.FC<Props> = (props) => {
                       ) : (
                         <>
                           CO₂ {props.atmosphericReadings[1].co2.measurement} ppm
-                          <span>↗</span>
+                          <span className="font-mono"> ↗</span>
                         </>
                       )}
                     </div>
@@ -156,7 +156,7 @@ const Home: React.FC<Props> = (props) => {
                       ) : (
                         <>
                           N₂O {props.atmosphericReadings[2].n2o.measurement} ppb
-                          <span>↗</span>
+                          <span className="font-mono"> ↗</span>
                         </>
                       )}
                     </div>
@@ -173,7 +173,7 @@ const Home: React.FC<Props> = (props) => {
                       ) : (
                         <>
                           SF₆ {props.atmosphericReadings[3].sf6.measurement} ppt
-                          <span>↗</span>
+                          <span className="font-mono"> ↗</span>
                         </>
                       )}
                     </div>
@@ -222,18 +222,16 @@ const Home: React.FC<Props> = (props) => {
             search by
           </div>
           <div className="flex flex-wrap">
-            <div className="w-full sm:w-1/2">
+            <div className="w-full">
               As awareness of the climate crysis increases, so does the noise
-              and origin of informaiton.
-              <br /> <br />
-              We are working to make a glossary of terms, agreements, companies,
-              orginizations and more.
+              and origin of informaiton. We are working to make a glossary of
+              terms, agreements, companies, orginizations and more.
             </div>
 
-            <div className="w-full sm:w-1/2">
+            <div className="pt-9 flex flex-wrap w-full">
               {props.allTags.map((tag, i) => {
                 return (
-                  <div key={i} className="">
+                  <div key={i} className="pl-0:first-child p-3 ">
                     <Tag tag={tag} />
                   </div>
                 );
@@ -253,7 +251,9 @@ const Home: React.FC<Props> = (props) => {
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
             <div className="">
-              <div className="text-h4 py-2 font-bold">Add a Term</div>
+              <div className="text-h4 py-2 font-bold hover:scale-105 hover:text-[#efefef] hover:bg-[#000000] hover:cursor-pointer">
+                Add a Term
+              </div>
 
               <div className="">
                 We take seggestions from our community and verify them before
@@ -281,7 +281,7 @@ const Home: React.FC<Props> = (props) => {
               <div className="">
                 <button
                   type="button"
-                  className="inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                  className="inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base hover:scale-105 hover:text-[#efefef] hover:bg-[#000000] hover:cursor-pointer"
                 >
                   Sign Up <span className="font-mono pl-1">↗</span>
                 </button>
@@ -293,7 +293,7 @@ const Home: React.FC<Props> = (props) => {
         {/* translation */}
 
         {/* by the numbers */}
-        {/* <div className="my-24 border-t-2">
+        <div className="my-24 border-t-2">
           <div className="py-9 text-h4 sm:text-h3 md:text-h2 font-bold uppercase">
             by the numbers
           </div>
@@ -331,7 +331,7 @@ const Home: React.FC<Props> = (props) => {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
         {/* company sponsorship*/}
         <div className="my-24 border-t-2">
           <div className="pt-9  text-h4 sm:text-h3 md:text-h2 font-bold uppercase">

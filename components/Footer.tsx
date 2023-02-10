@@ -6,33 +6,33 @@ const navigation = {
       href: "/about",
     },
 
-    { name: "newsletter ↗", href: "https://buttondown.email/madeforearth" },
+    { name: "newsletter ", href: "https://buttondown.email/madeforearth" },
   ],
   contribute: [
     {
-      name: "help translate ↗",
+      name: "help translate ",
       href: "https://form.typeform.com/to/hV9yuh6J",
     },
     {
-      name: "add a term ↗",
+      name: "add a term ",
       href: "https://form.typeform.com/to/lowIfjl5",
     },
     {
-      name: "sponsor us ↗",
+      name: "sponsor us ",
       href: "https://form.typeform.com/to/NVs38SdG",
     },
   ],
   social: [
     {
-      name: "twitter ↗",
+      name: "twitter ",
       href: "https://twitter.com/mdfrearth",
     },
     {
-      name: "are.na  ↗",
+      name: "are.na  ",
       href: "https://www.are.na/made-for-earth",
     },
     {
-      name: "gitHub ↗",
+      name: "gitHub",
       href: "https://github.com/tiny-factories/mfe-climate-glossary",
     },
   ],
