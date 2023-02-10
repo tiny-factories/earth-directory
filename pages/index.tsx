@@ -3,6 +3,8 @@ import Link from "next/link";
 import React from "react";
 import Layout from "../components/Layout";
 import Term, { TermProps } from "../components/Term";
+import Tag, { TagProps } from "../components/Tag";
+
 import prisma from "../lib/prisma";
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -33,6 +35,12 @@ export const getStaticProps: GetStaticProps = async () => {
     },
   });
 
+  const allTags = await prisma.tag.findMany({
+    where: {
+      published: true,
+    },
+  });
+
   // let data = feed.reduce((r, e) => {
   //   let group = e.title[0];
   //   if (!r[group]) r[group] = { group, children: [e] };
@@ -51,6 +59,7 @@ export const getStaticProps: GetStaticProps = async () => {
       numberOfTerms,
       numberOfLanguages,
       numberOfContributors,
+      allTags,
       atmosphericReadings,
       // result,
       feed,
@@ -64,7 +73,7 @@ type Props = {
   numberOfLanguages: string;
   numberOfContributors: string;
   atmosphericReadings: TermProps[];
-  // result: TermProps[];
+  allTags: TermProps[];
   feed: TermProps[];
   group: string;
 };
@@ -201,7 +210,7 @@ const Home: React.FC<Props> = (props) => {
           </div>
 
           <div className="text-h4 sm:text-h3 md:text-h2">
-            As awareness of the cliamte crysis increases, so does the noise and
+            As awareness of the climate crysis increases, so does the noise and
             origin of informaiton. We are working to make a glossary of terms,
             agreements, companies, orginizations and more.
           </div>
@@ -214,20 +223,21 @@ const Home: React.FC<Props> = (props) => {
           </div>
           <div className="flex flex-wrap">
             <div className="w-full sm:w-1/2">
-              As awareness of the cliamte crysis increases, so does the noise
+              As awareness of the climate crysis increases, so does the noise
               and origin of informaiton.
               <br /> <br />
               We are working to make a glossary of terms, agreements, companies,
               orginizations and more.
             </div>
 
-            <div className="">
-              <div className=""></div>
-              <div className=""></div>
-              <div className=""></div>
-              <div className=""></div>
-              <div className=""></div>
-              <div className=""></div>
+            <div className="w-full sm:w-1/2">
+              {props.allTags.map((tag, i) => {
+                return (
+                  <div key={Tag.i} className="">
+                    <Tag tag={term} />
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -256,7 +266,7 @@ const Home: React.FC<Props> = (props) => {
                     type="button"
                     className="inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                   >
-                    Button text
+                    Add Term <span className="font-mono pl-1"> ↗</span>
                   </button>
                 </Link>
               </div>
@@ -273,7 +283,7 @@ const Home: React.FC<Props> = (props) => {
                   type="button"
                   className="inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                 >
-                  Button text
+                  Sign Up <span className="font-mono pl-1">↗</span>
                 </button>
               </div>
             </div>
@@ -290,7 +300,7 @@ const Home: React.FC<Props> = (props) => {
 
           <div className="flex flex-wrap">
             <div className="w-full sm:w-1/2">
-              As awareness of the cliamte crysis increases, so does the noise
+              As awareness of the climate crysis increases, so does the noise
               and origin of informaiton. We are working to make a glossary of
               terms, agreements, companies, orginizations and more.
             </div>
@@ -325,52 +335,25 @@ const Home: React.FC<Props> = (props) => {
         {/* company sponsorship*/}
         <div className="my-24 border-t-2">
           <div className="pt-9  text-h4 sm:text-h3 md:text-h2 font-bold uppercase">
-            you made it to the bottom!
+            Sponsor our project
           </div>
-          <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-            <div className="p-8 sm:p-10 lg:flex-auto">
-              <h3 className="text-2xl font-bold tracking-tight text-gray-900">
-                Lifetime membership
-              </h3>
-              <p className="mt-6 text-base leading-7 text-gray-600">
-                Lorem ipsum dolor sit amet consect etur adipisicing elit. Itaque
-                amet indis perferendis blanditiis repellendus etur quidem
-                assumenda.
-              </p>
-              <div className="mt-10 flex items-center gap-x-4">
-                <h4 className="flex-none text-sm font-semibold leading-6 text-indigo-600">
-                  What’s included
-                </h4>
-                <div className="h-px flex-auto bg-gray-100" />
-              </div>
-              <ul
-                role="list"
-                className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6"
-              ></ul>
-            </div>
+          <div className="py-9">
+            Are you a climate company? Then apply to be added to our climate
+            glossary as a sponsor.{" "}
+          </div>
+          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
             <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
               <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
                 <div className="mx-auto max-w-xs px-8">
                   <p className="text-base font-semibold text-gray-600">
                     Pay once, own it forever
                   </p>
-                  <p className="mt-6 flex items-baseline justify-center gap-x-2">
-                    <span className="text-5xl font-bold tracking-tight text-gray-900">
-                      $349
-                    </span>
-                    <span className="text-sm font-semibold leading-6 tracking-wide text-gray-600">
-                      USD
-                    </span>
-                  </p>
-                  <a
-                    href="#"
-                    className="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                  >
-                    Get access
-                  </a>
+                  <p className="mt-6 flex items-baseline justify-center gap-x-2"></p>
+                  <Link href="https://form.typeform.com/to/NVs38SdG">
+                    Sponsor Us
+                  </Link>
                   <p className="mt-6 text-xs leading-5 text-gray-600">
-                    Invoices and receipts available for easy company
-                    reimbursement
+                    Company
                   </p>
                 </div>
               </div>
@@ -392,7 +375,7 @@ const Home: React.FC<Props> = (props) => {
             and learn a{" "}
             <Link href="#">
               <div className="underline underline-offset-2 inline">
-                new cliamte term
+                new climate term
               </div>
             </Link>
           </div>
