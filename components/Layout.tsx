@@ -129,7 +129,7 @@ const Layout: React.FC<Props> = (props) => {
         <div className="mx-auto p-9">
           {notices.map((term, i) => {
             return (
-              <div key={term.i} className="">
+              <div key={i} className="">
                 <Term term={term} />
               </div>
             );

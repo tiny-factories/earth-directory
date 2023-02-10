@@ -54,8 +54,8 @@ const Home: React.FC<Props> = (props) => {
             }
             return 0;
           })
-          .map((term, index) => (
-            <div className="" key={index}>
+          .map((term, i) => (
+            <div className="" key={i}>
               <Link href={`#${term.group}`}>
                 <div className="inline-block  text-gray-500 font-satoshi hover:font-bold">
                   {term.group}
@@ -79,8 +79,8 @@ const Home: React.FC<Props> = (props) => {
                 }
                 return 0;
               })
-              .map((term, index) => (
-                <div className="" key={index}>
+              .map((term, i) => (
+                <div className="" key={i}>
                   <div
                     id={term.group}
                     className="text-h2 font-bold text-gray-500 font-satoshi"
@@ -97,8 +97,8 @@ const Home: React.FC<Props> = (props) => {
                       }
                       return 0;
                     })
-                    .map((term, index) => (
-                      <div key={term.id} className="">
+                    .map((term, i) => (
+                      <div key={i} className="">
                         <Term term={term} />
                       </div>
                     ))}

@@ -65,7 +65,7 @@ export default function Example() {
           <div className="...">
             <div className="font-bold">Made For Earth</div>
             {navigation.main.map((item, i) => (
-              <div key={item.i} className="">
+              <div key={i} className="">
                 <Link
                   id={`link-to-${item.name}`}
                   href={item.href}
@@ -79,7 +79,7 @@ export default function Example() {
           <div className="...">
             <div className="font-bold">Contribute</div>
             {navigation.contribute.map((item, i) => (
-              <div key={item.i} className="">
+              <div key={i} className="">
                 <Link
                   id={`link-to-${item.name}`}
                   href={item.href}
@@ -93,7 +93,7 @@ export default function Example() {
           <div className="...">
             <div className="font-bold">Social</div>
             {navigation.social.map((item, i) => (
-              <div key={item.i} className="">
+              <div key={i} className="">
                 <Link
                   id={`link-to-${item.name}`}
                   href={item.href}
@@ -110,8 +110,8 @@ export default function Example() {
             className="-mx-5 -my-2 flex flex-wrap justify-center"
             aria-label="Footer"
           >
-            {navigation.main.map((item) => (
-              <div key={item.name} className="px-5 py-2">
+            {navigation.main.map((item,i) => (
+              <div key={i} className="px-5 py-2">
                 <div
                   id={`link-to-${item.name}`}
                   href={item.href}

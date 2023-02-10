@@ -233,8 +233,8 @@ const Home: React.FC<Props> = (props) => {
             <div className="w-full sm:w-1/2">
               {props.allTags.map((tag, i) => {
                 return (
-                  <div key={Tag.i} className="">
-                    <Tag tag={term} />
+                  <div key={i} className="">
+                    <Tag tag={tag} />
                   </div>
                 );
               })}

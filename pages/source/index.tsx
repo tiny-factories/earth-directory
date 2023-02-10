@@ -54,8 +54,8 @@ const Home: React.FC<Props> = (props) => {
             }
             return 0;
           })
-          .map((source, index) => (
-            <div className="" key={index}>
+          .map((source, i) => (
+            <div className="" key={i}>
               <Link href={`#${source.group}`}>
                 <div className="inline-block  text-gray-500 font-satoshi hover:font-bold">
                   {source.group}
@@ -79,8 +79,8 @@ const Home: React.FC<Props> = (props) => {
                 }
                 return 0;
               })
-              .map((source, index) => (
-                <div className="" key={index}>
+              .map((source, i) => (
+                <div className="" key={i}>
                   <div
                     id={source.group}
                     className="text-h2 font-bold text-gray-500 font-satoshi"
@@ -97,8 +97,8 @@ const Home: React.FC<Props> = (props) => {
                       }
                       return 0;
                     })
-                    .map((source, index) => (
-                      <div key={source.id} className="">
+                    .map((source, i) => (
+                      <div key={i} className="">
                         <Source source={source} />
                       </div>
                     ))}
