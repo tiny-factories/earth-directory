@@ -15,6 +15,7 @@ model Term {
   content    String?
   image      String?   @db.Text
   published  Boolean   @default(false)
+  sponsor    Boolean   @default(false)
   source     Source?   @relation(fields: [sourceId], references: [id])
   sourceId   String?
   language   Language? @relation(fields: [languageId], references: [id])

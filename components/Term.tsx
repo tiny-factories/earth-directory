@@ -4,9 +4,9 @@ import Router from "next/router";
 export type TermProps = {
   id: string;
   title: string;
-
   content: string;
   published: boolean;
+  sourceId: string;
 };
 
 const Term: React.FC<{ term: TermProps }> = ({ term }) => {

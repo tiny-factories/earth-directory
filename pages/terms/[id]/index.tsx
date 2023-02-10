@@ -43,27 +43,64 @@ const Term: React.FC<TermProps> = (props) => {
           <div className="text-h4 sm:text-h3 md:sm:text-h1 font-bold font-satoshi border-b-2">
             {title}
           </div>
-          <div className="grid grid-cols-4">
-            <div className="col-span-1">
-              <div className="">Overview</div>
+          <div className="grid grid-cols-4 py-9">
+            <div className="col-span-4 md:col-span-1 pb-9">
+              <div className="text-h5 md:text-h3 font-bold">Overview</div>
               <div className="">
                 via{" "}
-                <Link
-                  href={props?.content || "Undefinded Term"}
-                  className="underline"
-                >
-                  {props?.content || "Undefinded Term"}
+                <Link href={`/source/${props.sourceId}`} className="underline">
+                  source
                 </Link>
               </div>
             </div>
-            <div className="col-span-3 text-h4 sm:text-h3 md:sm:text-h2">
+            <div className="col-span-4 md:col-span-3 text-h4 sm:text-h3 md:sm:text-h2">
               {props?.content || "Undefinded Term"}
             </div>
           </div>
 
-          {/* <div>From a Scientist</div> */}
+          <div>
+            {" "}
+            <div className="grid grid-cols-4 py-9">
+              <div className="col-span-4 md:col-span-1 pb-9">
+                <div className="text-h5 md:text-h3 font-bold">The Details</div>
+                {/* <div className="">
+                  via{" "}
+                  <Link
+                    href={`/source/${props.sourceId}`}
+                    className="underline"
+                  >
+                    source
+                  </Link>
+                </div> */}
+              </div>
+              <div className="col-span-4 md:col-span-3 text-h4 sm:text-h3 md:sm:text-h2 italic">
+                Coming Soon
+              </div>
+            </div>
+          </div>
 
-          {/* <div>Related Terms</div> */}
+          <div>
+            {" "}
+            <div className="grid grid-cols-4 py-9">
+              <div className="col-span-4 md:col-span-1 pb-9">
+                <div className="text-h5 md:text-h3 font-bold">
+                  Related Terms
+                </div>
+                {/* <div className="">
+                  via{" "}
+                  <Link
+                    href={`/source/${props.sourceId}`}
+                    className="underline"
+                  >
+                    source
+                  </Link>
+                </div> */}
+              </div>
+              <div className="col-span-4 md:col-span-3 text-h4 sm:text-h3 md:sm:text-h2 italic">
+                Coming Soon
+              </div>
+            </div>
+          </div>
 
           <div></div>
         </div>
