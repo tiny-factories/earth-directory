@@ -6,18 +6,6 @@ import Layout from "../../../components/Layout";
 import { TermProps } from "../../../components/Term";
 import prisma from "../../../lib/prisma";
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const term = await prisma.term.findUnique({
-    where: {
-      id: String(params?.id),
-    },
-  });
-  return {
-    props: term,
-    revalidate: 10,
-  };
-};
-
 export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
   return {
     paths: [], //indicates that no page needs be created at build time
@@ -107,6 +95,18 @@ const Term: React.FC<TermProps> = (props) => {
       </Layout>
     </>
   );
+};
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const term = await prisma.term.findUnique({
+    where: {
+      id: String(params?.id),
+    },
+  });
+  return {
+    props: term,
+    revalidate: 10,
+  };
 };
 
 export default Term;
