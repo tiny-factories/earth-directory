@@ -4,10 +4,7 @@ import Router from "next/router";
 export type EarthAPIProps = {
   id: string;
   title: string;
-  author: {
-    name: string;
-    email: string;
-  } | null;
+
   content: string;
   published: boolean;
 };

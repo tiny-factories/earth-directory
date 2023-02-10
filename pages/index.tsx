@@ -13,13 +13,6 @@ export const getStaticProps: GetStaticProps = async () => {
     where: {
       published: true,
     },
-    include: {
-      author: {
-        select: {
-          name: true,
-        },
-      },
-    },
   });
 
   const allTerms = await prisma.term.findMany({

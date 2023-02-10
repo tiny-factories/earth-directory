@@ -1,19 +1,15 @@
 import React from "react";
+import Link from "next/link";
 import type { GetStaticProps } from "next";
 import Head from "next/head";
-import Layout from "../../components/Layout";
-import { TermProps } from "../../components/Term";
-import prisma from "../../lib/prisma";
+import Layout from "../../../components/Layout";
+import { TermProps } from "../../../components/Term";
+import prisma from "../../../lib/prisma";
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const term = await prisma.term.findUnique({
     where: {
       id: String(params?.id),
-    },
-    include: {
-      author: {
-        select: { name: true, email: true },
-      },
     },
   });
   return {
@@ -44,11 +40,25 @@ const Term: React.FC<TermProps> = (props) => {
       </Head>
       <Layout>
         <div className="mx-auto max-w-7xl ">
-          <div className="text-h4 sm:text-h3 md:sm:text-h1 font-bold font-satoshi ">
+          <div className="text-h4 sm:text-h3 md:sm:text-h1 font-bold font-satoshi border-b-2">
             {title}
           </div>
-          <div className="text-h4 sm:text-h3 md:sm:text-h2">
-            {props?.content || "Undefinded Term"}
+          <div className="grid grid-cols-4">
+            <div className="col-span-1">
+              <div className="">Overview</div>
+              <div className="">
+                via{" "}
+                <Link
+                  href={props?.content || "Undefinded Term"}
+                  className="underline"
+                >
+                  {props?.content || "Undefinded Term"}
+                </Link>
+              </div>
+            </div>
+            <div className="col-span-3 text-h4 sm:text-h3 md:sm:text-h2">
+              {props?.content || "Undefinded Term"}
+            </div>
           </div>
 
           {/* <div>From a Scientist</div> */}

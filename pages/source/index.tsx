@@ -2,21 +2,14 @@ import type { GetStaticProps } from "next";
 import { useState } from "react";
 import Link from "next/link";
 import React from "react";
-import Layout from "../components/Layout";
-import Term, { TermProps } from "../components/Term";
-import prisma from "../lib/prisma";
+import Layout from "../../components/Layout";
+import Source, { SourceProps } from "../../components/Source";
+import prisma from "../../lib/prisma";
 
 export const getStaticProps: GetStaticProps = async () => {
-  const feed = await prisma.term.findMany({
+  const feed = await prisma.source.findMany({
     where: {
       published: true,
-    },
-    include: {
-      author: {
-        select: {
-          name: true,
-        },
-      },
     },
   });
 
@@ -40,12 +33,12 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 type Props = {
-  result: TermProps[];
+  result: SourceProps[];
   group: string;
 };
 
 const Home: React.FC<Props> = (props) => {
-  // log term grouping
+  // log  source grouping
   // console.log(props);
 
   return (
@@ -61,11 +54,11 @@ const Home: React.FC<Props> = (props) => {
             }
             return 0;
           })
-          .map((term, index) => (
+          .map((source, index) => (
             <div className="" key={index}>
-              <Link href={`#${term.group}`}>
+              <Link href={`#${source.group}`}>
                 <div className="inline-block  text-gray-500 font-satoshi hover:font-bold">
-                  {term.group}
+                  {source.group}
                 </div>
               </Link>
             </div>
@@ -86,15 +79,15 @@ const Home: React.FC<Props> = (props) => {
                 }
                 return 0;
               })
-              .map((term, index) => (
+              .map((source, index) => (
                 <div className="" key={index}>
                   <div
-                    id={term.group}
+                    id={source.group}
                     className="text-h2 font-bold text-gray-500 font-satoshi"
                   >
-                    {term.group}
+                    {source.group}
                   </div>
-                  {term.children
+                  {source.children
                     .sort(function (a, b) {
                       if (a.group < b.group) {
                         return -1;
@@ -104,9 +97,9 @@ const Home: React.FC<Props> = (props) => {
                       }
                       return 0;
                     })
-                    .map((term, index) => (
-                      <div key={term.id} className="">
-                        <Term term={term} />
+                    .map((source, index) => (
+                      <div key={source.id} className="">
+                        <Source source={source} />
                       </div>
                     ))}
                 </div>
