@@ -328,6 +328,7 @@ const Home: React.FC<Props> = (props) => {
             </div>
           </div>
         </div>
+
         {/* company sponsorship*/}
         <div className="my-24 border-t-2">
           <div className="pt-9  text-h4 sm:text-h3 md:text-h2 font-bold uppercase">
