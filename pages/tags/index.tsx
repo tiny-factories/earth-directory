@@ -22,10 +22,6 @@ export const getStaticProps: GetStaticProps = async () => {
 
   let result = Object.values(data);
 
-  {
-    /* console.log(result); */
-  }
-
   return {
     props: { result },
     revalidate: 10,

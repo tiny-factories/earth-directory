@@ -6,6 +6,8 @@ export type TagProps = {
   title: string;
   content: string;
   published: boolean;
+  group: string;
+  children: string;
 };
 
 const Tag: React.FC<{ tag: TagProps }> = ({ tag }) => {

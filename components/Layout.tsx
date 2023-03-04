@@ -122,9 +122,7 @@ const Layout: React.FC<Props> = (props) => {
           </div>
         </div>
 
-        {!search && (
-          <div className="mx-auto p-9 max-w-screen-xl">{props.children}</div>
-        )}
+        {!search && <div className="mx-auto p-9 ">{props.children}</div>}
 
         <div className="mx-auto p-9">
           {notices.map((term, i) => {

@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import type { GetStaticProps } from "next";
 import Head from "next/head";
 import Layout from "../../../components/Layout";
@@ -32,19 +31,7 @@ const Tag: React.FC<TagProps> = (props) => {
             {title}
           </div>
           <div className="grid grid-cols-4 py-9">
-            <div className="col-span-4 md:col-span-1 pb-9">
-              <div className="text-h5 md:text-h3 font-bold">Overview</div>
-              <div className="">
-                via{" "}
-                <Link href={`/source/${props.sourceId}`} className="underline">
-                  source
-                </Link>
-              </div>
-            </div>
-            <div className="col-span-4 md:col-span-3 text-h4 sm:text-h3 md:sm:text-h2">
-              List of Things with tags
-              {props?.content || "Undefinded Tag"}
-            </div>
+            Future List of words for tag {title}
           </div>
         </div>
       </Layout>
