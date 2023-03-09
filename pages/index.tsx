@@ -93,7 +93,7 @@ const Home: React.FC<Props> = (props) => {
 
         {/* Explore */}
         <div className="my-24 mx-auto max-w-screen-lg">
-          <div className="py-9">
+          <div className="border-b-2">
             {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -107,19 +107,19 @@ const Home: React.FC<Props> = (props) => {
               />
             </svg> */}
 
-            <div className="bg-[#F3B53F] rounded-full w-9 h-9 align-middle mr-3 inline-block"></div>
+            {/* <div className="bg-[#F3B53F] rounded-full w-9 h-9 align-middle mr-3 inline-block"></div> */}
             <div className="align-middle text-h4 sm:text-h3 md:text-h2 font-bold uppercase font-satoshi inline-block">
               Explore
             </div>
           </div>
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap py-9">
             <div className="w-full text-h5 sm:text-h4 md:text-h3">
               As awareness of the climate crysis increases, so does the noise
               and origin of informaiton. We are working to make a glossary of
               terms, agreements, companies, orginizations and more.
             </div>
 
-            <div className="pt-9 flex flex-wrap w-full">
+            <div className="pt-9 flex flex-wrap w-full justify-between">
               {props.allTags.map((tag, i) => {
                 return (
                   <div key={i} className="pl-0:first-child p-3 ">
@@ -133,7 +133,7 @@ const Home: React.FC<Props> = (props) => {
 
         {/* grow */}
         <div className="my-24 mx-auto max-w-screen-lg">
-          <div className="py-9">
+          <div className="border-b-2">
             {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -146,7 +146,7 @@ const Home: React.FC<Props> = (props) => {
                 clipRule="evenodd"
               />
             </svg> */}
-            <div className="bg-[#F3B53F] rounded-full w-9 h-9 align-middle mr-3 inline-block"></div>
+            {/* <div className="bg-[#F3B53F] rounded-full w-9 h-9 align-middle mr-3 inline-block"></div>*/}
             <span className="align-middle text-h4 sm:text-h3 md:text-h2 font-bold uppercase font-satoshi inline-block">
               grow
             </span>
@@ -199,7 +199,7 @@ const Home: React.FC<Props> = (props) => {
 
         {/* contribute */}
         <div className="my-24 mx-auto max-w-screen-lg">
-          <div className="py-9">
+          <div className="border-b-2">
             {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -213,20 +213,20 @@ const Home: React.FC<Props> = (props) => {
               />
               <path d="M5.082 14.254a8.287 8.287 0 00-1.308 5.135 9.687 9.687 0 01-1.764-.44l-.115-.04a.563.563 0 01-.373-.487l-.01-.121a3.75 3.75 0 013.57-4.047zM20.226 19.389a8.287 8.287 0 00-1.308-5.135 3.75 3.75 0 013.57 4.047l-.01.121a.563.563 0 01-.373.486l-.115.04c-.567.2-1.156.349-1.764.441z" />
             </svg> */}
-            <div className="bg-[#F3B53F] rounded-full w-9 h-9 align-middle mr-3 inline-block"></div>
+            {/*<div className="bg-[#F3B53F] rounded-full w-9 h-9 align-middle mr-3 inline-block"></div>*/}
             <div className="align-middle text-h4 sm:text-h3 md:text-h2 font-bold uppercase font-satoshi inline-block">
               contribute
             </div>
           </div>
 
-          <div className="text-h5 sm:text-h4 md:text-h3">
+          <div className="py-9 text-h5 sm:text-h4 md:text-h3">
             We are still small but everything needs to start somewhere, as we
             grow we want to co-create the future of this project with the{" "}
             <Link
               href="https://madefor.earth"
               className="underline underline-offset-2"
             >
-              madefor.earth
+              MadeFor<span className="text-[#007D00]">Earth</span>
             </Link>{" "}
             community. Maybe some day there is an API, Twitter bot, or we are
             signted in a future un treaty, who knows! But for now her are some
@@ -234,7 +234,7 @@ const Home: React.FC<Props> = (props) => {
           </div>
 
           <div className="py-9 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            <div className="border-2 rounded">
+            <div className="border-2 rounded p-9">
               {" "}
               <div className="text-h4 sm:text-h3 md:text-h1 font-bold block">
                 {props.numberOfTerms}
@@ -242,7 +242,7 @@ const Home: React.FC<Props> = (props) => {
               <div className="block">glossary terms</div>
             </div>
 
-            <div className="border-2 rounded">
+            <div className="border-2 rounded p-9">
               {" "}
               <div className="text-h4 sm:text-h3 md:text-h1  font-bold block">
                 {props.numberOfContributors}
@@ -250,7 +250,7 @@ const Home: React.FC<Props> = (props) => {
               <div className="block">contrinutors</div>
             </div>
 
-            <div className="border-2 rounded">
+            <div className="border-2 rounded p-9">
               {" "}
               <div className="text-h4 sm:text-h3 md:text-h1  font-bold block">
                 {props.numberOfLanguages}
@@ -262,7 +262,7 @@ const Home: React.FC<Props> = (props) => {
 
         {/* sponsorship*/}
         <div className="my-24 mx-auto max-w-screen-lg">
-          <div className="pt-9">
+          <div className="border-b-2">
             {/*<svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -277,7 +277,7 @@ const Home: React.FC<Props> = (props) => {
               />
               <path d="M2.25 18a.75.75 0 000 1.5c5.4 0 10.63.722 15.6 2.075 1.19.324 2.4-.558 2.4-1.82V18.75a.75.75 0 00-.75-.75H2.25z" />
             </svg>*/}
-            <div className="bg-[#F3B53F] rounded-full w-9 h-9 align-middle mr-3 inline-block"></div>
+            {/* <div className="bg-[#F3B53F] rounded-full w-9 h-9 align-middle mr-3 inline-block"></div>*/}
             <div className="align-middle text-h4 sm:text-h3 md:text-h2 font-bold uppercase font-satoshi inline-block">
               sponsor
             </div>
@@ -308,7 +308,7 @@ const Home: React.FC<Props> = (props) => {
 
         {/* you made it*/}
         <div className="my-24 mx-auto max-w-screen-lg">
-          <div className="py-9">
+          <div className="border-b-2">
             {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -321,23 +321,29 @@ const Home: React.FC<Props> = (props) => {
                 clipRule="evenodd"
               />
             </svg> */}
-            <div className="bg-[#F3B53F] rounded-full w-9 h-9 align-middle mr-3 inline-block"></div>
+            {/*  <div className="bg-[#F3B53F] rounded-full w-9 h-9 align-middle mr-3 inline-block"></div>*/}
             <div className="align-middle text-h4 sm:text-h3 md:text-h2 font-bold uppercase font-satoshi inline-block">
               you made it
             </div>
           </div>
 
-          <div className="text-h5 sm:text-h4 md:text-h3">
-            give you self a{" "}
-            <Link href="#">
-              <div className="underline underline-offset-2 inline">🖐️</div>
+          <div className="py-9  text-h5 sm:text-h4 md:text-h3">
+            welcome to the bottom of the page, give you self a 🖐️. This was made
+            by{" "}
+            <Link href="https://tinyfactories.space">
+              <span className="underline underline-offset-2">
+                {" "}
+                Tiny Factories
+              </span>
             </Link>{" "}
-            and learn a{" "}
-            <Link href="#">
-              <div className="underline underline-offset-2 inline">
-                new climate term
-              </div>
+            as pary of our{" "}
+            <Link href="https://madefor.earth">
+              <span className="underline underline-offset-2">
+                {" "}
+                MadeFor<span className="text-[#007D00]">Earth</span>{" "}
+              </span>
             </Link>
+            initiative.
           </div>
         </div>
       </Layout>
