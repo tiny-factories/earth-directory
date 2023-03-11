@@ -2,21 +2,14 @@ import type { GetStaticProps } from "next";
 import { useState } from "react";
 import Link from "next/link";
 import React from "react";
-import Layout from "../components/Layout";
-import Term, { TermProps } from "../components/Term";
-import prisma from "../lib/prisma";
+import Layout from "../../components/Layout";
+import Tag, { TagProps } from "../../components/Tag";
+import prisma from "../../lib/prisma";
 
 export const getStaticProps: GetStaticProps = async () => {
-  const feed = await prisma.term.findMany({
+  const feed = await prisma.tag.findMany({
     where: {
       published: true,
-    },
-    include: {
-      author: {
-        select: {
-          name: true,
-        },
-      },
     },
   });
 
@@ -29,10 +22,6 @@ export const getStaticProps: GetStaticProps = async () => {
 
   let result = Object.values(data);
 
-  {
-    /* console.log(result); */
-  }
-
   return {
     props: { result },
     revalidate: 10,
@@ -40,14 +29,11 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 type Props = {
-  result: TermProps[];
+  result: TagProps[];
   group: string;
 };
 
 const Home: React.FC<Props> = (props) => {
-  // log term grouping
-  // console.log(props);
-
   return (
     <Layout>
       <div className="flex w-full justify-between hover:bold">
@@ -61,11 +47,11 @@ const Home: React.FC<Props> = (props) => {
             }
             return 0;
           })
-          .map((term, index) => (
-            <div className="" key={index}>
-              <Link href={`#${term.group}`}>
+          .map((tag, i) => (
+            <div className="" key={i}>
+              <Link href={`#${tag.group}`}>
                 <div className="inline-block  text-gray-500 font-satoshi hover:font-bold">
-                  {term.group}
+                  {tag.group}
                 </div>
               </Link>
             </div>
@@ -86,15 +72,15 @@ const Home: React.FC<Props> = (props) => {
                 }
                 return 0;
               })
-              .map((term, index) => (
-                <div className="" key={index}>
+              .map((tag, i) => (
+                <div className="" key={i}>
                   <div
-                    id={term.group}
+                    id={tag.group}
                     className="text-h2 font-bold text-gray-500 font-satoshi"
                   >
-                    {term.group}
+                    {tag.group}
                   </div>
-                  {term.children
+                  {tag.children
                     .sort(function (a, b) {
                       if (a.group < b.group) {
                         return -1;
@@ -104,9 +90,9 @@ const Home: React.FC<Props> = (props) => {
                       }
                       return 0;
                     })
-                    .map((term, index) => (
-                      <div key={term.id} className="">
-                        <Term term={term} />
+                    .map((tag, i) => (
+                      <div key={i} className="">
+                        <Tag tag={tag} />
                       </div>
                     ))}
                 </div>

@@ -12,7 +12,15 @@ module.exports = {
           fontFeatureSettings:
             '"zero", "ss01" , "dlig", "ccmp", "frac", "calt", "tnum", "case"',
         },
-
+        "ui-sans-serif",
+        "system-ui",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Helvetica",
+        "Arial",
+      ],
+      satoshi: [
+        "Satoshi var",
         "ui-sans-serif",
         "system-ui",
         "-apple-system",
@@ -29,8 +37,8 @@ module.exports = {
       h5: "1.25rem",
       h4: "1.563rem",
       h3: "1.953rem",
-      h2: "2.441rem",
-      h1: "3.052rem",
+      h2: "3rem",
+      h1: "3.75rem",
     },
     colors: {
       green: "#0C7D01",

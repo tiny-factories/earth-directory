@@ -73,7 +73,7 @@ const Layout: React.FC<Props> = (props) => {
         src="https://umami.tinyfactories.space/umami.js"
       />
 
-      <div className="font-sans bg-[#F2F2F2] min-h-screen">
+      <div className="font-sans bg-[#FFFFFF] min-h-screen">
         <div className="mx-auto py-3 px-9 ">
           <div className="relative flex justify-between ">
             <div className="flex">
@@ -122,14 +122,12 @@ const Layout: React.FC<Props> = (props) => {
           </div>
         </div>
 
-        {!search && (
-          <div className="mx-auto p-9 max-w-screen-xl">{props.children}</div>
-        )}
+        {!search && <div className="mx-auto p-9 ">{props.children}</div>}
 
         <div className="mx-auto p-9">
           {notices.map((term, i) => {
             return (
-              <div key={term.i} className="">
+              <div key={i} className="">
                 <Term term={term} />
               </div>
             );
