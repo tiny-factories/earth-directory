@@ -75,7 +75,6 @@ const Home: React.FC<Props> = (props) => {
     <>
       <Layout>
         {/* Hero */}
-
         <div className="bg-[#FEF2E7] grid grid-cols-1 md:grid-cols-2 gap-4 rounded-lg md:p-24 min-h-max">
           <div className="">
             <div className="text-h3 md:text-h2 lg:text-h1 md:text-h1 font-bold font-satoshi">
@@ -90,7 +89,6 @@ const Home: React.FC<Props> = (props) => {
           </div>
           <div className="bg-[#F3B53F] rounded-full"></div>
         </div>
-
         {/* Explore */}
         <div className="my-24 mx-auto max-w-screen-lg">
           <div className="border-b-2">
@@ -130,7 +128,6 @@ const Home: React.FC<Props> = (props) => {
             </div>
           </div>
         </div>
-
         {/* grow */}
         <div className="my-24 mx-auto max-w-screen-lg">
           <div className="border-b-2">
@@ -196,7 +193,6 @@ const Home: React.FC<Props> = (props) => {
             </div>
           </div>
         </div>
-
         {/* contribute */}
         <div className="my-24 mx-auto max-w-screen-lg">
           <div className="border-b-2">
@@ -259,11 +255,10 @@ const Home: React.FC<Props> = (props) => {
             </div>
           </div>
         </div>
-
         {/* sponsorship*/}
-        <div className="my-24 mx-auto max-w-screen-lg">
+        {/*<div className="my-24 mx-auto max-w-screen-lg">
           <div className="border-b-2">
-            {/*<svg
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
@@ -276,36 +271,33 @@ const Home: React.FC<Props> = (props) => {
                 clipRule="evenodd"
               />
               <path d="M2.25 18a.75.75 0 000 1.5c5.4 0 10.63.722 15.6 2.075 1.19.324 2.4-.558 2.4-1.82V18.75a.75.75 0 00-.75-.75H2.25z" />
-            </svg>*/}
-            {/* <div className="bg-[#F3B53F] rounded-full w-9 h-9 align-middle mr-3 inline-block"></div>*/}
+            </svg>
+            <div className="bg-[#F3B53F] rounded-full w-9 h-9 align-middle mr-3 inline-block"></div>
             <div className="align-middle text-h4 sm:text-h3 md:text-h2 font-bold uppercase font-satoshi inline-block">
               sponsor
             </div>
           </div>
-          <div className="py-9 text-h5 sm:text-h4 md:text-h3">
-            Are you a climate company? Then apply to be added to our climate
-            glossary as a sponsor.{" "}
-          </div>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-            <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
-              <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
-                <div className="mx-auto max-w-xs px-8">
-                  <p className="text-base font-semibold text-gray-600">
-                    Pay once, own it forever
-                  </p>
-                  <p className="mt-6 flex items-baseline justify-center gap-x-2"></p>
-                  <Link href="https://form.typeform.com/to/NVs38SdG">
-                    Sponsor Us
-                  </Link>
-                  <p className="mt-6 text-xs leading-5 text-gray-600">
-                    Company
-                  </p>
-                </div>
+        <div className="py-9 text-h5 sm:text-h4 md:text-h3">
+          Are you a climate company? Then apply to be added to our climate
+          glossary as a sponsor.{" "}
+        </div>
+        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+          <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+            <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+              <div className="mx-auto max-w-xs px-8">
+                <p className="text-base font-semibold text-gray-600">
+                  Pay once, own it forever
+                </p>
+                <p className="mt-6 flex items-baseline justify-center gap-x-2"></p>
+                <Link href="https://form.typeform.com/to/NVs38SdG">
+                  Sponsor Us
+                </Link>
+                <p className="mt-6 text-xs leading-5 text-gray-600">Company</p>
               </div>
             </div>
-          </div>{" "}
+          </div>
         </div>
-
+        */}
         {/* you made it*/}
         <div className="my-24 mx-auto max-w-screen-lg">
           <div className="border-b-2">
