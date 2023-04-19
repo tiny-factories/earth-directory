@@ -73,7 +73,7 @@ const Layout: React.FC<Props> = (props) => {
         src="https://umami.tinyfactories.space/umami.js"
       />
 
-      <div className="font-sans bg-[#FFFFFF] min-h-screen">
+      <div className="font-sans bg-[#EBEBEB] min-h-screen">
         <div className="mx-auto py-3 px-9 ">
           <div className="relative flex justify-between ">
             <div className="flex">
