@@ -36,10 +36,10 @@ const Home: React.FC<Props> = (props) => {
   return (
     <Layout>
       <div className="flex flex-wrap w-full justify-between hover:bold">
-        <div className="text-h4 sm:text-h3 md:sm:text-h2 font-bold w-full border-b-2 border-black">
+        <div className="text-h4 sm:text-h3 md:sm:text-h2 font-bold w-full border-b-4 border-black">
           Jump to a <span className="text-[#918180]">section</span>
         </div>
-        <div className="w-full font-bold">
+        <div className="pt-3 pb-9 w-full flex justify-between font-bold text-h3">
           {props.result
             .sort(function (a, b) {
               if (a.group < b.group) {
@@ -52,10 +52,11 @@ const Home: React.FC<Props> = (props) => {
             })
             .map((term, i) => (
               <div className="" key={i}>
-                <Link href={`#${term.group}`}>
-                  <div className="inline-block  text-gray-500 font-satoshi hover:font-bold">
-                    {term.group}
-                  </div>
+                <Link
+                  href={`#${term.group}`}
+                  className="text-gray-500 font-satoshi hover:font-bold hover:scale-125"
+                >
+                  {term.group}
                 </Link>
               </div>
             ))}
