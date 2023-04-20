@@ -125,7 +125,7 @@ const Home: React.FC<Props> = (props) => {
               verifies each submission before adding it to the database.
             </div>
             <div className="py-9 flex flex-wrap">
-              <div className="w-full align-middle">
+              <div className="w-full middle">
                 <div className="bg-[#F3B53F] rounded-full w-3 h-3 mx-3 inline-block"></div>
                 <Link
                   href="https://form.typeform.com/to/lowIfjl5"
@@ -156,11 +156,11 @@ const Home: React.FC<Props> = (props) => {
 
           <div className="py-9 text-h5 sm:text-h4 md:text-h3">
             We may be a small organization, but we believe in the power of
-            collective action to drive meaningful change. As we grow, we're
-            excited to co-create the future of this project with the
-            MadeForEarth community. Who knows what's next? An API, a Twitter
-            bot, or even a role in a future UN treaty? For now, here are some
-            numbers to show our progress.
+            collective action to drive meaningful change. As we grow,
+            we`&apos;`re excited to co-create the future of this project with
+            the MadeForEarth community. Who knows what`&apos;`s next? An API, a
+            Twitter bot, or even a role in a future UN treaty? For now, here are
+            some numbers to show our progress.
           </div>
 
           <div className="py-9 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
