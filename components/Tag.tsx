@@ -13,13 +13,10 @@ export type TagProps = {
 const Tag: React.FC<{ tag: TagProps }> = ({ tag }) => {
   return (
     <div
-      className="inline-flex items-center "
+      className="text-h3 rounded-lg bg-[#FFF] p-3 cursor-pointer"
       onClick={() => Router.push("/tags/[id]", `/tags/${tag.id}`)}
     >
-      <span className="text-h5 sm:text-h4 md:text-h3 font-bold hover:cursor-pointer">
-        {tag.title}
-      </span>{" "}
-      <div className="bg-[#F3B53F] rounded-full w-3 h-3 align-middle mx-3 inline-block"></div>
+      {tag.title}
     </div>
   );
 };

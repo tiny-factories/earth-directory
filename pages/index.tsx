@@ -1,5 +1,6 @@
 import type { GetStaticProps } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 import Layout from "../components/Layout";
 import Term, { TermProps } from "../components/Term";
@@ -75,104 +76,101 @@ const Home: React.FC<Props> = (props) => {
     <>
       <Layout>
         {/* Hero */}
-        <div className="grid grid-cols-1 gap-4 rounded-lg  min-h-max">
+        <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 rounded-lg min-h-max flex items-center">
+          <div className="text-h2 lg:text-h1 font-bold">
+            A shared source of truth to build a better future.
+          </div>
           <div className="">
-            <div className="text-h3 md:text-h2 lg:text-h1 md:text-h1 font-bold font-satoshi">
-              A shared source of truth to build a better future.
-            </div>
-            <div>Search Box</div>
+            <Image
+              src="/g-hero-earth.webp"
+              width={500}
+              height={500}
+              alt="Picture of the author"
+            />
           </div>
         </div>
         {/* Explore */}
-        {/* <div className="my-24 mx-auto max-w-screen-lg">
+        <div className="my-24 mx-auto max-w-screen-lg">
           <div className="border-b-4">
-            <div className="align-middle text-h4 sm:text-h3 md:text-h2 font-bold uppercase font-satoshi inline-block">
+            <div className="align-middle text-h3 md:text-h2 font-bold uppercase font-satoshi inline-block">
               Explore
             </div>
           </div>
           <div className="flex flex-wrap py-9">
-            <div className="w-full text-h5 sm:text-h4 md:text-h3">
+            {/* <div className="w-full text-paragraph">
               As our planet faces a growing climate crisis, it can be
               overwhelming to navigate the vast amount of information available.
               That's why we're creating a comprehensive glossary of terms,
               agreements, companies, organizations, and more to help you
               understand and take action.
-            </div>
+            </div> */}
 
-            <div className="pt-9 flex flex-wrap w-full justify-between">
+            <div className="flex flex-wrap w-full ">
               {props.allTags.map((tag, i) => {
                 return (
-                  <div key={i} className="pl-0:first-child p-3 ">
+                  <div key={i} className="p-3">
                     <Tag tag={tag} />
                   </div>
                 );
               })}
             </div>
           </div>
-        </div> */}
+        </div>
         {/* grow */}
         <div className="my-24 mx-auto max-w-screen-lg">
           <div className="border-b-4">
-            <span className="align-middle text-h4 sm:text-h3 md:text-h2 font-bold uppercase font-satoshi inline-block">
+            <span className="align-middle text-h3 md:text-h2 font-bold uppercase font-satoshi inline-block">
               grow
             </span>
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-4">
-            <div className="py-9 text-h5 sm:text-h4 md:text-h3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="col-span-2 py-9 text-paragraph">
               We rely on our community to help us expand and refine the
               glossary. Anyone can suggest a term, and our team carefully
               verifies each submission before adding it to the database.
             </div>
-            <div className="py-9 flex flex-wrap">
-              <div className="w-full middle">
-                <div className="bg-[#F3B53F] rounded-full w-3 h-3 mx-3 inline-block"></div>
-                <Link
-                  href="https://form.typeform.com/to/lowIfjl5"
-                  className="text-h5 sm:text-h4 md:text-h3"
-                >
-                  Add a Term <span className="font-mono">↗</span>
-                </Link>
-              </div>
-              <div className="w-full">
-                <div className="bg-[#F3B53F] rounded-full w-3 h-3 mx-3 inline-block"></div>
-                <Link
-                  href="https://form.typeform.com/to/lowIfjl5"
-                  className="text-h5 sm:text-h4 md:text-h3"
-                >
-                  Help Translate <span className="font-mono">↗</span>
-                </Link>
-              </div>
-            </div>
+            <Link
+              href="https://form.typeform.com/to/lowIfjl5"
+              className="bg-[#fff] p-3 rounded-lg text-h3 font-satoshi font-bold uppercase"
+            >
+              Add a Term <span className="font-mono">↗</span>
+            </Link>
+            <Link
+              href="https://form.typeform.com/to/lowIfjl5"
+              className="bg-[#fff] p-3 rounded-lg text-h3 font-satoshi font-bold uppercase"
+            >
+              Help Translate <span className="font-mono">↗</span>
+            </Link>
           </div>
         </div>
         {/* contribute */}
         <div className="my-24 mx-auto max-w-screen-lg">
           <div className="border-b-4">
-            <div className="align-middle text-h4 sm:text-h3 md:text-h2 font-bold uppercase font-satoshi inline-block">
+            <div className="align-middle text-h3 md:text-h2 font-bold uppercase font-satoshi inline-block">
               contribute
             </div>
           </div>
 
-          <div className="py-9 text-h5 sm:text-h4 md:text-h3">
+          <div className="py-9 text-paragraph">
             We may be a small organization, but we believe in the power of
-            collective action to drive meaningful change. As we grow,
-            we`&apos;`re excited to co-create the future of this project with
-            the MadeForEarth community. Who knows what`&apos;`s next? An API, a
+            collective action to drive meaningful change. As we grow, we&apos;re
+            excited to co-create the future of this project with the
+            MadeForEarth community. Who knows what&apos;s next? An API, a
             Twitter bot, or even a role in a future UN treaty? For now, here are
             some numbers to show our progress.
           </div>
 
           <div className="py-9 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            <div className="border-2 rounded p-9">
+            <div className="border-2 rounded p-9 bg-[#FFF]">
               {" "}
               <div className="text-h4 sm:text-h3 md:text-h1 font-bold block">
                 {props.numberOfTerms}
               </div>
-              <div className="block">glossary terms</div>
+              <div className="block">terms</div>
             </div>
 
-            <div className="border-2 rounded p-9">
+            <div className="border-2 rounded p-9 bg-[#FFF]">
               {" "}
               <div className="text-h4 sm:text-h3 md:text-h1  font-bold block">
                 {props.numberOfContributors}
@@ -180,7 +178,7 @@ const Home: React.FC<Props> = (props) => {
               <div className="block">contrinutors</div>
             </div>
 
-            <div className="border-2 rounded p-9">
+            <div className="border-2 rounded p-9 bg-[#FFF]">
               {" "}
               <div className="text-h4 sm:text-h3 md:text-h1  font-bold block">
                 {props.numberOfLanguages}
@@ -222,13 +220,13 @@ const Home: React.FC<Props> = (props) => {
         {/* you made it*/}
         <div className="my-24 mx-auto max-w-screen-lg">
           <div className="border-b-4">
-            <div className="align-middle text-h4 sm:text-h3 md:text-h2 font-bold uppercase font-satoshi inline-block">
+            <div className="align-middle text-h3 md:text-h2 font-bold uppercase font-satoshi inline-block">
               you made it
             </div>
           </div>
 
-          <div className="py-9  text-h5 sm:text-h4 md:text-h3">
-            welcome to the bottom of the page, give you self a 🖐️. This was made
+          <div className="py-9 text-paragraph">
+            Welcome to the bottom of the page, give you self a 🖐️. This was made
             by{" "}
             <Link href="https://tinyfactories.space">
               <span className="underline underline-offset-4">

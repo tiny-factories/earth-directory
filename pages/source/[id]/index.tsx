@@ -7,7 +7,7 @@ import { TermProps } from "../../../components/Term";
 import prisma from "../../../lib/prisma";
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const term = await prisma.term.findUnique({
+  const term = await prisma.source.findUnique({
     where: {
       id: String(params?.id),
     },

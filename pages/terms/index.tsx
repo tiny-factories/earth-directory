@@ -54,7 +54,7 @@ const Home: React.FC<Props> = (props) => {
               <div className="" key={i}>
                 <Link
                   href={`#${term.group}`}
-                  className="text-gray-500 font-satoshi hover:font-bold hover:scale-125"
+                  className="p-3 text-gray-500 font-satoshi font-normal hover:bg-[#FFF] hover:rounded-lg"
                 >
                   {term.group}
                 </Link>
