@@ -3,8 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import Layout from "../components/Layout";
-import Term, { TermProps } from "../components/Term";
-import Tag, { TagProps } from "../components/Tag";
+import { TermProps } from "../components/Term";
+import Tag from "../components/Tag";
 
 import prisma from "../lib/prisma";
 

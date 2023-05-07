@@ -35,7 +35,7 @@ type Props = {
 const Home: React.FC<Props> = (props) => {
   return (
     <Layout>
-      <div className="flex flex-wrap w-full justify-between hover:bold">
+      <div className="hidden sm:flex flex-wrap w-full justify-between hover:bold">
         <div className="text-h4 sm:text-h3 md:sm:text-h2 font-bold w-full border-b-4 border-black">
           Jump to a <span className="text-[#918180]">section</span>
         </div>

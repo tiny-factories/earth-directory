@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import type { GetStaticProps } from "next";
+import type { GetStaticProps, GetStaticPaths } from "next";
 import Head from "next/head";
 import Layout from "../../../components/Layout";
 import { TermProps } from "../../../components/Term";

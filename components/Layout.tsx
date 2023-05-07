@@ -4,14 +4,23 @@ import Script from "next/script";
 import Head from "next/head";
 import Footer from "./Footer";
 import Term from "./Term";
+
 import useDebounce from "../hooks/useDebounce";
 
 type Props = {
   children: ReactNode;
 };
+
 export interface Notice {
   title: string;
   content: string;
+  id: string;
+  published: boolean;
+  sponsor: boolean;
+  sourceId: string;
+  group: any;
+  children: any;
+  notice: any;
 }
 
 export interface Links {
