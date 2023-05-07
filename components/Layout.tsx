@@ -4,14 +4,23 @@ import Script from "next/script";
 import Head from "next/head";
 import Footer from "./Footer";
 import Term from "./Term";
+
 import useDebounce from "../hooks/useDebounce";
 
 type Props = {
   children: ReactNode;
 };
+
 export interface Notice {
   title: string;
   content: string;
+  id: string;
+  published: boolean;
+  sponsor: boolean;
+  sourceId: string;
+  group: any;
+  children: any;
+  notice: any;
 }
 
 export interface Links {
@@ -56,11 +65,11 @@ const Layout: React.FC<Props> = (props) => {
       <Head>
         {process.env.UMAMI != "DEVELOPMENT" ? (
           <>
-            <title>Climate Glossary MFE [PREVIEW]</title>
+            <title>Climate Glossary [PREVIEW]</title>
           </>
         ) : (
           <>
-            <title>Climate Glossary MFE</title>
+            <title>Climate Glossary</title>
           </>
         )}
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -73,20 +82,21 @@ const Layout: React.FC<Props> = (props) => {
         src="https://umami.tinyfactories.space/umami.js"
       />
 
-      <div className="font-sans bg-[#FFFFFF] min-h-screen">
-        <div className="mx-auto py-3 px-9 ">
-          <div className="relative flex justify-between ">
+      <div className="font-sans bg-[#EEEDE6] min-h-screen bg-white rounded">
+        {/* Navigation */}
+        <div className="mx-auto py-3 px-3">
+          <div className="relative flex justify-between rounded-lg bg-[#ffffff]">
             <div className="flex">
               <div className="flex flex-shrink-0 items-center">
                 <Link href="/">
-                  <div className="font-bold hover:underline">
-                    <span className="">Glossary</span>
+                  <div className="font-bold hover:underline hover:underline-offset-4 hover:decoration-2 uppercase pl-4 pr-2 py-2">
+                    Glossary
                   </div>
                 </Link>
               </div>
             </div>
             <div className="min-w-0 flex-1">
-              <div className="flex items-center px-6 py-4 ">
+              <div className="flex items-center px-3 py-2">
                 <div className="w-full">
                   <label htmlFor="search" className="sr-only">
                     Search
@@ -98,7 +108,7 @@ const Layout: React.FC<Props> = (props) => {
                     <input
                       id="search"
                       name="search"
-                      className="block w-full rounded-md border-none focus:border-gray-300 bg-[#E9E9E9] text-sm placeholder-gray-500 "
+                      className="block w-full rounded-md border-none focus:border-none bg-[#EEEDE6] text-sm placeholder-gray-500 "
                       placeholder="Search for terms, agencies, treaties, emissions … "
                       type="search"
                       onChange={(e) => setSearch(e.target.value)}
@@ -110,19 +120,16 @@ const Layout: React.FC<Props> = (props) => {
             <div className="flex inset-y-0 left-0 static col-span-2">
               <div className="flex flex-shrink-0 items-center">
                 <Link href="/terms">
-                  <div className="font-bold hover:underline pr-3">terms</div>
-                </Link>
-              </div>
-              <div className="flex flex-shrink-0 items-center">
-                <Link href="/about">
-                  <div className="font-bold hover:underline">about</div>
+                  <div className="hover:underline hover:underline-offset-4 hover:decoration-2  pl-2 pr-4 py-2">
+                    terms
+                  </div>
                 </Link>
               </div>
             </div>
           </div>
         </div>
 
-        {!search && <div className="mx-auto p-9 ">{props.children}</div>}
+        {!search && <div className="mx-auto p-3 md:p-9">{props.children}</div>}
 
         <div className="mx-auto p-9">
           {notices.map((term, i) => {

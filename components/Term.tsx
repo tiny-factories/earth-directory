@@ -6,17 +6,31 @@ export type TermProps = {
   title: string;
   content: string;
   published: boolean;
+  sponsor: boolean;
   sourceId: string;
+  group: any;
+  children: any;
+  notice: any;
 };
 
 const Term: React.FC<{ term: TermProps }> = ({ term }) => {
   return (
     <div
-      className="text-h4 sm:text-h3 md:sm:text-h1 font-satoshi border-t border-black snap-center py-3"
-      onClick={() => Router.push("/terms/[id]", `/terms/${term.id}`)}
+      className="group text-h4 sm:text-h3 md:sm:text-h2 font-satoshi border-t-4 border-gray-500 snap-center py-3 cursor-pointer duration-100"
+      onClick={() => Router.push("/terms/[title]", `/terms/${term.id}`)}
     >
-      <div className="hover:translate-x-3 transform-gpu hover:duration-200">
-        {term.title} <span className="">→</span>
+      <div className="flex justify-between  hover:duration-200 hover:bg-[#FFF] hover:rounded-lg">
+        <div className="group-hover:translate-x-3 duration-100">
+          {term.sponsor ? (
+            <>
+              {term.title} <span className="text-[#fd8841]">🞾</span>
+            </>
+          ) : (
+            <>{term.title} </>
+          )}
+        </div>
+
+        <span className="group-hover:-translate-x-3 duration-100">→</span>
       </div>
     </div>
   );

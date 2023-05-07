@@ -1,13 +1,13 @@
 import React from "react";
 import Link from "next/link";
-import type { GetStaticProps } from "next";
+import type { GetStaticProps, GetStaticPaths } from "next";
 import Head from "next/head";
 import Layout from "../../../components/Layout";
 import { TermProps } from "../../../components/Term";
 import prisma from "../../../lib/prisma";
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const term = await prisma.term.findUnique({
+  const term = await prisma.source.findUnique({
     where: {
       id: String(params?.id),
     },

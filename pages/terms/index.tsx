@@ -1,5 +1,4 @@
 import type { GetStaticProps } from "next";
-import { useState } from "react";
 import Link from "next/link";
 import React from "react";
 import Layout from "../../components/Layout";
@@ -36,31 +35,36 @@ type Props = {
 const Home: React.FC<Props> = (props) => {
   return (
     <Layout>
-      <div className="flex w-full justify-between hover:bold">
-        {props.result
-          .sort(function (a, b) {
-            if (a.group < b.group) {
-              return -1;
-            }
-            if (a.group > b.group) {
-              return 1;
-            }
-            return 0;
-          })
-          .map((term, i) => (
-            <div className="" key={i}>
-              <Link href={`#${term.group}`}>
-                <div className="inline-block  text-gray-500 font-satoshi hover:font-bold">
+      <div className="hidden sm:flex flex-wrap w-full justify-between hover:bold">
+        <div className="text-h4 sm:text-h3 md:sm:text-h2 font-bold w-full border-b-4 border-black">
+          Jump to a <span className="text-[#918180]">section</span>
+        </div>
+        <div className="pt-3 pb-9 w-full flex justify-between font-bold text-h3">
+          {props.result
+            .sort(function (a, b) {
+              if (a.group < b.group) {
+                return -1;
+              }
+              if (a.group > b.group) {
+                return 1;
+              }
+              return 0;
+            })
+            .map((term, i) => (
+              <div className="" key={i}>
+                <Link
+                  href={`#${term.group}`}
+                  className="p-3 text-gray-500 font-satoshi font-normal hover:bg-[#FFF] hover:rounded-lg"
+                >
                   {term.group}
-                </div>
-              </Link>
-            </div>
-          ))}
+                </Link>
+              </div>
+            ))}
+        </div>
       </div>
 
       <div className="page">
         <main className="snap-y">
-          {/* <div>Hero {props.result.length} </div> */}
           <div className="">
             {props.result
               .sort(function (a, b) {
@@ -76,9 +80,10 @@ const Home: React.FC<Props> = (props) => {
                 <div className="" key={i}>
                   <div
                     id={term.group}
-                    className="text-h2 font-bold text-gray-500 font-satoshi"
+                    className="text-h4 sm:text-h3 md:sm:text-h2 font-bold text-gray-500 font-satoshi"
                   >
-                    {term.group}
+                    {term.group}{" "}
+                    <span className="text-[#918180]">is for {term.group}</span>
                   </div>
                   {term.children
                     .sort(function (a, b) {
