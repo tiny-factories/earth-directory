@@ -3,7 +3,7 @@ const navigation = {
   main: [
     {
       name: "about",
-      href: "/about",
+      href: "https://madefor.earth/about",
     },
 
     { name: "newsletter ", href: "https://buttondown.email/madeforearth" },
