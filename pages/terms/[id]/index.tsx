@@ -49,7 +49,7 @@ const Term: React.FC<TermProps> = (props) => {
 
           <div>
             {" "}
-            <div className="grid grid-cols-4 py-9">
+            {/* <div className="grid grid-cols-4 py-9">
               <div className="col-span-4 md:col-span-1 pb-9">
                 <div className="text-h5 md:text-h3 font-bold">The Details</div>
                 {/* <div className="">
@@ -60,12 +60,12 @@ const Term: React.FC<TermProps> = (props) => {
                   >
                     source
                   </Link>
-                </div> */}
+                </div>
               </div>
               <div className="col-span-4 md:col-span-3 text-h4 sm:text-h3 md:sm:text-h2 italic">
                 Coming Soon
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div>
