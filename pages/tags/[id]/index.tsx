@@ -17,6 +17,7 @@ const Tag: React.FC<TagProps> = (props) => {
   if (!props.published) {
     title = `${title} (Draft)`;
   }
+  console.log(props);
 
   return (
     <>
@@ -40,7 +41,7 @@ const Tag: React.FC<TagProps> = (props) => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const tag = await prisma.tag.findUnique({
+  const tag = await prisma.tag.findFirst({
     where: {
       id: String(params?.id),
     },
