@@ -36,7 +36,7 @@ const Tag: React.FC<TagProps> = (props) => {
             Tag &#34;{title}&#34;
           </div>
           <div className="flex flex-wrap w-full ">
-            <div className="pt-3 pb-9 w-full flex justify-between font-bold text-h3">
+            <div className="pt-3 pb-9 w-full flex flex-wrap justify-between font-bold text-h3">
               {props.result
                 .sort(function (a, b) {
                   if (a.group < b.group) {
