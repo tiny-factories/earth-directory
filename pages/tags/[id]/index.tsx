@@ -17,13 +17,12 @@ export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
 };
 
 const Tag: React.FC<TagProps> = (props) => {
-  let title = props.title;
-  if (!props.published) {
-    title = `${title} (Draft)`;
+  let title = props.tag.title;
+  if (!props.tag.published) {
+    title = `${tag.title} (Draft)`;
   }
 
   console.log(props);
-
   return (
     <>
       <Head>
@@ -34,11 +33,11 @@ const Tag: React.FC<TagProps> = (props) => {
       <Layout>
         <div className="mx-auto max-w-7xl ">
           <div className="text-h4 sm:text-h3 md:sm:text-h1 font-bold font-satoshi border-b-2">
-            Tagged "{title}"
+            Tag "{title}"
           </div>
           <div className="flex flex-wrap w-full ">
             <div className="pt-3 pb-9 w-full flex justify-between font-bold text-h3">
-              {props.terms
+              {props.result
                 .sort(function (a, b) {
                   if (a.group < b.group) {
                     return -1;
@@ -50,12 +49,30 @@ const Tag: React.FC<TagProps> = (props) => {
                 })
                 .map((term, i) => (
                   <div className="" key={i}>
-                    <Link
-                      href={`#${term.group}`}
-                      className="p-3 text-gray-500 font-satoshi font-normal hover:bg-[#FFF] hover:rounded-lg"
+                    <div
+                      id={term.group}
+                      className="text-h4 sm:text-h3 md:sm:text-h2 font-bold text-gray-500 font-satoshi"
                     >
-                      {term.group}
-                    </Link>
+                      {term.group}{" "}
+                      <span className="text-[#918180]">
+                        is for {term.group}
+                      </span>
+                    </div>
+                    {term.children
+                      .sort(function (a, b) {
+                        if (a.group < b.group) {
+                          return -1;
+                        }
+                        if (a.group > b.group) {
+                          return 1;
+                        }
+                        return 0;
+                      })
+                      .map((term, i) => (
+                        <div key={i} className="">
+                          <Term term={term} />
+                        </div>
+                      ))}
                   </div>
                 ))}
             </div>
@@ -80,8 +97,18 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       },
     },
   });
+
+  let terms = tag.terms.reduce((r, e) => {
+    let group = e.title[0];
+    if (!r[group]) r[group] = { group, children: [e] };
+    else r[group].children.push(e);
+    return r;
+  }, {});
+
+  let result = Object.values(terms);
+
   return {
-    props: tag,
+    props: { tag, result },
     revalidate: 10,
   };
 };
