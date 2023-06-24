@@ -41,10 +41,10 @@ const Term: React.FC<TermProps> = (props) => {
       <Layout>
         <div className="mx-auto max-w-7xl ">
           <div className="text-h4 sm:text-h3 md:sm:text-h1 font-bold font-satoshi border-b-2">
-            {title}
+            <Link href={props.href}>{title} ↗</Link>{" "}
           </div>
           <div className="grid grid-cols-4">
-            <div className="col-span-1">
+            {/* <div className="col-span-1">
               <div className="">Overview</div>
               <div className="">
                 via{" "}
@@ -55,7 +55,7 @@ const Term: React.FC<TermProps> = (props) => {
                   {props?.content || "Undefinded Term"}
                 </Link>
               </div>
-            </div>
+            </div> */}
             <div className="col-span-3 text-h4 sm:text-h3 md:sm:text-h2">
               {props?.content || "Undefinded Term"}
             </div>
