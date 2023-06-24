@@ -48,7 +48,7 @@ const Tag: React.FC<TagProps> = (props) => {
                   return 0;
                 })
                 .map((term, i) => (
-                  <div className="" key={i}>
+                  <div className="w-full" key={i}>
                     <div
                       id={term.group}
                       className="text-h4 sm:text-h3 md:sm:text-h2 font-bold text-gray-500 font-satoshi"
