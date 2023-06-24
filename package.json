@@ -20,10 +20,6 @@
     "db:down": "docker-compose down",
     "studio": "prisma studio"
   },
-  "engines": {
-    "npm": ">=8.0.0 <9.0.0",
-    "node": ">=16.13.0 <17.0.0"
-  },
   "dependencies": {
     "@headlessui/react": "^1.7.4",
     "@heroicons/react": "^2.0.13",

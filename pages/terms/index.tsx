@@ -5,28 +5,6 @@ import Layout from "../../components/Layout";
 import Term, { TermProps } from "../../components/Term";
 import prisma from "../../lib/prisma";
 
-export const getStaticProps: GetStaticProps = async () => {
-  const feed = await prisma.term.findMany({
-    where: {
-      published: true,
-    },
-  });
-
-  let data = feed.reduce((r, e) => {
-    let group = e.title[0];
-    if (!r[group]) r[group] = { group, children: [e] };
-    else r[group].children.push(e);
-    return r;
-  }, {});
-
-  let result = Object.values(data);
-
-  return {
-    props: { result },
-    revalidate: 10,
-  };
-};
-
 type Props = {
   result: TermProps[];
   group: string;
@@ -107,6 +85,28 @@ const Home: React.FC<Props> = (props) => {
       </div>
     </Layout>
   );
+};
+
+export const getStaticProps: GetStaticProps = async () => {
+  const feed = await prisma.term.findMany({
+    where: {
+      published: true,
+    },
+  });
+
+  let data = feed.reduce((r, e) => {
+    let group = e.title[0];
+    if (!r[group]) r[group] = { group, children: [e] };
+    else r[group].children.push(e);
+    return r;
+  }, {});
+
+  let result = Object.values(data);
+
+  return {
+    props: { result },
+    revalidate: 10,
+  };
 };
 
 export default Home;
