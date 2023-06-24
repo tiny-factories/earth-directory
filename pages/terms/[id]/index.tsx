@@ -18,6 +18,7 @@ const Term: React.FC<TermProps> = (props) => {
   if (!props.published) {
     title = `${title} (Draft)`;
   }
+  console.log(props);
 
   return (
     <>
@@ -36,8 +37,8 @@ const Term: React.FC<TermProps> = (props) => {
               <div className="text-h5 md:text-h3 font-bold">Overview</div>
               <div className="">
                 via{" "}
-                <Link href={`/source/${props.sourceId}`} className="underline">
-                  source
+                <Link href={props.source.href} className="underline">
+                  {props.source.title}
                 </Link>
               </div>
             </div>
@@ -48,7 +49,7 @@ const Term: React.FC<TermProps> = (props) => {
 
           <div>
             {" "}
-            <div className="grid grid-cols-4 py-9">
+            {/* <div className="grid grid-cols-4 py-9">
               <div className="col-span-4 md:col-span-1 pb-9">
                 <div className="text-h5 md:text-h3 font-bold">The Details</div>
                 {/* <div className="">
@@ -59,12 +60,12 @@ const Term: React.FC<TermProps> = (props) => {
                   >
                     source
                   </Link>
-                </div> */}
+                </div>
               </div>
               <div className="col-span-4 md:col-span-3 text-h4 sm:text-h3 md:sm:text-h2 italic">
                 Coming Soon
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div>
@@ -98,9 +99,17 @@ const Term: React.FC<TermProps> = (props) => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const term = await prisma.term.findUnique({
+  const term = await prisma.term.findFirst({
     where: {
       id: String(params?.id),
+    },
+    include: {
+      source: {
+        select: {
+          title: true,
+          href: true,
+        },
+      },
     },
   });
   return {

@@ -16,7 +16,7 @@ export type TermProps = {
 const Term: React.FC<{ term: TermProps }> = ({ term }) => {
   return (
     <div
-      className="group text-h4 sm:text-h3 md:sm:text-h2 font-satoshi border-t-4 border-gray-500 snap-center py-3 cursor-pointer duration-100"
+      className="group text-h4 sm:text-h3 md:sm:text-h2 font-satoshi border-t border-gray-500 snap-center py-3 cursor-pointer duration-100"
       onClick={() => Router.push("/terms/[title]", `/terms/${term.id}`)}
     >
       <div className="flex justify-between  hover:duration-200 hover:bg-[#FFF] hover:rounded-lg">
