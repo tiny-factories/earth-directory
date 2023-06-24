@@ -33,7 +33,7 @@ const Tag: React.FC<TagProps> = (props) => {
       <Layout>
         <div className="mx-auto max-w-7xl ">
           <div className="text-h4 sm:text-h3 md:sm:text-h1 font-bold font-satoshi border-b-2">
-            Tag "{title}"
+            Tag &#34;{title}&#34;
           </div>
           <div className="flex flex-wrap w-full ">
             <div className="pt-3 pb-9 w-full flex justify-between font-bold text-h3">
