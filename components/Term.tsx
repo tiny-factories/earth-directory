@@ -13,7 +13,7 @@ export type TermProps = {
   notice: any;
 };
 
-const Term: React.FC<{ term: TermProps }> = ({ term }) => {
+const TermCard: React.FC<{ term: TermProps }> = ({ term }) => {
   return (
     <div
       className="group text-h4 sm:text-h3 md:sm:text-h2 font-satoshi border-t border-gray-500 snap-center py-3 cursor-pointer duration-100"
@@ -36,4 +36,4 @@ const Term: React.FC<{ term: TermProps }> = ({ term }) => {
   );
 };
 
-export default Term;
+export default TermCard;
