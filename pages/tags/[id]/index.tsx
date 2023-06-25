@@ -22,7 +22,6 @@ const Tag: React.FC<TagProps> = (props) => {
     title = `${tag.title} (Draft)`;
   }
 
-  console.log(props);
   return (
     <>
       <Head>

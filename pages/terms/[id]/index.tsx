@@ -19,7 +19,6 @@ const TermPage: React.FC<TermProps> = (props) => {
   if (!props.pageData.published) {
     title = `${title} (Draft)`;
   }
-  console.log(props.realtedTerms);
   return (
     <>
       <Head>
