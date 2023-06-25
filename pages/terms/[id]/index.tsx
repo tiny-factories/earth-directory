@@ -3,7 +3,8 @@ import Link from "next/link";
 import type { GetStaticProps } from "next";
 import Head from "next/head";
 import Layout from "../../../components/Layout";
-import { TermProps } from "../../../components/Term";
+import TermCard, { TermProps } from "../../../components/Term";
+
 import prisma from "../../../lib/prisma";
 
 export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
@@ -13,13 +14,12 @@ export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
   };
 };
 
-const Term: React.FC<TermProps> = (props) => {
-  let title = props.title;
-  if (!props.published) {
+const TermPage: React.FC<TermProps> = (props) => {
+  let title = props.pageData.title;
+  if (!props.pageData.published) {
     title = `${title} (Draft)`;
   }
-  console.log(props);
-
+  console.log(props.realtedTerms);
   return (
     <>
       <Head>
@@ -37,13 +37,13 @@ const Term: React.FC<TermProps> = (props) => {
               <div className="text-h5 md:text-h3 font-bold">Overview</div>
               <div className="">
                 via{" "}
-                <Link href={props.source.href} className="underline">
-                  {props.source.title}
+                <Link href={props.pageData.source.href} className="underline">
+                  {props.pageData.source.title}
                 </Link>
               </div>
             </div>
             <div className="col-span-4 md:col-span-3 text-h4 sm:text-h3 md:sm:text-h2">
-              {props?.content || "Undefinded Term"}
+              {props?.pageData.content || "Undefinded Term"}
             </div>
           </div>
 
@@ -75,18 +75,50 @@ const Term: React.FC<TermProps> = (props) => {
                 <div className="text-h5 md:text-h3 font-bold">
                   Related Terms
                 </div>
-                {/* <div className="">
-                  via{" "}
-                  <Link
-                    href={`/source/${props.sourceId}`}
-                    className="underline"
-                  >
-                    source
-                  </Link>
-                </div> */}
               </div>
               <div className="col-span-4 md:col-span-3 text-h4 sm:text-h3 md:sm:text-h2 italic">
-                Coming Soon
+                <div className="flex flex-wrap w-full ">
+                  <div className="pt-3 pb-9 w-full flex flex-wrap justify-between font-bold text-h3">
+                    {props.realtedTerms
+                      .sort(function (a, b) {
+                        if (a.group < b.group) {
+                          return -1;
+                        }
+                        if (a.group > b.group) {
+                          return 1;
+                        }
+                        return 0;
+                      })
+                      .map((term, i) => (
+                        <div className="w-full" key={i}>
+                          <div
+                            id={term.group}
+                            className="text-h4 sm:text-h3 md:sm:text-h2 font-bold text-gray-500 font-satoshi"
+                          >
+                            {term.group}{" "}
+                            <span className="text-[#918180]">
+                              is for {term.group}
+                            </span>
+                          </div>
+                          {term.children
+                            .sort(function (a, b) {
+                              if (a.group < b.group) {
+                                return -1;
+                              }
+                              if (a.group > b.group) {
+                                return 1;
+                              }
+                              return 0;
+                            })
+                            .map((term, i) => (
+                              <div key={i} className="">
+                                <TermCard term={term} />
+                              </div>
+                            ))}
+                        </div>
+                      ))}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -99,7 +131,7 @@ const Term: React.FC<TermProps> = (props) => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const term = await prisma.term.findFirst({
+  const pageData = await prisma.term.findFirst({
     where: {
       id: String(params?.id),
     },
@@ -112,10 +144,34 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       },
     },
   });
+
+  const tag = await prisma.tag.findFirst({
+    where: {
+      id: String(pageData?.tagId),
+    },
+    include: {
+      terms: {
+        select: {
+          title: true,
+          id: true,
+        },
+      },
+    },
+  });
+  console.log(tag);
+  let sameTag = tag.terms.reduce((r, e) => {
+    let group = e.title[0];
+    if (!r[group]) r[group] = { group, children: [e] };
+    else r[group].children.push(e);
+    return r;
+  }, {});
+
+  let realtedTerms = Object.values(sameTag);
+
   return {
-    props: term,
+    props: { pageData, realtedTerms },
     revalidate: 10,
   };
 };
 
-export default Term;
+export default TermPage;
