@@ -137,7 +137,7 @@ const Home: React.FC<Props> = (props) => {
               Add a Term <span className="font-mono">↗</span>
             </Link>
             <Link
-              href="https://form.typeform.com/to/lowIfjl5"
+              href="https://form.typeform.com/to/hV9yuh6J"
               className="bg-[#fff] p-3 rounded-lg text-h3 font-satoshi font-bold uppercase"
             >
               Help Translate <span className="font-mono">↗</span>
