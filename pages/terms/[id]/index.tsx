@@ -157,8 +157,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       },
     },
   });
-  console.log(tag);
-  let sameTag = tag.terms.reduce((r, e) => {
+
+  let sameTag = tag?.terms.reduce((r, e) => {
     let group = e.title[0];
     if (!r[group]) r[group] = { group, children: [e] };
     else r[group].children.push(e);
