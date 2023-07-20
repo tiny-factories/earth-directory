@@ -75,7 +75,7 @@ const TermPage: React.FC<TermProps> = (props) => {
                   Related Terms
                 </div>
               </div>
-              <div className="col-span-4 md:col-span-3 text-h4 sm:text-h3 md:sm:text-h2 italic">
+              <div className="col-span-4 md:col-span-3 text-h4 sm:text-h3 md:sm:text-h2 ">
                 <div className="flex flex-wrap w-full ">
                   <div className="pt-3 pb-9 w-full flex flex-wrap justify-between font-bold text-h3">
                     {props.realtedTerms

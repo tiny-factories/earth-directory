@@ -148,7 +148,7 @@ const Home: React.FC<Props> = (props) => {
         <div className="my-24 mx-auto max-w-screen-lg">
           <div className="border-b-4">
             <div className="align-middle text-h3 md:text-h2 font-bold uppercase font-satoshi inline-block">
-              contribute
+              contributor
             </div>
           </div>
 
@@ -161,29 +161,29 @@ const Home: React.FC<Props> = (props) => {
             some numbers to show our progress.
           </div>
 
-          <div className="py-9 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            <div className="border-2 rounded p-9 bg-[#FFF]">
+          <div className="py-9 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ordinal slashed-zero">
+            <div className="rounded p-9 bg-[#FFF]">
               {" "}
-              <div className="text-h4 sm:text-h3 md:text-h1 font-bold block">
+              <div className="text-h4 sm:text-h3 md:text-h1 font-bold block font-sans text-h2">
                 {props.numberOfTerms}
               </div>
-              <div className="block">terms</div>
+              <div className="block font-satoshi uppercase">terms</div>
             </div>
 
-            <div className="border-2 rounded p-9 bg-[#FFF]">
+            <div className="rounded p-9 bg-[#FFF]">
               {" "}
-              <div className="text-h4 sm:text-h3 md:text-h1  font-bold block">
+              <div className="text-h4 sm:text-h3 md:text-h1 font-bold block font-sans text-h2">
                 {props.numberOfContributors}
               </div>
-              <div className="block">contrinutors</div>
+              <div className="block font-satoshi uppercase">contrinutors</div>
             </div>
 
-            <div className="border-2 rounded p-9 bg-[#FFF]">
+            <div className="rounded p-9 bg-[#FFF]">
               {" "}
-              <div className="text-h4 sm:text-h3 md:text-h1  font-bold block">
+              <div className="text-h4 sm:text-h3 md:text-h1  font-bold block font-sans text-h2">
                 {props.numberOfLanguages}
               </div>
-              <div className="block">languages</div>
+              <div className="block font-satoshi uppercase">languages</div>
             </div>
           </div>
         </div>
