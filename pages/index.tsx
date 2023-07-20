@@ -76,7 +76,7 @@ const Home: React.FC<Props> = (props) => {
     <>
       <Layout>
         {/* Hero */}
-        <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 rounded-lg min-h-max flex items-center">
+        <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 rounded-lg min-h-max flex items-center my-24 mx-auto max-w-screen-lg">
           <div className="text-h2 lg:text-h1 font-bold">
             A shared source of truth to build a better future.
           </div>
@@ -164,26 +164,32 @@ const Home: React.FC<Props> = (props) => {
           <div className="py-9 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ordinal slashed-zero">
             <div className="rounded p-9 bg-[#FFF]">
               {" "}
-              <div className="text-h4 sm:text-h3 md:text-h1 font-bold block font-sans text-h2">
+              <div className="text-h4 sm:text-h3 md:text-h1 font-bold block font-satoshi text-h2">
                 {props.numberOfTerms}
               </div>
-              <div className="block font-satoshi uppercase">terms</div>
+              <div className="block font-satoshi uppercase text-paragraph">
+                terms
+              </div>
             </div>
 
             <div className="rounded p-9 bg-[#FFF]">
               {" "}
-              <div className="text-h4 sm:text-h3 md:text-h1 font-bold block font-sans text-h2">
+              <div className="text-h4 sm:text-h3 md:text-h1 font-bold block font-satoshi text-h2">
                 {props.numberOfContributors}
               </div>
-              <div className="block font-satoshi uppercase">contrinutors</div>
+              <div className="block font-satoshi uppercase text-paragraph">
+                contrinutors
+              </div>
             </div>
 
             <div className="rounded p-9 bg-[#FFF]">
               {" "}
-              <div className="text-h4 sm:text-h3 md:text-h1  font-bold block font-sans text-h2">
+              <div className="text-h4 sm:text-h3 md:text-h1  font-bold block font-satoshi text-h2">
                 {props.numberOfLanguages}
               </div>
-              <div className="block font-satoshi uppercase">languages</div>
+              <div className="block font-satoshi uppercase text-paragraph">
+                languages
+              </div>
             </div>
           </div>
         </div>
