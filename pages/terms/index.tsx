@@ -11,6 +11,12 @@ type Props = {
 };
 
 const Home: React.FC<Props> = (props) => {
+  function getRandomTerm(terms) {
+    if (!terms || terms.length === 0) return "N/A";
+    const today = new Date().getDate();
+    return terms[today % terms.length].title;
+  }
+
   return (
     <Layout>
       <div className="hidden sm:flex flex-wrap w-full justify-between hover:bold">
@@ -40,12 +46,11 @@ const Home: React.FC<Props> = (props) => {
             ))}
         </div>
       </div>
-
       <div className="page">
         <main className="snap-y">
           <div className="">
             {props.result
-              .sort(function (a, b) {
+              .sort((a, b) => {
                 if (a.group < b.group) {
                   return -1;
                 }
@@ -55,16 +60,18 @@ const Home: React.FC<Props> = (props) => {
                 return 0;
               })
               .map((term, i) => (
-                <div className="" key={i}>
+                <div className="" key={term.id || i}>
                   <div
                     id={term.group}
                     className="text-h4 sm:text-h3 md:sm:text-h2 font-bold text-gray-500 font-satoshi"
                   >
                     {term.group}{" "}
-                    <span className="text-[#918180]">is for {term.group}</span>
+                    <span className="text-[#918180]">
+                      is for {term.randomTerm}
+                    </span>
                   </div>
                   {term.children
-                    .sort(function (a, b) {
+                    .sort((a, b) => {
                       if (a.group < b.group) {
                         return -1;
                       }
@@ -74,7 +81,7 @@ const Home: React.FC<Props> = (props) => {
                       return 0;
                     })
                     .map((term, i) => (
-                      <div key={i} className="">
+                      <div key={term.id || i} className="">
                         <Term term={term} />
                       </div>
                     ))}
@@ -82,7 +89,7 @@ const Home: React.FC<Props> = (props) => {
               ))}
           </div>
         </main>
-      </div>
+      </div>{" "}
     </Layout>
   );
 };
@@ -96,10 +103,20 @@ export const getStaticProps: GetStaticProps = async () => {
 
   let data = feed.reduce((r, e) => {
     let group = e.title[0];
-    if (!r[group]) r[group] = { group, children: [e] };
-    else r[group].children.push(e);
+    if (!r[group]) {
+      r[group] = { group, children: [e] };
+    } else {
+      r[group].children.push(e);
+    }
     return r;
   }, {});
+
+  // Now, assign a random term for each group
+  for (let group in data) {
+    const terms = data[group].children;
+    const randomIndex = Math.floor(Math.random() * terms.length);
+    data[group].randomTerm = terms[randomIndex].title;
+  }
 
   let result = Object.values(data);
 

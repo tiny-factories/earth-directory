@@ -31,9 +31,10 @@ const TermPage: React.FC<TermProps> = (props) => {
           <div className="text-h4 sm:text-h3 md:sm:text-h1 font-bold font-satoshi border-b-2">
             {title}
           </div>
-          <div className="grid grid-cols-4 py-9">
+          {/* Section Definition */}
+          <div className="grid grid-cols-4 gap-4 gap-4 py-9">
             <div className="col-span-4 md:col-span-1 pb-9">
-              <div className="text-h5 md:text-h3 font-bold">Overview</div>
+              <div className="text-h5 md:text-h3 font-bold">Definition</div>
               <div className="">
                 via{" "}
                 <Link href={props.pageData.source.href} className="underline">
@@ -45,13 +46,12 @@ const TermPage: React.FC<TermProps> = (props) => {
               {props?.pageData.content || "Undefinded Term"}
             </div>
           </div>
-
+          {/* Section Simple Example */}
           <div>
-            {" "}
-            {/* <div className="grid grid-cols-4 py-9">
+            <div className="grid grid-cols-4 gap-4 py-9">
               <div className="col-span-4 md:col-span-1 pb-9">
-                <div className="text-h5 md:text-h3 font-bold">The Details</div>
-                {/* <div className="">
+                <div className="text-h5 md:text-h3 font-bold">Example</div>
+                <div className="">
                   via{" "}
                   <Link
                     href={`/source/${props.sourceId}`}
@@ -64,12 +64,33 @@ const TermPage: React.FC<TermProps> = (props) => {
               <div className="col-span-4 md:col-span-3 text-h4 sm:text-h3 md:sm:text-h2 italic">
                 Coming Soon
               </div>
-            </div> */}
+            </div>
           </div>
+          {/* Section Case Case Studies */}
+          <div>
+            <div className="grid grid-cols-4 gap-4 py-9">
+              <div className="col-span-4 md:col-span-1 pb-9">
+                <div className="text-h5 md:text-h3 font-bold">Case Studies</div>
+                <div className="">
+                  via{" "}
+                  <Link
+                    href={`/source/${props.sourceId}`}
+                    className="underline"
+                  >
+                    source
+                  </Link>
+                </div>
+              </div>
+              <div className="col-span-4 md:col-span-3 text-h4 sm:text-h3 md:sm:text-h2 italic">
+                Coming Soon
+              </div>
+            </div>
+          </div>
+          {/* Section on Related Terms */}
 
           <div>
             {" "}
-            <div className="grid grid-cols-4 py-9">
+            <div className="grid grid-cols-4 gap-4 py-9">
               <div className="col-span-4 md:col-span-1 pb-9">
                 <div className="text-h5 md:text-h3 font-bold">
                   Related Terms
@@ -121,8 +142,6 @@ const TermPage: React.FC<TermProps> = (props) => {
               </div>
             </div>
           </div>
-
-          <div></div>
         </div>
       </Layout>
     </>
