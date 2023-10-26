@@ -33,7 +33,7 @@ const navigation = {
     },
     {
       name: "gitHub",
-      href: "https://github.com/tiny-factories/mfe-climate-glossary",
+      href: "https://github.com/tiny-factories/mfe-glossary",
     },
   ],
 };
