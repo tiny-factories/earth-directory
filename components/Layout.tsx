@@ -89,7 +89,7 @@ const Layout: React.FC<Props> = (props) => {
             <div className="flex">
               <div className="flex flex-shrink-0 items-center">
                 <Link href="/">
-                  <div className="font-bold hover:underline hover:underline-offset-4 hover:decoration-2 uppercase pl-4 pr-2 py-2">
+                  <div className="font-bold hover:underline hover:underline-offset-4 hoveßr:decoration-2 uppercase pl-4 pr-2 py-2">
                     Earth Directory
                   </div>
                 </Link>
