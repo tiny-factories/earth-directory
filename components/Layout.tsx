@@ -38,7 +38,7 @@ const Layout: React.FC<Props> = (props) => {
   const [search, setSearch] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
-  let title = "Climate Glossary MFE";
+  let title = "Earth Directory";
 
   const debouncedSearch = useDebounce(search, 500);
 
@@ -65,11 +65,11 @@ const Layout: React.FC<Props> = (props) => {
       <Head>
         {process.env.UMAMI != "DEVELOPMENT" ? (
           <>
-            <title>Climate Glossary [PREVIEW]</title>
+            <title>Earth Directory [PREVIEW]</title>
           </>
         ) : (
           <>
-            <title>Climate Glossary</title>
+            <title>Earth Directory</title>
           </>
         )}
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -89,8 +89,8 @@ const Layout: React.FC<Props> = (props) => {
             <div className="flex">
               <div className="flex flex-shrink-0 items-center">
                 <Link href="/">
-                  <div className="font-bold hover:underline hover:underline-offset-4 hover:decoration-2 uppercase pl-4 pr-2 py-2">
-                    Glossary
+                  <div className="font-bold hover:underline hover:underline-offset-4 hoveßr:decoration-2 uppercase pl-4 pr-2 py-2">
+                    Earth Directory
                   </div>
                 </Link>
               </div>
