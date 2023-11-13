@@ -23,10 +23,7 @@ const TermPage: React.FC<TermProps> = (props) => {
     <>
       <Head>
         <title>{title}</title>
-        <meta
-          property="og:image"
-          content={`/api/og?title=${props.pageData.source.title}`}
-        />
+        <meta property="og:image" content={`/api/og?title=${title}`} />
         {/* <meta property="og:image" content={`/api/og?title=${title}`} /> */}
       </Head>
       <Layout>

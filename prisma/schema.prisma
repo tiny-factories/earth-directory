@@ -13,6 +13,7 @@ model Term {
   title          String
   content        String?
   example_conent String?
+  tldr           String?
   studies        Studies[]
   image          String?   @db.Text
   published      Boolean   @default(false)
