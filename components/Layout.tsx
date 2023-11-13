@@ -65,7 +65,7 @@ const Layout: React.FC<Props> = (props) => {
       <Head>
         {process.env.UMAMI != "DEVELOPMENT" ? (
           <>
-            <title>Earth Directory [PREVIEW]</title>
+            <title>Earth Directory</title>
           </>
         ) : (
           <>

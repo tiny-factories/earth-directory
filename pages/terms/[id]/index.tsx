@@ -23,7 +23,10 @@ const TermPage: React.FC<TermProps> = (props) => {
     <>
       <Head>
         <title>{title}</title>
-        <meta property="og:image" content={`/api/og?title=${title}`} />
+        <meta
+          property="og:image"
+          content={`/api/og?title=${props.pageData.source.title}`}
+        />
         {/* <meta property="og:image" content={`/api/og?title=${title}`} /> */}
       </Head>
       <Layout>
@@ -51,18 +54,17 @@ const TermPage: React.FC<TermProps> = (props) => {
             <div className="grid grid-cols-4 gap-4 py-9">
               <div className="col-span-4 md:col-span-1 pb-9">
                 <div className="text-h5 md:text-h3 font-bold">Example</div>
-                <div className="">
-                  via{" "}
+                <div className="opacity-50 no-underline">
                   <Link
                     href={`/source/${props.sourceId}`}
                     className="underline"
                   >
-                    source
+                    Report Issue
                   </Link>
                 </div>
               </div>
               <div className="col-span-4 md:col-span-3 text-h4 sm:text-h3 md:sm:text-h2 italic">
-                Coming Soon
+                {props?.pageData.example || "Coming Soon"}
               </div>
             </div>
           </div>
@@ -71,18 +73,17 @@ const TermPage: React.FC<TermProps> = (props) => {
             <div className="grid grid-cols-4 gap-4 py-9">
               <div className="col-span-4 md:col-span-1 pb-9">
                 <div className="text-h5 md:text-h3 font-bold">Case Studies</div>
-                <div className="">
-                  via{" "}
+                <div className="opacity-50 no-underline">
                   <Link
                     href={`/source/${props.sourceId}`}
                     className="underline"
                   >
-                    source
+                    Report Issue
                   </Link>
                 </div>
               </div>
               <div className="col-span-4 md:col-span-3 text-h4 sm:text-h3 md:sm:text-h2 italic">
-                Coming Soon
+                {props?.pageData.studies || "Coming Soon"}
               </div>
             </div>
           </div>
@@ -116,9 +117,6 @@ const TermPage: React.FC<TermProps> = (props) => {
                             className="text-h4 sm:text-h3 md:sm:text-h2 font-bold text-gray-500 font-satoshi"
                           >
                             {term.group}{" "}
-                            <span className="text-[#918180]">
-                              is for {term.group}
-                            </span>
                           </div>
                           {term.children
                             .sort(function (a, b) {
