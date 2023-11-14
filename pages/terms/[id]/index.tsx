@@ -61,7 +61,7 @@ const TermPage: React.FC<TermProps> = (props) => {
                 </div>
               </div>
               <div className="col-span-4 md:col-span-3 text-h4 sm:text-h3 md:sm:text-h2 italic">
-                {props?.pageData.tldr || "Coming Soon"}
+                {"Coming Soon"}
               </div>
             </div>
           </div>
