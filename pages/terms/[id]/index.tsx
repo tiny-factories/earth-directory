@@ -4,16 +4,43 @@ import type { GetStaticProps } from "next";
 import Head from "next/head";
 import Layout from "../../../components/Layout";
 import TermCard, { TermProps } from "../../../components/Term";
-
 import prisma from "../../../lib/prisma";
+
+interface Term {
+  title: string;
+  id: string;
+  // Add other properties that a term might have
+}
+
+interface GroupedTerms {
+  group: string;
+  children: Term[];
+}
+
+interface PageData {
+  title: string;
+  published: boolean;
+  content?: string;
+  studies?: string;
+  // Add other properties that pageData might have
+  // If source is optional, use source?: { title: string; href: string; }
+  source: {
+    title: string;
+    href: string;
+  };
+}
+
+interface TermPageProps {
+  pageData: PageData;
+  relatedTerms: GroupedTerms[];
+}
 
 export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
   return {
-    paths: [], //indicates that no page needs be created at build time
-    fallback: "blocking", //indicates the type of fallback
+    paths: [], // Indicates that no page needs to be created at build time
+    fallback: 'blocking', // Indicates the type of fallback
   };
 };
-
 const TermPage: React.FC<TermProps> = (props) => {
   let title = props.pageData.title;
   if (!props.pageData.published) {

@@ -1,23 +1,19 @@
 import { ImageResponse } from "@vercel/og";
 import { NextRequest } from "next/server";
 
-
 export const config = {
   runtime: "edge",
 };
 
-export default async function handler(req: NextRequest) {
+export default function handler(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);
-  const imageData = await fetch('https://earth.directory/g-hero-earth.png').then(
-    (res) => res.arrayBuffer(),
-  );
 
     // ?title=<title>
     const hasTitle = searchParams.has("title");
     const title = hasTitle
       ? searchParams.get("title")?.slice(0, 100)
-      : "My default title";
+      : "Earth Directory";
 
     return new ImageResponse(
       (
@@ -35,8 +31,6 @@ export default async function handler(req: NextRequest) {
             flexWrap: "nowrap",
           }}
         >
-        <img width="256" height="256" src={imageData} />
-
           <div
             style={{
               display: "flex",
