@@ -7,3 +7,4 @@ noise and origin of information. We are working to make a glossary of terms, agr
 organizations and more.
 
 [Submit a Term](https://form.typeform.com/to/lowIfjl5) or [Help Translate](https://form.typeform.com/to/hV9yuh6J)
+
