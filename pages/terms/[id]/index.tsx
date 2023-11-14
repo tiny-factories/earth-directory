@@ -50,10 +50,10 @@ const TermPage: React.FC<TermProps> = (props) => {
           <div>
             <div className="grid grid-cols-4 gap-4 py-9">
               <div className="col-span-4 md:col-span-1 pb-9">
-                <div className="text-h5 md:text-h3 font-bold">Example</div>
+                <div className="text-h5 md:text-h3 font-bold">TLDR</div>
                 <div className="opacity-50 no-underline">
                   <Link
-                    href={`/source/${props.sourceId}`}
+                    href="https://github.com/tiny-factories/earth-directory/issues/new"
                     className="underline"
                   >
                     Report Issue
@@ -61,7 +61,7 @@ const TermPage: React.FC<TermProps> = (props) => {
                 </div>
               </div>
               <div className="col-span-4 md:col-span-3 text-h4 sm:text-h3 md:sm:text-h2 italic">
-                {props?.pageData.example || "Coming Soon"}
+                {props?.pageData.tldr || "Coming Soon"}
               </div>
             </div>
           </div>
@@ -72,7 +72,7 @@ const TermPage: React.FC<TermProps> = (props) => {
                 <div className="text-h5 md:text-h3 font-bold">Case Studies</div>
                 <div className="opacity-50 no-underline">
                   <Link
-                    href={`/source/${props.sourceId}`}
+                    href="https://github.com/tiny-factories/earth-directory/issues/new"
                     className="underline"
                   >
                     Report Issue
