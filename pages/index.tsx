@@ -40,6 +40,9 @@ export const getStaticProps: GetStaticProps = async () => {
     where: {
       published: true,
     },
+    include: {
+      terms: true,
+    },
   });
 
   let numberOfTerms = allTerms.length;
@@ -85,7 +88,7 @@ const Home: React.FC<Props> = (props) => {
               src="/g-hero-earth.webp"
               width={500}
               height={500}
-              alt="Picture of the author"
+              alt="Picture of the Earth"
             />
           </div>
         </div>
@@ -97,21 +100,17 @@ const Home: React.FC<Props> = (props) => {
             </div>
           </div>
           <div className="flex flex-wrap py-9">
-            {/* <div className="w-full text-paragraph">
-              As our planet faces a growing climate crisis, it can be
-              overwhelming to navigate the vast amount of information available.
-              That's why we're creating a comprehensive glossary of terms,
-              agreements, companies, organizations, and more to help you
-              understand and take action.
-            </div> */}
-
             <div className="flex flex-wrap w-full ">
               {props.allTags.map((tag, i) => {
-                return (
-                  <div key={i} className="p-3">
-                    <Tag tag={tag} />
-                  </div>
-                );
+                if (tag.terms.length > 0) {
+                  return (
+                    <div key={i} className="p-3">
+                      <Tag tag={tag} />
+                    </div>
+                  );
+                }
+
+                return null;
               })}
             </div>
           </div>

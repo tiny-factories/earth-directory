@@ -24,7 +24,7 @@
     "@headlessui/react": "^1.7.4",
     "@heroicons/react": "^2.0.13",
     "@next-auth/prisma-adapter": "1.0.5",
-    "@prisma/client": "4.8.1",
+    "@prisma/client": "^5.5.2",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",
     "@vercel/og": "^0.0.22",
@@ -36,7 +36,6 @@
     "react-markdown": "8.0.4"
   },
   "devDependencies": {
-    "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.8",
     "@types/next-auth": "3.15.0",
     "@types/node": "18.11.18",

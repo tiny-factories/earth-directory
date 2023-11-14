@@ -6,6 +6,7 @@ export type TermProps = {
   title: string;
   content: string;
   published: boolean;
+  terms:any;
   sponsor: boolean;
   sourceId: string;
   group: any;

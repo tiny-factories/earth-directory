@@ -1,7 +1,6 @@
 generator client {
   provider        = "prisma-client-js"
   previewFeatures = ["fullTextSearch", "fullTextIndex"]
-
 }
 
 datasource db {
@@ -10,18 +9,21 @@ datasource db {
 }
 
 model Term {
-  id         String    @id @default(cuid())
-  title      String
-  content    String?
-  image      String?   @db.Text
-  published  Boolean   @default(false)
-  sponsor    Boolean   @default(false)
-  source     Source?   @relation(fields: [sourceId], references: [id])
-  sourceId   String?
-  language   Language? @relation(fields: [languageId], references: [id])
-  languageId String?
-  Tag        Tag?      @relation(fields: [tagId], references: [id])
-  tagId      String?
+  id             String    @id @default(cuid())
+  title          String
+  content        String?
+  example_conent String?
+  tldr           String?
+  studies        Studies[]
+  image          String?   @db.Text
+  published      Boolean   @default(false)
+  sponsor        Boolean   @default(false)
+  source         Source?   @relation(fields: [sourceId], references: [id])
+  sourceId       String?
+  language       Language? @relation(fields: [languageId], references: [id])
+  languageId     String?
+  Tag            Tag?      @relation(fields: [tagId], references: [id])
+  tagId          String?
 }
 
 model Tag {
@@ -32,7 +34,6 @@ model Tag {
   published Boolean    @default(false)
   terms     Term[]
   languages Language[]
-
 }
 
 model Source {
@@ -56,3 +57,10 @@ model Language {
   tagId     String?
 }
 
+model Studies {
+  id      Int     @id @default(autoincrement())
+  title   String
+  content String
+  Term    Term?   @relation(fields: [termId], references: [id])
+  termId  String?
+}
