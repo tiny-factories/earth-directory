@@ -8,21 +8,33 @@ const pages = [
   // Add more pages or fetch dynamically
 ];
 
+function escapeXML(str) {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+}
+
 const sitemap = `
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   ${pages
     .map(
       (page) => `
-	<url>
-	  <loc>${`https://earth.directory${page.path}`}</loc>
-	  <changefreq>${page.changefreq}</changefreq>
-	  <priority>${page.priority}</priority>
-	</url>
+    <url>
+      <loc>${escapeXML(`https://earth.directory${page.path}`)}</loc>
+      <changefreq>${escapeXML(page.changefreq)}</changefreq>
+      <priority>${page.priority}</priority>
+    </url>
   `
     )
     .join("")}
 </urlset>
 `;
 
-fs.writeFileSync(path.resolve(__dirname, "public", "sitemap.xml"), sitemap);
+fs.writeFileSync(
+  path.resolve(__dirname, "public", "sitemap.xml"),
+  sitemap.trim()
+);

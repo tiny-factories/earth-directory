@@ -1,26 +1,1534 @@
 
-<rss version="2.0">
-<channel>
-  <title>Earth Directory</title>
-  <link>https://earth.directory</link>
-  <description>Latest updated terms</description>
-  <language>en-us</language>
+  <rss version="2.0">
+  <channel>
+    <title>Earth Directory</title>
+    <link>https://earth.directory</link>
+    <description>Latest updated terms</description>
+    <language>en-us</language>
+    
+      <item>
+        <title>Copenhagen Accord</title>
+        <link>https://earth.directory/terms/1418a4e0-ed1c-11ed-b4c4-a9e35d4aa4ac</link>
+        <description>The Copenhagen Accord is a document which delegates at the 15th session of the Conference of Parties (COP 15) to the United Nations Framework Convention on Climate Change agreed to &quot;take note of&quot; at the final plenary on 18 December 2009.[1][2]
+
+The Accord, drafted by, on the one hand, the United States and on the other, in a united position as the BASIC countries (China, India, South Africa, and Brazil), is not legally binding and does not commit countries to agree to a binding successor to the Kyoto Protocol, whose round ended in 2012.</description>
+        <pubDate>Mon, 04 Mar 2024 09:43:09 -0800</pubDate>
+        <guid>https://earth.directory/terms/1418a4e0-ed1c-11ed-b4c4-a9e35d4aa4ac</guid>
+      </item>
+    
+      <item>
+        <title>Habitat Fragmentation</title>
+        <link>https://earth.directory/terms/cldxtkyoi005ktdws9ke62tj5</link>
+        <description>A process during which larger areas of habitat are broken into a number of smaller patches of smaller total area, isolated from each other by a matrix of habitats unlike the original habitat.</description>
+        <pubDate>Sun, 03 Mar 2024 22:51:54 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyoi005ktdws9ke62tj5</guid>
+      </item>
+    
+      <item>
+        <title>Carbon Dioxide</title>
+        <link>https://earth.directory/terms/cldxsrosq000ktdws0934ksa3</link>
+        <description>A naturally occurring gas, and also a by-product of burning fossil fuels and biomass, as well as land-use changes and other industrial processes. It is the principal human caused greenhouse gas that affects the Earth&apos;s radiative balance. It is the reference gas against which other greenhouse gases are measured and therefore has a Global Warming Potential of 1.</description>
+        <pubDate>Sun, 03 Mar 2024 22:31:09 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxsrosq000ktdws0934ksa3</guid>
+      </item>
+    
+      <item>
+        <title>Biomass</title>
+        <link>https://earth.directory/terms/cldxsrosm0002tdwsy24ppnes</link>
+        <description>Materials that are biological in origin, including organic material (both living and dead) from above and below ground, for example, trees, crops, grasses, tree litter, roots, and animals and animal waste.</description>
+        <pubDate>Sun, 03 Mar 2024 22:30:13 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxsrosm0002tdwsy24ppnes</guid>
+      </item>
+    
+      <item>
+        <title>Carbon Insetting</title>
+        <link>https://earth.directory/terms/199f3a50-4cf8-11ee-bfd5-9b66b937db91</link>
+        <description>A company pays money to make up for polluting &amp; emissions that it does</description>
+        <pubDate>Sun, 03 Mar 2024 22:24:58 -0800</pubDate>
+        <guid>https://earth.directory/terms/199f3a50-4cf8-11ee-bfd5-9b66b937db91</guid>
+      </item>
+    
+      <item>
+        <title>Net Zero</title>
+        <link>https://earth.directory/terms/27350210-e84b-11ed-98ef-6fc350410096</link>
+        <description>The goal of achieving a balance between the number of emissions produced and the amount removed from the atmosphere. This can be achieved by reducing carbon emissions as much as possible and then offsetting any remaining emissions by removing an equivalent amount from the atmosphere. The goal of achieving net zero emissions is to limit global warming to 1.5°C above pre-industrial levels, which is the target set by the Paris Agreement on climate change. Many countries, businesses, and organisations have set ambitious targets to achieve net zero emissions by mid-century or earlier, in line with the Paris Agreement&apos;s objectives.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/27350210-e84b-11ed-98ef-6fc350410096</guid>
+      </item>
+    
+      <item>
+        <title>Fluorinated Gases</title>
+        <link>https://earth.directory/terms/cldxtkyof004ytdws7zbvritn</link>
+        <description>Powerful synthetic greenhouse gases such as hydrofluorocarbons, perfluorocarbons, and sulfur hexafluoride that are emitted from a variety of industrial processes. Fluorinated gases are sometimes used as substitutes for stratospheric ozone-depleting substances (e.g., chlorofluorocarbons, hydrochlorofluorocarbons, and halons) and are often used in coolants, foaming agents, fire extinguishers, solvents, pesticides, and aerosol propellants. These gases are emitted in small quantities compared to carbon dioxide (CO2), methane (CH4), or nitrous oxide (N2O), but because they are potent greenhouse gases, they are sometimes referred to as High Global Warming Potential gases (High GWP gases).</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyof004ytdws7zbvritn</guid>
+      </item>
+    
+      <item>
+        <title>Eccentricity</title>
+        <link>https://earth.directory/terms/cldxtkyoc004etdwsdx74ofc5</link>
+        <description>The extent to which the Earth&apos;s orbit around the Sun departs from a perfect circle.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyoc004etdwsdx74ofc5</guid>
+      </item>
+    
+      <item>
+        <title>Dryland Farming</title>
+        <link>https://earth.directory/terms/cldxtkyob004ctdwsv6oha6ct</link>
+        <description>A technique that uses soil moisture conservation and seed selection to optimize production under dry conditions.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyob004ctdwsv6oha6ct</guid>
+      </item>
+    
+      <item>
+        <title>Coalbed Methane</title>
+        <link>https://earth.directory/terms/cldxtkyoa0042tdwsnosns0ky</link>
+        <description>Coalbed methane is methane contained in coal seams, and is often referred to as virgin coalbed methane, or coal seam gas.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyoa0042tdwsnosns0ky</guid>
+      </item>
+    
+      <item>
+        <title>RASAT</title>
+        <link>https://earth.directory/terms/9970c540-12b1-11ee-818b-db7679c575cf</link>
+        <description>RASAT was an earth observation satellite designed and developed by TÜBİTAK Space Technologies Research Institute (TÜBİTAK UZAY) and produced in Turkey to provide high resolution imagery. It was the first remote sensing satellite fully realized in Turkey, and the second indigenously developed remote sensing satellite after BILSAT-1.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/9970c540-12b1-11ee-818b-db7679c575cf</guid>
+      </item>
+    
+      <item>
+        <title>BCR</title>
+        <link>https://earth.directory/terms/1d34e370-e84b-11ed-b3b7-db9c1a4fa47e</link>
+        <description>The process of carbon dioxide removal through biochar production. Biochar carbon removal (BCR) involves the pyrolysis of biomass to create biochar which is then applied in soils or durable materials such as cement. The carbon dioxide sequestered by the plants used for the biochar production is subsequently stored for hundreds of years.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/1d34e370-e84b-11ed-b3b7-db9c1a4fa47e</guid>
+      </item>
+    
+      <item>
+        <title>MRV</title>
+        <link>https://earth.directory/terms/1fd41f60-e84b-11ed-8d76-d78dec0887a3</link>
+        <description>Measurement, Reporting, and Verification (MRV) refers to the multi-step process to measure the amount of greenhouse gas (GHG) emissions reduced by a specific mitigation activity.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/1fd41f60-e84b-11ed-8d76-d78dec0887a3</guid>
+      </item>
+    
+      <item>
+        <title>Photosynthesis</title>
+        <link>https://earth.directory/terms/21d7b790-e84b-11ed-84af-d97099ed04e3</link>
+        <description>The process by which green plants, algae, and some bacteria convert light energy from the sun into chemical energy in the form of organic compounds such as glucose. During photosynthesis, plants take in carbon dioxide and water from the air and soil and transform it into oxygen and glucose. The plant then releases the oxygen back into the air and stores energy within the glucose molecules of its biomass.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/21d7b790-e84b-11ed-84af-d97099ed04e3</guid>
+      </item>
+    
+      <item>
+        <title>Greenhouse Effect</title>
+        <link>https://earth.directory/terms/cldxtkyoh005itdws0u3j74am</link>
+        <description>Trapping and build-up of heat in the atmosphere (troposphere) near the Earths surface. Some of the heat flowing back toward space from the Earth&apos;s surface is absorbed by water vapor, carbon dioxide, ozone, and several other gases in the atmosphere and then reradiated back toward the Earths surface. If the atmospheric concentrations of these greenhouse gases rise, the average temperature of the lower atmosphere will gradually increase. </description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyoh005itdws0u3j74am</guid>
+      </item>
+    
+      <item>
+        <title>Global Warming Potential</title>
+        <link>https://earth.directory/terms/cldxtkyoh005gtdwsc6d841ix</link>
+        <description>A measure of the total energy that a gas absorbs over a particular period of time (usually 100 years), compared to carbon dioxide.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyoh005gtdwsc6d841ix</guid>
+      </item>
+    
+      <item>
+        <title>Scalability</title>
+        <link>https://earth.directory/terms/2b134db0-e84b-11ed-9028-3db39844b53c</link>
+        <description>The ability to increase the capacity and efficiency of carbon dioxide removal technologies to mitigate climate change on a large scale. To achieve scalability, CDR and BCR technologies must be able to remove carbon dioxide at a significant scale and at a reasonable cost.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/2b134db0-e84b-11ed-9028-3db39844b53c</guid>
+      </item>
+    
+      <item>
+        <title>Sustainability Legislation</title>
+        <link>https://earth.directory/terms/2ecb2590-e84b-11ed-87bf-bf3e19f1e824</link>
+        <description>Laws and regulations that aim to promote sustainable development and ensure that economic growth is achieved in a way that is environmentally, socially, and economically responsible. Sustainability legislation is becoming increasingly prevalent and can provide incentives and support for sustainable investments and innovations.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/2ecb2590-e84b-11ed-87bf-bf3e19f1e824</guid>
+      </item>
+    
+      <item>
+        <title>Adaptive Capacity</title>
+        <link>https://earth.directory/terms/cldxsrosu000ytdwsz5lh9ev8</link>
+        <description>The ability of a system to adjust to climate change (including climate variability and extremes) to moderate potential damages, to take advantage of opportunities, or to cope with the consequences.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxsrosu000ytdwsz5lh9ev8</guid>
+      </item>
+    
+      <item>
+        <title>Adaptation</title>
+        <link>https://earth.directory/terms/cldxsrost000wtdwsufs2shmn</link>
+        <description>Adjustment or preparation of natural or human systems to a new or changing environment which moderates harm or exploits beneficial opportunities.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxsrost000wtdwsufs2shmn</guid>
+      </item>
+    
+      <item>
+        <title>Hydrochlorofluorocarbons (HCFCs)</title>
+        <link>https://earth.directory/terms/cldxtkyoj005utdwsgjssm6rp</link>
+        <description>Compounds containing hydrogen, fluorine, chlorine, and carbon atoms. Although ozone depleting substances, they are less potent at destroying stratospheric ozone than chlorofluorocarbons (CFCs). They have been introduced as temporary replacements for CFCs and are also greenhouse gases. See ozone depleting substance.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyoj005utdwsgjssm6rp</guid>
+      </item>
+    
+      <item>
+        <title>Hydrocarbons</title>
+        <link>https://earth.directory/terms/cldxtkyoj005stdwsg16cb2p5</link>
+        <description>Substances containing only hydrogen and carbon. Fossil fuels are made up of hydrocarbons.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyoj005stdwsg16cb2p5</guid>
+      </item>
+    
+      <item>
+        <title>Heat Waves</title>
+        <link>https://earth.directory/terms/cldxtkyoj005qtdwsbs1vvzj9</link>
+        <description>A prolonged period of excessive heat, often combined with excessive humidity.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyoj005qtdwsbs1vvzj9</guid>
+      </item>
+    
+      <item>
+        <title>Heat Island</title>
+        <link>https://earth.directory/terms/cldxtkyoi005otdwsbkd2ek1c</link>
+        <description>An urban area characterized by temperatures higher than those of the surrounding non-urban area. As urban areas develop, buildings, roads, and other infrastructure replace open land and vegetation. These surfaces absorb more solar energy, which can create higher temperatures in urban areas. </description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyoi005otdwsbkd2ek1c</guid>
+      </item>
+    
+      <item>
+        <title>Albedo</title>
+        <link>https://earth.directory/terms/cldxsross000stdwsrnkxjanr</link>
+        <description>The amount of solar radiation reflected from an object or surface, often expressed as a percentage.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxsross000stdwsrnkxjanr</guid>
+      </item>
+    
+      <item>
+        <title>Carbon Dioxide Equivalent</title>
+        <link>https://earth.directory/terms/cldxsrosr000mtdws5q39n3un</link>
+        <description>A metric measure used to compare the emissions from various greenhouse gases based upon their global warming potential (GWP). Carbon dioxide equivalents are commonly expressed as &quot;million metric tons of carbon dioxide equivalents (MMTCO2Eq).&quot; The carbon dioxide equivalent for a gas is derived by multiplying the tons of the gas by the associated GWP.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxsrosr000mtdws5q39n3un</guid>
+      </item>
+    
+      <item>
+        <title>Feedstock</title>
+        <link>https://earth.directory/terms/261a9160-e84b-11ed-b527-37ab0795510c</link>
+        <description>Any organic matter that can be used as a raw material to produce bioenergy, biofuels, or bioproducts. Biomass feedstocks can come from a wide range of sources, including crops, forestry residues, food waste, and animal waste. Examples of biomass feedstocks include corn, sugarcane, switchgrass, wood chips, sawdust, and agricultural residues like straw, husks, and stalks.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/261a9160-e84b-11ed-b527-37ab0795510c</guid>
+      </item>
+    
+      <item>
+        <title>H/Corg</title>
+        <link>https://earth.directory/terms/2857d730-e84b-11ed-a64f-7351d0b72ebc</link>
+        <description>Sometimes written as H/C, is a ratio used to describe the ratio of hydrogen atoms to carbon atoms in a molecule or substance. The ratio can provide useful information about the chemical and physical properties of a substance, including its energy content, reactivity, and potential uses as a fuel or feedstock. For example, a lower H/Corg ratio generally indicates a substance that is more Carbon-rich and, therefore, more chemically stable.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/2857d730-e84b-11ed-a64f-7351d0b72ebc</guid>
+      </item>
+    
+      <item>
+        <title>GhG</title>
+        <link>https://earth.directory/terms/309f2240-e84b-11ed-bd66-eb8dce9cba20</link>
+        <description>Gases in the Earth&apos;s atmosphere that trap heat and contribute to the greenhouse effect—the process by which the Earth&apos;s atmosphere absorbs and re-radiates some of the energy from the sun. The primary greenhouse gases in the Earth&apos;s atmosphere are carbon dioxide (CO2), methane (CH4), nitrous oxide (N2O), and fluorinated gases. These are produced by natural processes such as respiration and volcanic activity but also by human activities such as burning fossil fuels, deforestation, and industrial processes.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/309f2240-e84b-11ed-bd66-eb8dce9cba20</guid>
+      </item>
+    
+      <item>
+        <title>Durability</title>
+        <link>https://earth.directory/terms/24b16470-e84b-11ed-a8a0-33822e4c5f03</link>
+        <description>Either the planned duration of carbon storage or the risk of reversal before that time is up (also often referred to as &quot;permanence.”)</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/24b16470-e84b-11ed-a8a0-33822e4c5f03</guid>
+      </item>
+    
+      <item>
+        <title>Permanence</title>
+        <link>https://earth.directory/terms/297f4030-e84b-11ed-9a94-754b0a805447</link>
+        <description>The long-term storage of carbon in a stable form, preventing it from being released back into the atmosphere as carbon dioxide. Carbon permanence is a critical consideration in carbon removal as carbon credits are only valid if the emissions reductions or sequestration are permanent, meaning that the carbon will not be released back into the atmosphere in the future. Carbon removal projects must demonstrate that their carbon sequestration methods are robust, reliable, and verifiable over time to ensure carbon permanence.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/297f4030-e84b-11ed-9a94-754b0a805447</guid>
+      </item>
+    
+      <item>
+        <title>Sulfur Hexafluoride</title>
+        <link>https://earth.directory/terms/cldxsrosq000itdws2wp2jhk1</link>
+        <description>A colorless gas soluble in alcohol and ether, slightly soluble in water. A very powerful greenhouse gas used primarily in electrical transmission and distribution systems and as a dielectric in electronics. The global warming potential of SF6 is 22,800. This GWP is from the IPCC&apos;s Fourth Assessment Report (AR4).</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxsrosq000itdws2wp2jhk1</guid>
+      </item>
+    
+      <item>
+        <title>United Nations REDD Programme</title>
+        <link>https://earth.directory/terms/1525cf20-ed1c-11ed-adb8-735011e6fb90</link>
+        <description>The United Nations Programme on Reducing Emissions from Deforestation and Forest Degradation (or UN-REDD Programme) is a collaborative programme of the Food and Agriculture Organization of the United Nations (FAO), the United Nations Development Programme (UNDP) and the United Nations Environment Programme (UNEP), created in 2008 in response to the UNFCCC decisions on the Bali Action Plan and REDD at COP 13. It should not be confused with REDD+, a voluntary climate change mitigation approach that has been developed by Parties to the UNFCCC (see below #Difference between REDD+ and the UN-REDD Programme).</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/1525cf20-ed1c-11ed-adb8-735011e6fb90</guid>
+      </item>
+    
+      <item>
+        <title>1.5ºC</title>
+        <link>https://earth.directory/terms/156b7af0-e84b-11ed-a0c0-559d3bd8869e</link>
+        <description>1.5 degree warming refers to an average global temperature increase of 1.5 degrees Celsius (or 2.7 degrees Fahrenheit) above pre-industrial levels. The 1.5 degree Celsius target has become a widely recognised goal in climate policy and international agreements, as it represents a threshold beyond which many of the worst impacts of climate change are expected to occur.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/156b7af0-e84b-11ed-a0c0-559d3bd8869e</guid>
+      </item>
+    
+      <item>
+        <title>Stability</title>
+        <link>https://earth.directory/terms/20ca6640-e84b-11ed-86ea-a96ca70ce4fd</link>
+        <description>See Permanence</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/20ca6640-e84b-11ed-86ea-a96ca70ce4fd</guid>
+      </item>
+    
+      <item>
+        <title>Soil Moisture and Ocean Salinity
+</title>
+        <link>https://earth.directory/terms/82810930-12b1-11ee-b639-010a8fcf5df8</link>
+        <description>Soil Moisture and Ocean Salinity (SMOS) is a satellite which forms part of ESA&apos;s Living Planet Programme. It is intended to provide new insights into Earth&apos;s water cycle and climate. In addition, it is intended to provide improved weather forecasting and monitoring of snow and ice accumulation.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/82810930-12b1-11ee-b639-010a8fcf5df8</guid>
+      </item>
+    
+      <item>
+        <title>Evapotranspiration</title>
+        <link>https://earth.directory/terms/cldxtkyoe004utdwsjty8n9fz</link>
+        <description>The combined process of evaporation from the Earth&apos;s surface and transpiration from vegetation.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyoe004utdwsjty8n9fz</guid>
+      </item>
+    
+      <item>
+        <title>Enhanced Greenhouse Effect</title>
+        <link>https://earth.directory/terms/cldxtkyoe004qtdwsotmi6xx0</link>
+        <description>The concept that the natural greenhouse effect has been enhanced by increased atmospheric concentrations of greenhouse gases (such as CO2 and methane) emitted as a result of human activities. These added greenhouse gases cause the earth to warm.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyoe004qtdwsotmi6xx0</guid>
+      </item>
+    
+      <item>
+        <title>Rio Convention</title>
+        <link>https://earth.directory/terms/c4a067e0-ed1b-11ed-80a7-333d4d6fd5d5</link>
+        <description>Rio Convention relates to the following three conventions, which were agreed at the Earth Summit held in Rio de Janeiro in June 1992.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/c4a067e0-ed1b-11ed-80a7-333d4d6fd5d5</guid>
+      </item>
+    
+      <item>
+        <title>VRSS-1</title>
+        <link>https://earth.directory/terms/888e69d0-12b1-11ee-8bfa-6fc6481a458f</link>
+        <description>VRSS-1 (Venezuelan Remote Sensing Satellite-1), also known as (Satellite) Francisco Miranda, is the first Venezuelan remote sensing satellite, and the second Venezuelan satellite after VENESAT-1. It will be used to study the territory of Venezuela and help with planning, agriculture and disaster recovery. It was built and launched by the Chinese and has been named after Venezuelan revolutionary Francisco de Miranda.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/888e69d0-12b1-11ee-8bfa-6fc6481a458f</guid>
+      </item>
+    
+      <item>
+        <title>TIMED</title>
+        <link>https://earth.directory/terms/83aae330-12b1-11ee-9aae-85460890a546</link>
+        <description>The TIMED (Thermosphere • Ionosphere • Mesosphere • Energetics and Dynamics) mission is dedicated to study the influences energetics and dynamics of the Sun and humans on the least explored and understood region of Earth&apos;s atmosphere – the Mesosphere and Lower Thermosphere / Ionosphere (MLTI). The mission was launched from Vandenberg Air Force Base in California on 7 December 2001 aboard a Delta II rocket launch vehicle. The project is sponsored and managed by NASA, while the spacecraft was designed and assembled by the Applied Physics Laboratory at Johns Hopkins University. The mission has been extended several times, and has now collected data over an entire solar cycle, which helps in its goal to differentiate the Sun&apos;s effects on the atmosphere from other effects.[2] TIMED Was Launched Alongside Jason-1.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/83aae330-12b1-11ee-9aae-85460890a546</guid>
+      </item>
+    
+      <item>
+        <title>Terra (satellite)</title>
+        <link>https://earth.directory/terms/7cc71fc0-12b1-11ee-a701-6b09f9f547c4</link>
+        <description>Terra (EOS AM-1) is a multi-national, NASA scientific research satellite in a Sun-synchronous orbit around the Earth that takes simultaneous measurements of Earth&apos;s atmosphere, land, and water to understand how Earth is changing and to identify the consequences for life on Earth.[1] It is the flagship of the Earth Observing System (EOS) and the first satellite of the system which was followed by Aqua (launched in 2002) and Aura (launched in 2004). Terra was launched in 1999.
+
+The name &quot;Terra&quot; comes from the Latin word for Earth. A naming contest was held by NASA among U.S. high school students. The winning essay was submitted by Sasha Jones of Brentwood, Missouri. The identifier &quot;AM-1&quot; refers to its orbit, passing over the equator in the morning.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/7cc71fc0-12b1-11ee-a701-6b09f9f547c4</guid>
+      </item>
+    
+      <item>
+        <title>Emission Reduction Unit</title>
+        <link>https://earth.directory/terms/da5c5ee0-ed1b-11ed-a2b6-658adbc842a7</link>
+        <description>The emission reduction unit (ERU) was an emissions unit issued under a Joint Implementation project in terms of the Kyoto Protocol. An ERU represented a reduction of greenhouse gases under the Joint Implementation mechanism, where it represented one tonne of CO2 equivalent reduced.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/da5c5ee0-ed1b-11ed-a2b6-658adbc842a7</guid>
+      </item>
+    
+      <item>
+        <title>TanDEM-X</title>
+        <link>https://earth.directory/terms/93a0bbc0-12b1-11ee-9eb6-4577cbaa762f</link>
+        <description>TanDEM-X (TerraSAR-X add-on for Digital Elevation Measurement) is the name of TerraSAR-X&apos;s twin satellite, a German Earth observation satellite using SAR (Synthetic Aperture Radar) - a modern radar imaging technology. Implemented in a Public-Private-Partnership between the German Aerospace centre (DLR) and EADS Astrium (now Airbus Defence and Space), it is a second, almost identical spacecraft to TerraSAR-X. TanDEM-X is also the name of the satellite mission flying the two satellites in a closely controlled formation with typical distances between 250 and 500 m.[1] The twin satellite constellation allowed the generation of WorldDEM global digital elevation models starting in 2014.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/93a0bbc0-12b1-11ee-9eb6-4577cbaa762f</guid>
+      </item>
+    
+      <item>
+        <title>Solar Radiation and Climate Experiment</title>
+        <link>https://earth.directory/terms/950e2e70-12b1-11ee-8df4-6768ed04f1fb</link>
+        <description>The Solar Radiation and Climate Experiment (SORCE) was a NASA-sponsored satellite mission that measured incoming X-ray, ultraviolet, visible, near-infrared, and total solar radiation.[2] These measurements specifically addressed long-term climate change, natural variability, atmospheric ozone, and UV-B radiation, enhancing climate prediction. These measurements are critical to studies of the Sun, its effect on the Earth&apos;s system, and its influence on humankind. SORCE was launched on 25 January 2003 on a Pegasus XL launch vehicle to provide NASA&apos;s Earth Science Enterprise (ESE) with precise measurements of solar radiation.
+
+SORCE measured the Sun&apos;s output using radiometers, spectrometers, photodiodes, detectors, and bolometers mounted on a satellite observatory orbiting the Earth. Spectral measurements identify the irradiance of the Sun by characterizing the Sun&apos;s energy and emissions in the form of color that can then be translated into quantities and elements of matter. Data obtained by SORCE can be used to model the Sun&apos;s output and to explain and predict the effect of the Sun&apos;s radiation on the Earth&apos;s atmosphere and climate.
+
+Flying in a 645 km (401 mi) orbit at a 40.0° inclination, SORCE was operated by the Laboratory for Atmospheric and Space Physics (LASP) at the University of Colorado Boulder, Colorado. It continued the precise measurements of total solar irradiance that began with the ERB instrument in 1979 and extended to the 21st century with the ACRIM series of measurements. SORCE provided measurements of the solar spectral irradiance from 1 to 2000 nm, accounting for 95% of the spectral contribution to the total solar irradiance.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/950e2e70-12b1-11ee-8df4-6768ed04f1fb</guid>
+      </item>
+    
+      <item>
+        <title>Concentration</title>
+        <link>https://earth.directory/terms/cldxtkyoa0046tdws1wni36e6</link>
+        <description>The supreme body of the United Nations Framework Convention on Climate Change (UNFCCC). It comprises more than 180 nations that have ratified the Convention. Its first session was held in Berlin, Germany, in 1995 and it is expected to continue meeting on a yearly basis. The COP&apos;s role is to promote and review the implementation of the Convention. It will periodically review existing commitments in light of the Convention&apos;s objective, new scientific findings, and the effectiveness of national climate change programs.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyoa0046tdws1wni36e6</guid>
+      </item>
+    
+      <item>
+        <title>Parts Per Million</title>
+        <link>https://earth.directory/terms/cldxtkyo2002wtdwstljgfvmn</link>
+        <description>Atmospheric condition at any given time or place. It is measured in terms of such things as wind, temperature, humidity, atmospheric pressure, cloudiness, and precipitation. In most places, weather can change from hour-to-hour, day-to-day, and season-to-season. Climate in a narrow sense is usually defined as the &quot;average weather&quot;, or more rigorously, as the statistical description in terms of the mean and variability of relevant quantities over a period of time ranging from months to thousands or millions of years. The classical period is 30 years, as defined by the World Meteorological Organization (WMO). These quantities are most often surface variables such as temperature, precipitation, and wind. Climate in a wider sense is the state, including a statistical description, of the climate system. A simple way of remembering the difference is that climate is what you expect (e.g. cold winters) and &apos;weather&apos; is what you get (e.g. a blizzard).</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo2002wtdwstljgfvmn</guid>
+      </item>
+    
+      <item>
+        <title>NigComSat-1</title>
+        <link>https://earth.directory/terms/7ec030a0-12b1-11ee-b360-1ba6ceea01c8</link>
+        <description>NigComSat-1, a Nigerian satellite built in 2004, was Nigeria&apos;s third satellite and Africa&apos;s first communication satellite. It was launched on 13 May 2007, aboard a Chinese Long March 3B carrier rocket, from the Xichang Satellite Launch Centre in China. The spacecraft was operated by NigComSat and the Nigerian Space Agency, NASRDA. On 11 November 2008, NigComSat-1 failed in orbit after running out of power due to an anomaly in its solar array. It was based on the Chinese DFH-4 satellite bus, and carries a variety of transponders: 4 C band; 14 Ku band; 8 Ka band; and 2 L band. It was designed to provide coverage to many parts of Africa, and the Ka-band transponders would also cover Italy.
+
+On 10 November 2008 (0900 GMT), the satellite was reportedly switched off for analysis and to avoid a possible collision with other satellites. According to Nigerian Communications Satellite Limited, it was put into &quot;emergency mode operation in order to effect mitigation and repairs&quot;.[3] The satellite eventually failed after losing power on 11 November 2008.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/7ec030a0-12b1-11ee-b360-1ba6ceea01c8</guid>
+      </item>
+    
+      <item>
+        <title>NigComSat-1R</title>
+        <link>https://earth.directory/terms/9864d380-12b1-11ee-ace6-e1d9427239a0</link>
+        <description>On 24 March 2009, the Nigerian Federal Ministry of Science and Technology, NigComSat Ltd. and CGWIC signed another contract for the in-orbit delivery of the NigComSat-1R satellite. NigComSat-1R was also a DFH-4 satellite, and the replacement for the failed NigComSat-1 was successfully launched into orbit by China in Xichang on December 19, 2011.[4][5] The satellite according to Nigerian President Goodluck Jonathan which was paid for by the insurance policy on NigComSat-1 which de-orbited in 2009, would have a positive impact on national development in various sectors such as communications, internet services, health, agriculture, environmental protection and national security.[6] It was launched in the year 2009.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/9864d380-12b1-11ee-ace6-e1d9427239a0</guid>
+      </item>
+    
+      <item>
+        <title>NOAA-20</title>
+        <link>https://earth.directory/terms/8d0c50d0-12b1-11ee-8f12-619bd2eec04f</link>
+        <description>NOAA-20, designated JPSS-1 prior to launch, is the first of the United States National Oceanic and Atmospheric Administration&apos;s latest generation of U.S. polar-orbiting, non-geosynchronous, environmental satellites called the Joint Polar Satellite System. NOAA-20 was launched on 18 November 2017 and joined the Suomi National Polar-orbiting Partnership satellite in the same orbit. NOAA-20 operates about 50 minutes behind Suomi NPP, allowing important overlap in observational coverage. Circling the Earth from pole-to-pole, it crosses the equator about 14 times daily, providing full global coverage twice a day. This gives meteorologists information on &quot;atmospheric temperature and moisture, clouds, sea-surface temperature, ocean color, sea ice cover, volcanic ash, and fire detection&quot; so as to enhance weather forecasting including hurricane tracking, post-hurricane recovery by detailing storm damage and mapping of power outages.[2][3]
+
+The project incorporates five instruments, and these are substantially upgraded since previous satellite equipment. The project&apos;s greater-detailed observations provide better predictions and emphasize climate behavior in cases like El Niño and La Niña.[2]
+
+The satellite bus of the project and Ozone Mapping and Profiler Suite (OMPS) equipment, was designed by Ball Aerospace &amp; Technologies. The Visible Infrared Imaging Radiometer Suite (VIIRS) and the Common Ground System (CGS) were built by Raytheon Company, and the Cross-track Infrared Sounder (CrIS) was by Harris Corporation. The Advanced Technology Microwave Sounder (ATMS) and the Clouds and the Earth&apos;s Radiant Energy System (CERES) instrument were built by Northrop Grumman Innovation Systems.[2]</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/8d0c50d0-12b1-11ee-8f12-619bd2eec04f</guid>
+      </item>
+    
+      <item>
+        <title>Global Warming</title>
+        <link>https://earth.directory/terms/cldxtkyoh005etdwsg2x5i03l</link>
+        <description>The recent and ongoing global average increase in temperature near the Earths surface.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyoh005etdwsg2x5i03l</guid>
+      </item>
+    
+      <item>
+        <title>Resourcesat-1</title>
+        <link>https://earth.directory/terms/9e653bd0-12b1-11ee-9c92-1b48a5ca1b1b</link>
+        <description>Resourcesat-1 (also known as IRS-P6) is an advanced remote sensing satellite built by Indian Space Research Organization (ISRO). The tenth satellite of ISRO in IRS series, Resourcesat-1 is intended to not only continue the remote sensing data services provided by IRS-1C and IRS-1D, both of which have far outlived their designed mission lives, but also vastly enhance the data quality.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/9e653bd0-12b1-11ee-9c92-1b48a5ca1b1b</guid>
+      </item>
+    
+      <item>
+        <title>Resurs-P No.1
+</title>
+        <link>https://earth.directory/terms/95f92ab0-12b1-11ee-8b98-b516b7e681cb</link>
+        <description>Resurs-P No.1[1] is a Russian commercial earth observation satellite capable of acquiring high-resolution imagery (resolution up to 1.0 m). The spacecraft is operated by Roscosmos as a replacement of the Resurs-DK No.1 satellite.
+
+The satellite is designed for multi-spectral remote sensing of the Earth&apos;s surface aimed at acquiring high-quality visible images in near real-time as well as on-line data delivery via radio link and providing a wide range of consumers with value-added processed data.[citation needed]
+
+In January 2022 it was revealed by the general director of Progress Rocket Space Centre Dimitriy Baranov that the satellite had been decommissioned in December 2021 because of &quot;the failure of onboard equipment&quot;.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/95f92ab0-12b1-11ee-8b98-b516b7e681cb</guid>
+      </item>
+    
+      <item>
+        <title>Resurs-P No.2</title>
+        <link>https://earth.directory/terms/a268c2b0-12b1-11ee-aa1d-f1f8d0d170d3</link>
+        <description>Resurs-P No.2[2] is a Russian commercial Earth observation satellite capable of acquiring high-resolution imagery (resolution up to 1.0 m). The spacecraft will be operated by Roscosmos along with the Resurs-P No.1 satellite.
+
+The satellite is designed for multi-spectral remote sensing of the Earth&apos;s surface aimed at acquiring high-quality visible images in near real-time as well as on-line data delivery via radio link and providing a wide range of consumers with value-added processed data.
+
+Additionally the satellite carries the Nuklon high-energy particle detector developed by the Moscow State University for detecting cosmic radiation.[</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/a268c2b0-12b1-11ee-aa1d-f1f8d0d170d3</guid>
+      </item>
+    
+      <item>
+        <title>Landsat 9</title>
+        <link>https://earth.directory/terms/9b1c2b50-12b1-11ee-8287-d9172621883a</link>
+        <description>Landsat 9 is an Earth observation satellite launched on 27 September 2021 from Space Launch Complex-3E at Vandenberg Space Force Base on an Atlas V 401 launch vehicle.[3] NASA is in charge of building, launching, and testing the satellite, while the United States Geological Survey (USGS) operates the satellite, and manages and distributes the data archive.[4] It is the ninth satellite in the Landsat program, but Landsat 6 failed to reach orbit. The Critical Design Review (CDR) was completed by NASA in April 2018, and Northrop Grumman Innovation Systems (NGIS) was given the go-ahead to manufacture the satellite.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/9b1c2b50-12b1-11ee-8287-d9172621883a</guid>
+      </item>
+    
+      <item>
+        <title>Carbonisation</title>
+        <link>https://earth.directory/terms/1e7e2c50-e84b-11ed-af7d-69258e0b2753</link>
+        <description>A process by which the carbon content of an organic material is increased through pyrolysis or Carbolysis. Through this process, the proportion of carbon present in the material grows, and the proportion of other elements decreases.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/1e7e2c50-e84b-11ed-af7d-69258e0b2753</guid>
+      </item>
+    
+      <item>
+        <title>Exothermic</title>
+        <link>https://earth.directory/terms/231f04a0-e84b-11ed-a8e9-0b9745695dc5</link>
+        <description>A process or reaction that releases heat or energy into the surrounding environment. In an exothermic reaction, the products of the reaction have less energy than the reactants, releasing excess energy in the form of heat, light, or other forms of radiation.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/231f04a0-e84b-11ed-a8e9-0b9745695dc5</guid>
+      </item>
+    
+      <item>
+        <title>Tars</title>
+        <link>https://earth.directory/terms/2c46ebb0-e84b-11ed-a987-ddd9e35383b1</link>
+        <description>A toxic byproduct of traditional pyrolysis, tars are complex mixtures of organic compounds not produced in our patented Carbolysis process. Typically, they contain a high proportion of oxygen-containing compounds, such as acids, aldehydes, and ketones which can make them corrosive and difficult to handle. Tars can have negative environmental impacts if not handled properly, such as realising harmful pollutants when burned or processed and can contaminate soil and water if not properly disposed of.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/2c46ebb0-e84b-11ed-a987-ddd9e35383b1</guid>
+      </item>
+    
+      <item>
+        <title>Syngas</title>
+        <link>https://earth.directory/terms/2d6a8420-e84b-11ed-b5a2-a98194082b72</link>
+        <description>Short for synthesis gas, is a mixture of carbon monoxide (CO), hydrogen (H2), and small amounts of other gases such as carbon dioxide (CO2), methane (CH4), and nitrogen (N2). Syngas is considered a renewable energy source when it is produced from biomass or waste materials.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/2d6a8420-e84b-11ed-b5a2-a98194082b72</guid>
+      </item>
+    
+      <item>
+        <title>Aerosols</title>
+        <link>https://earth.directory/terms/cldxsrosu0010tdwso5rcp28m</link>
+        <description>Small particles or liquid droplets in the atmosphere that can absorb or reflect sunlight depending on their composition.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxsrosu0010tdwso5rcp28m</guid>
+      </item>
+    
+      <item>
+        <title>Alternative Energy</title>
+        <link>https://earth.directory/terms/cldxsrost000utdwsexeoz5mx</link>
+        <description>Energy derived from nontraditional sources (e.g., compressed natural gas, solar, hydroelectric, wind).</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxsrost000utdwsexeoz5mx</guid>
+      </item>
+    
+      <item>
+        <title>Coal Mine Methane</title>
+        <link>https://earth.directory/terms/cldxsross000qtdwssnls1pfe</link>
+        <description>Coal mine methane is the subset of coalbed methane that is released from the coal seams during the process of coal mining.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxsross000qtdwssnls1pfe</guid>
+      </item>
+    
+      <item>
+        <title>Climate Feedback</title>
+        <link>https://earth.directory/terms/cldxsrosr000otdwsdp89fgay</link>
+        <description>A process that acts to amplify or reduce direct warming or cooling effects.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxsrosr000otdwsdp89fgay</guid>
+      </item>
+    
+      <item>
+        <title>Megha-Tropiques</title>
+        <link>https://earth.directory/terms/9a449000-12b1-11ee-a020-1718cc60c210</link>
+        <description>Megha-Tropiques was a satellite mission to study the water cycle in the tropical atmosphere in the context of climate change.[4] A collaborative effort between Indian Space Research Organisation (ISRO) and French Centre National d’Etudes Spatiales (CNES), Megha-Tropiques was successfully deployed into orbit by a PSLV rocket in October 2011.
+
+Megha-Tropiques was initially scrapped in 2003, but later revived in 2004 after India increased its contribution and overall costs were lowered.[5][6] With the progress made by GEWEX (Global Energy and Water Cycle Experiment), Megha-Tropiques was designed to understand tropical meteorological and climatic processes, by obtaining reliable statistics on the water and energy budget of the tropical atmosphere.[7] Megha-Tropiques complemented other data in regional monsoon projects such as MAHASRI and the completed GAME project.[8][9] Megha-Tropiques also sought to describe the evolution of major tropical weather systems. The focus was the repetitive measurement of the tropics.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/9a449000-12b1-11ee-a020-1718cc60c210</guid>
+      </item>
+    
+      <item>
+        <title>Landsat 7</title>
+        <link>https://earth.directory/terms/a136ab50-12b1-11ee-a3a3-b5d0af69af01</link>
+        <description>Landsat 7 is the seventh satellite of the Landsat program. Launched on 15 April 1999, Landsat 7&apos;s primary goal is to refresh the global archive of satellite photos, providing up-to-date and cloud-free images. The Landsat program is managed and operated by the United States Geological Survey, and data from Landsat 7 is collected and distributed by the USGS. The NASA WorldWind project allows 3D images from Landsat 7 and other sources to be freely navigated and viewed from any angle. The satellite&apos;s companion, Earth Observing-1, trailed by one minute and followed the same orbital characteristics, but in 2011 its fuel was depleted and EO-1&apos;s orbit began to degrade.[2] Landsat 7 was built by Lockheed Martin Space Systems.
+
+In 2016, NASA announced plans to attempt the first ever refueling of a live satellite by refueling Landsat 7 in 2020 with the OSAM-1 mission;[3][4][5][6] as of 2021, the launch date has slipped to 2025.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/a136ab50-12b1-11ee-a3a3-b5d0af69af01</guid>
+      </item>
+    
+      <item>
+        <title>Meteor-M No.1</title>
+        <link>https://earth.directory/terms/1e18c900-12b7-11ee-a915-93a82b1326c7</link>
+        <description>Meteor-M No.1 was the first of the Russian Meteor-M series of polar-orbiting weather satellites. It was launched on a Soyuz-2.1b rocket with a Fregat upper stage on 17 September 2009. Meteor-M No.1 was the designated replacement for Meteor-3M No.1,[4] and had a design life of 5 years. In November 2014, Russian officials announced the termination of the mission after a failure of the onboard attitude control system.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/1e18c900-12b7-11ee-a915-93a82b1326c7</guid>
+      </item>
+    
+      <item>
+        <title>MetOp</title>
+        <link>https://earth.directory/terms/22b5d0c0-12b7-11ee-bb80-bdf1981ac6c6</link>
+        <description>Metop (Meteorological Operational satellite) is a series of three polar-orbiting meteorological satellites developed by the European Space Agency (ESA) and operated by the European Organisation for the Exploitation of Meteorological Satellites (EUMETSAT). The satellites form the space segment component of the overall EUMETSAT Polar System (EPS), which in turn is the European half of the EUMETSAT / NOAA Initial Joint Polar System (IJPS). The satellites carry a payload comprising 11 scientific instruments and two which support Cospas-Sarsat Search and Rescue services. In order to provide data continuity between Metop and NOAA Polar Operational Environmental Satellites (POES), several instruments are carried on both fleets of satellites.
+
+Metop-A, launched on 19 October 2006, is Europe&apos;s first polar orbiting satellite used for operational meteorology. With respect to its primary mission of providing data for Numerical Weather Prediction, studies have shown that Metop-A data are measured as having the largest impact of any individual satellite platform on reducing 24-hour forecasting errors, and accounts for about 25% of the total impact on global forecast error reduction across all data sources.[1]
+
+Each of the three satellites were originally intended to be operated sequentially, however good performance of the Metop-A and Metop-B satellites mean there was a period of all three satellite operating. EUMETSAT lowered the orbit of Metop-A and decommissioned the spacecraft in November 2021 [2]
+
+The successor to the Metop satellites will be MetOp-SG, currently with the first MetOp SG-A satellite expected to be launched in 2025.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/22b5d0c0-12b7-11ee-bb80-bdf1981ac6c6</guid>
+      </item>
+    
+      <item>
+        <title>PRISMA (spacecraft)</title>
+        <link>https://earth.directory/terms/1d0a6640-12b7-11ee-9e9a-3dcbbb2a219c</link>
+        <description>PRISMA (PRecursore IperSpettrale della Missione Applicativa,[2] Hyperspectral PRecursor of the Application Mission) is an Italian Space Agency pre-operational and technology demonstrator mission focused on the development and delivery of hyperspectral products and the qualification of the hyperspectral payload in space.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/1d0a6640-12b7-11ee-9e9a-3dcbbb2a219c</guid>
+      </item>
+    
+      <item>
+        <title>Sentinel-2</title>
+        <link>https://earth.directory/terms/2bcca0d0-12b7-11ee-a7e0-39996a6a98e1</link>
+        <description>Sentinel-2 is an Earth observation mission from the Copernicus Programme that systematically acquires optical imagery at high spatial resolution (10 m to 60 m) over land and coastal waters. The mission is currently a constellation with two satellites, Sentinel-2A and Sentinel-2B; a third satellite, Sentinel-2C, is currently undergoing testing in preparation for launch in 2024.[4]
+
+The mission supports a broad range of services and applications such as agricultural monitoring, emergencies management, land cover classification or water quality.
+
+Sentinel-2 has been developed and is being operated by the European Space Agency, and the satellites were manufactured by a consortium led by Airbus Defence and Space in Friedrichshafen.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/2bcca0d0-12b7-11ee-a7e0-39996a6a98e1</guid>
+      </item>
+    
+      <item>
+        <title>Sentinel-3</title>
+        <link>https://earth.directory/terms/29488e00-12b7-11ee-8eb5-f5cc7c9358a8</link>
+        <description>Sentinel-3 is an Earth observation heavy satellite series developed by the European Space Agency as part of the Copernicus Programme.[4][5][6] It currently (as of 2020) consists of 2 satellites: Sentinel-3A and Sentinel-3B. After initial commissioning, each satellite was handed over to EUMETSAT for the routine operations phase of the mission. Two recurrent satellites— Sentinel-3C and Sentinel-3D— will follow in approximately 2024 and 2028 respectively to ensure continuity of the Sentinel-3 mission.
+
+Each Sentinel-3 satellite is designed to operate for seven years in a sun-synchronous low earth orbit and uses multiple sensors to measure topography, temperature, marine ecosystems, water quality, pollution, and other features for ocean forecasting and environmental and monitoring.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/29488e00-12b7-11ee-8eb5-f5cc7c9358a8</guid>
+      </item>
+    
+      <item>
+        <title>Soil Moisture Active Passive</title>
+        <link>https://earth.directory/terms/21655bf0-12b7-11ee-8de0-677e7e983e7b</link>
+        <description>Soil Moisture Active Passive (SMAP) is a NASA environmental monitoring satellite that measures soil moisture across the planet. It is designed to collect a global &apos;snapshot&apos; of soil moisture every 2 to 3 days. With this frequency, changes from specific storms can be measured while also assessing impacts across seasons of the year.[5] SMAP was launched on 31 January 2015.[2] It was one of the first Earth observation satellites developed by NASA in response to the National Research Council&apos;s Decadal Survey.[6][7]
+
+NASA invested US$916 million in the design, development, launch, and operations of the program.[8]
+
+An early fault in a radar power supply limited the resolution of the radar data collected from 2015 onwards.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/21655bf0-12b7-11ee-8de0-677e7e983e7b</guid>
+      </item>
+    
+      <item>
+        <title>ENERGY STAR</title>
+        <link>https://earth.directory/terms/cldxtkyod004otdwskd3culy3</link>
+        <description>A U.S. Environmental Protection Agency voluntary program that helps businesses and individuals save money and protect our climate through superior energy efficiency.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyod004otdwskd3culy3</guid>
+      </item>
+    
+      <item>
+        <title>Emissions Factor</title>
+        <link>https://earth.directory/terms/cldxtkyod004ktdwsfph8kx7j</link>
+        <description>A unique value for scaling emissions to activity data in terms of a standard rate of emissions per unit of activity (e.g., grams of carbon dioxide emitted per barrel of fossil fuel consumed, or per pound of product produced).</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyod004ktdwsfph8kx7j</guid>
+      </item>
+    
+      <item>
+        <title>Desertification</title>
+        <link>https://earth.directory/terms/cldxtkyob004atdwsxz014lvl</link>
+        <description>Land degradation in arid, semi-arid, and dry sub-humid areas resulting from various factors, including climatic variations and human activities. Further, the UNCCD (The United Nations Convention to Combat Desertification) defines land degradation as a reduction or loss, in arid, semi-arid, and dry sub-humid areas, of the biological or economic productivity and complexity of rain-fed cropland, irrigated cropland, or range, pasture, forest, and woodlands resulting from land uses or from a process or combination of processes, including processes arising from human activities and habitation patterns, such as: (i) soil erosion caused by wind and/or water; (ii) deterioration of the physical, chemical and biological or economic properties of soil; and (iii) long-term loss of natural vegetation. Conversion of forest to non-forest.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyob004atdwsxz014lvl</guid>
+      </item>
+    
+      <item>
+        <title>TerraSAR-X</title>
+        <link>https://earth.directory/terms/1b23cbf0-12b7-11ee-91f5-c74049c3535c</link>
+        <description>TerraSAR-X, is an imaging radar Earth observation satellite, a joint venture being carried out under a public-private-partnership between the German Aerospace Center (DLR) and EADS Astrium. The exclusive commercial exploitation rights are held by the geo-information service provider Astrium. TerraSAR-X was launched on 15 June 2007 and has been in operational service since January 2008. With its twin satellite TanDEM-X, launched 21 June 2010, TerraSAR-X acquires the data basis for the WorldDEM, the worldwide and homogeneous DEM available from 2014.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/1b23cbf0-12b7-11ee-91f5-c74049c3535c</guid>
+      </item>
+    
+      <item>
+        <title>Sentinel-5 Precursor</title>
+        <link>https://earth.directory/terms/81422090-12b1-11ee-88ee-33675fbeb8b5</link>
+        <description>Sentinel-5 Precursor (Sentinel-5P) is an Earth observation satellite developed by ESA as part of the Copernicus Programme to close the gap in continuity of observations between Envisat and Sentinel-5.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/81422090-12b1-11ee-88ee-33675fbeb8b5</guid>
+      </item>
+    
+      <item>
+        <title>VNREDSat-1</title>
+        <link>https://earth.directory/terms/89e39990-12b1-11ee-8ba8-e34fc3402e5b</link>
+        <description>VNREDSat-1 (short for Vietnam Natural Resources, Environment and Disaster Monitoring Satellite, also VNREDSat-1A)[2] is the first optical Earth Observing satellite of Vietnam; its primary mission is to monitor and study the effects of climate change, predict and take measures to prevent natural disasters, and optimise the management of Vietnam&apos;s natural resources.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/89e39990-12b1-11ee-8ba8-e34fc3402e5b</guid>
+      </item>
+    
+      <item>
+        <title>THEOS (satellite)</title>
+        <link>https://earth.directory/terms/85ed3210-12b1-11ee-8b28-8ba997e49a36</link>
+        <description>THEOS, also known as Thaichote,[2][3] is an earth observation mission of Thailand, developed at EADS Astrium SAS, Toulouse, France. In July 2004, EADS Astrium SAS signed a contract for delivery of THEOS with GISTDA (Geo-Informatics and Space Technology Development Agency) of Bangkok, Thailand. GISTDA is Thailand&apos;s leading national organization (i.e., space agency) in the field of space activities and applications. The Thai Ministry of Science and Technology funds the program.
+
+THEOS was launched from Dombarovskiy at 06:37 UTC on 1 October 2008, by a Dnepr rocket.[1] The satellite was initially planned for a 2007 launch using the space vehicle Rokot of Eurockot Launch Services . The contract was however canceled when Eurockot faced a parts shortage.[4]
+
+On 24 March 2014, THEOS captured images showing some 300 objects in close proximity to the suspected crash site of Malaysia Airlines Flight MH370, in the Indian Ocean. The discovery was reported by GISTDA on 27 March 2014.[5] The objects have not yet been identified as debris.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/85ed3210-12b1-11ee-8b28-8ba997e49a36</guid>
+      </item>
+    
+      <item>
+        <title>NigeriaSat-2</title>
+        <link>https://earth.directory/terms/917a5950-12b1-11ee-b956-59c165e60a74</link>
+        <description>NigeriaSat-2, Nigeria&apos;s second satellite, was built as a high-resolution earth satellite by Surrey Space Technology Limited, a United Kingdom-based satellite technology company. It has 2.5-metre resolution panchromatic (very high resolution), 5-metre multispectral (high resolution, NIR red, green and red bands), and 32-metre multispectral (medium resolution, NIR red, green and red bands) antennas, with a ground receiving station in Abuja.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/917a5950-12b1-11ee-b956-59c165e60a74</guid>
+      </item>
+    
+      <item>
+        <title>Reflectivity</title>
+        <link>https://earth.directory/terms/cldxsrosv0016tdwsaagxb93p</link>
+        <description>The ability of a surface material to reflect sunlight including the visible, infrared, and ultraviolet wavelengths.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxsrosv0016tdwsaagxb93p</guid>
+      </item>
+    
+      <item>
+        <title>Suomi NPP</title>
+        <link>https://earth.directory/terms/8dffb180-12b1-11ee-96e5-1d7032234410</link>
+        <description>The Suomi National Polar-orbiting Partnership (Suomi NPP), previously known as the National Polar-orbiting Operational Environmental Satellite System Preparatory Project (NPP) and NPP-Bridge, is a weather satellite operated by the United States National Oceanic and Atmospheric Administration (NOAA). It was launched in 2011 and continues to operate in June 2022.
+
+Suomi NPP was originally intended as a pathfinder for the National Polar-orbiting Operational Environmental Satellite System (NPOESS) program, which was to have replaced NOAA&apos;s Polar Operational Environmental Satellites (POES) and the U.S. Air Force&apos;s Defense Meteorological Satellite Program (DMSP). Suomi NPP was launched in 2011 after the cancellation of NPOESS to serve as a stop-gap between the POES satellites and the Joint Polar Satellite System (JPSS) which will replace them. Its instruments provide climate measurements that continue prior observations by NASA&apos;s Earth Observing System (EOS).</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/8dffb180-12b1-11ee-96e5-1d7032234410</guid>
+      </item>
+    
+      <item>
+        <title>NOAA-19</title>
+        <link>https://earth.directory/terms/8f557d80-12b1-11ee-b5c5-4102e0adf3be</link>
+        <description>NOAA-19,[7] known as NOAA-N&apos; (NOAA-N Prime) before launch, is the last of the American National Oceanic and Atmospheric Administration (NOAA) series of weather satellites. NOAA-19 was launched on 6 February 2009. NOAA-19 is in an afternoon Sun-synchronous orbit and is intended to replace NOAA-18 as the prime afternoon spacecraft.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/8f557d80-12b1-11ee-b5c5-4102e0adf3be</guid>
+      </item>
+    
+      <item>
+        <title>NOAA-18</title>
+        <link>https://earth.directory/terms/84d1fe10-12b1-11ee-9196-31edf944d27a</link>
+        <description>NOAA-18, also known as NOAA-N before launch, is an operational, polar orbiting, weather satellite series (NOAA K-N) operated by the National Environmental Satellite Service (NESS) of the National Oceanic and Atmospheric Administration (NOAA). NOAA-18 also continued the series of Advanced TIROS-N (ATN) spacecraft begun with the launch of NOAA-8 (NOAA-E) in 1983 but with additional new and improved instrumentation over the NOAA A-M series and a new launch vehicle (Titan 23G). NOAA-18 is in an afternoon equator-crossing orbit and replaced NOAA-17 as the prime afternoon spacecraft.[6]</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/84d1fe10-12b1-11ee-9196-31edf944d27a</guid>
+      </item>
+    
+      <item>
+        <title>Nigerian weather and communications satellites</title>
+        <link>https://earth.directory/terms/876700d0-12b1-11ee-92d5-b366adfdc4f4</link>
+        <description>The Nigerian government has commissioned the overseas production and launch of four satellites.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/876700d0-12b1-11ee-92d5-b366adfdc4f4</guid>
+      </item>
+    
+      <item>
+        <title>Nigeriasat-1</title>
+        <link>https://earth.directory/terms/7ffd92a0-12b1-11ee-9356-d1c292080ad1</link>
+        <description>The Nigeriasat-1 was the first satellite to be built under the Nigerian government sponsorship. The satellite was launched from Russia on 27 September 2003. Nigeriasat-1 was part of the worldwide Disaster Monitoring Constellation System.[citation needed]
+
+The primary objectives of the Nigeriasat-1 were: to give early warning signals of environmental disaster; to help detect and control desertification in the northern part of Nigeria; to assist in demographic planning; to establish the relationship between malaria vectors and the environment that breeds malaria and to give early warning signals on future outbreaks of meningitis using remote sensing technology; to provide the technology needed to bring education to all parts of the country through distant learning; and to aid in conflict resolution and border disputes by mapping out state and International borders.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/7ffd92a0-12b1-11ee-9356-d1c292080ad1</guid>
+      </item>
+    
+      <item>
+        <title>SARAL</title>
+        <link>https://earth.directory/terms/282f07b0-12b7-11ee-8846-37ed57fe4022</link>
+        <description>SARAL (Satellite with ARgos and ALtiKa) is a cooperative altimetry technology mission of Indian Space Research Organisation (ISRO) and Centre National d&apos;Études Spatiales (CNES). SARAL performs altimetric measurements designed to study ocean circulation and sea surface elevation.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/282f07b0-12b7-11ee-8846-37ed57fe4022</guid>
+      </item>
+    
+      <item>
+        <title>NOAA-15</title>
+        <link>https://earth.directory/terms/92816910-12b1-11ee-b069-f15c21892380</link>
+        <description>NOAA-15, also known as NOAA-K before launch, is an operational, polar-orbiting of the NASA-provided Television Infrared Observation Satellite (TIROS) series of weather forecasting satellite operated by National Oceanic and Atmospheric Administration (NOAA). NOAA-15 was the latest in the Advanced TIROS-N (ATN) series. It provided support to environmental monitoring by complementing the NOAA/NESS Geostationary Operational Environmental Satellite program (GOES).[2]</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/92816910-12b1-11ee-b069-f15c21892380</guid>
+      </item>
+    
+      <item>
+        <title>Oceansat-2</title>
+        <link>https://earth.directory/terms/8af09cc0-12b1-11ee-9757-83d141b7802c</link>
+        <description>Oceansat-2 is the second Indian satellite built primarily for ocean applications. It was a part of the Indian Remote Sensing Programme satellite series. Oceansat-2 is an Indian satellite designed to provide service continuity for operational users of the Ocean Colour Monitor (OCM) instrument on Oceansat-1. It will also enhance the potential of applications in other areas. The OceanSat-2 mission was approved by the government of India on 16 July 2005.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/8af09cc0-12b1-11ee-9757-83d141b7802c</guid>
+      </item>
+    
+      <item>
+        <title>Orbiting Carbon Observatory 2</title>
+        <link>https://earth.directory/terms/97280dc0-12b1-11ee-b1df-e5c879457b73</link>
+        <description>Orbiting Carbon Observatory-2 (OCO-2) is an American environmental science satellite which launched on 2 July 2014. A NASA mission, it is a replacement for the Orbiting Carbon Observatory which was lost in a launch failure in 2009. It is the second successful high-precision (better than 0.3%) CO2 observing satellite, after GOSAT.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/97280dc0-12b1-11ee-b1df-e5c879457b73</guid>
+      </item>
+    
+      <item>
+        <title>Pakistan Technology Evaluation Satellite</title>
+        <link>https://earth.directory/terms/7db0bc70-12b1-11ee-8bd7-d9b530df6f5b</link>
+        <description>Pakistan Technology Evaluation Satellite (PakTES-1A) is an indigenously developed remote sensing satellite of Space and Upper Atmosphere Research Commission. It was developed by SUPARCO while payload manufacturing was subcontracted to South Africa&apos;s Space Advisory Company. It has 300 Kilogram Mass.[2] It was launched on board a Chinese Long March 2C rocket on 9 July 2018. It will operate at an altitude of 610 kilometres (380 mi) from the Earth.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/7db0bc70-12b1-11ee-8bd7-d9b530df6f5b</guid>
+      </item>
+    
+      <item>
+        <title>Resourcesat-2</title>
+        <link>https://earth.directory/terms/8bddbbe0-12b1-11ee-9a2a-6f3229988c30</link>
+        <description>Resourcesat-2 is a follow on mission to Resourcesat-1 and the eighteenth Indian remote sensing satellite built by Indian Space Research Organisation (ISRO). The new satellite provides the same services as the original Resourcesat-1, but was also designed to &quot;provide data with enhanced multispectral and spatial coverage&quot;.[1] Compared to Resourcesat-1, LISS-4 multispectral swath has been enhanced from 23 km to 70 km based on user needs. Suitable changes including miniaturization in payload electronics have been incorporated in Resourcesat-2.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/8bddbbe0-12b1-11ee-9a2a-6f3229988c30</guid>
+      </item>
+    
+      <item>
+        <title>Radarsat-2</title>
+        <link>https://earth.directory/terms/9d6271d0-12b1-11ee-9252-57cb42847e4e</link>
+        <description>RADARSAT-2 is a Canadian Space Agency (CSA) Earth observation satellite. It launched on 14 December 2007 aboard a Starsem Soyuz-FG rocket from Baikonur Cosmodrome, Kazakhstan.[1] The spacecraft is owned by MDA (formerly MacDonald Dettwiler and Associates.)</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/9d6271d0-12b1-11ee-9252-57cb42847e4e</guid>
+      </item>
+    
+      <item>
+        <title>SAOCOM</title>
+        <link>https://earth.directory/terms/9f7d6290-12b1-11ee-9b59-cf6424fbab09</link>
+        <description>SAOCOM (Satélite Argentino de Observación COn Microondas, Spanish for Argentine Microwaves Observation Satellite) is an Earth observation satellite constellation of Argentina&apos;s space agency CONAE. Two satellites are already orbiting the Earth in a Sun-synchronous orbit. The second one was launched on 30 August 2020.
+
+CONAE contracted the company INVAP as main contractor for the project.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/9f7d6290-12b1-11ee-9b59-cf6424fbab09</guid>
+      </item>
+    
+      <item>
+        <title>PROBA-V</title>
+        <link>https://earth.directory/terms/9bfffba0-12b1-11ee-a615-a7ba31bd6b1f</link>
+        <description>PROBA-V, or PROBA-Vegetation (the V standing for vegetation and not the Roman numeral for 5), is a satellite in the European Space Agency&apos;s PROBA series. It was launched in 2013 with a predicted usable lifetime between 2.5 and 5 years.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/9bfffba0-12b1-11ee-a615-a7ba31bd6b1f</guid>
+      </item>
+    
+      <item>
+        <title>Landsat 8</title>
+        <link>https://earth.directory/terms/a06810b0-12b1-11ee-a5cd-451d8b71d22b</link>
+        <description>Landsat 8 is an American Earth observation satellite launched on 11 February 2013. It is the eighth satellite in the Landsat program; the seventh to reach orbit successfully. Originally called the Landsat Data Continuity Mission (LDCM), it is a collaboration between NASA and the United States Geological Survey (USGS). NASA Goddard Space Flight Center in Greenbelt, Maryland, provided development, mission systems engineering, and acquisition of the launch vehicle while the USGS provided for development of the ground systems and will conduct on-going mission operations. It comprises the camera of the Operational Land Imager (OLI) and the Thermal Infrared Sensor (TIRS), which can be used to study Earth surface temperature and is used to study global warming.[2]
+
+The satellite was built by Orbital Sciences Corporation, who served as prime contractor for the mission.[3] The spacecraft&apos;s instruments were constructed by Ball Aerospace &amp; Technologies and NASA&apos;s Goddard Space Flight Center (GSFC),[4] and its launch was contracted to United Launch Alliance (ULA).[5] During the first 108 days in orbit, LDCM underwent checkout and verification by NASA and on 30 May 2013 operations were transferred from NASA to the USGS when LDCM was officially renamed to Landsat 8</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/a06810b0-12b1-11ee-a5cd-451d8b71d22b</guid>
+      </item>
+    
+      <item>
+        <title>Global Average Temperature</title>
+        <link>https://earth.directory/terms/cldxtkyog005ctdwsdyy3hmba</link>
+        <description>An estimate of Earths mean surface air temperature averaged over the entire planet.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyog005ctdwsdyy3hmba</guid>
+      </item>
+    
+      <item>
+        <title>LAGEOS</title>
+        <link>https://earth.directory/terms/23fd9300-12b7-11ee-a7be-43084510d216</link>
+        <description>LAGEOS, Laser Geodynamics Satellite or Laser Geometric Environmental Observation Survey, are a series of two scientific research satellites designed to provide an orbiting laser ranging benchmark for geodynamical studies of the Earth. Each satellite is a high-density passive laser reflector in a very stable medium Earth orbit (MEO).
+</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/23fd9300-12b7-11ee-a7be-43084510d216</guid>
+      </item>
+    
+      <item>
+        <title>Meteosat 8</title>
+        <link>https://earth.directory/terms/252682a0-12b7-11ee-ab91-47a0a157ce6b</link>
+        <description>Meteosat 8 is a weather satellite, also known as MSG 1. The Meteosat series are operated by EUMETSAT under the Meteosat Transition Programme (MTP) and the Meteosat Second Generation (MSG) program. Notable for imaging the first meteor to be predicted to strike the earth, 2008 TC3.[1] Launched 28 Aug 2002 by an Ariane V155, this European Meteorology satellite is in a Geostationary orbit.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/252682a0-12b7-11ee-ab91-47a0a157ce6b</guid>
+      </item>
+    
+      <item>
+        <title>Paz (satellite)</title>
+        <link>https://earth.directory/terms/262a8520-12b7-11ee-b351-f324d531441c</link>
+        <description>Paz (Spanish for &quot;Peace&quot;) is a Spanish Earth observation and reconnaissance satellite launched on 22 February 2018. It is Spain&apos;s first spy satellite.[2] The satellite is operated by Hisdesat.[3] Paz was previously referred to as SEOSAR (Satélite Español de Observación SAR).</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/262a8520-12b7-11ee-b351-f324d531441c</guid>
+      </item>
+    
+      <item>
+        <title>Pléiades (satellite)</title>
+        <link>https://earth.directory/terms/27403ae0-12b7-11ee-a392-0fd6d7a4875b</link>
+        <description>The Pléiades constellation is composed of two very-high-resolution optical Earth-imaging satellites. Pléiades-1A and Pléiades-1B provide the coverage of Earth&apos;s surface with a repeat cycle of 26 days.[1] Designed as a dual civil/military system, Pléiades will meet the space imagery requirements of European defence as well as civil and commercial needs.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/27403ae0-12b7-11ee-a392-0fd6d7a4875b</guid>
+      </item>
+    
+      <item>
+        <title>Sentinel-1</title>
+        <link>https://earth.directory/terms/2aa07ce0-12b7-11ee-84f5-f11f1799163e</link>
+        <description>Sentinel-1 is the first of the Copernicus Programme satellite constellation conducted by the European Space Agency.[4] This mission was originally composed of a constellation of two satellites, Sentinel-1A and Sentinel-1B, which shared the same orbital plane. Two more satellites, Sentinel-1C and Sentinel-1D are in development. Sentinel-1B has been retired, leaving Sentinel-1A the only satellite of the constellation. The Sentinel-1 satellites carry a C-band synthetic-aperture radar instrument which provides a collection of data in all-weather, day or night. This instrument has a spatial resolution of down to 5 m and a swath of up to 410 km.[5] The satellite orbits a sun-synchronous, near-polar (98.18° inclination) orbit. The orbit has a 12-day repeat cycle and completes 175 orbits per cycle.
+
+The first satellite, Sentinel-1A, launched on 3 April 2014, and Sentinel-1B was launched on 25 April 2016. Both satellites lifted off from the Guiana Space Centre in Kourou, French Guiana, and each on a Soyuz rocket.[6] Sentinel-1C and 1D are in development.[7] An equipment failure on Sentinel-1B in December 2021 accelerated work on Sentinel-1C,[8] originally planned to launch in December 2023.[9]
+
+There are a wide range of applications for the data collected via the Sentinel-1 mission. A few of these uses include sea and land monitoring, emergency response due to environmental disasters, and economic applications. A major goal of the mission was to provide C-Band SAR data.[10] Recently, Sentinel-1 has worked in conjunction with SMAP to help achieve a more accurate measure of soil moisture estimates.[11] Observations from both instruments show to be complementary of each other as they combine data of soil moisture contents.
+
+The ESA and European Commission&apos;s policies makes Sentinel-1&apos;s data easily accessible. Various users can acquire the data and use it for public, scientific, or commercial purposes for free.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/2aa07ce0-12b7-11ee-84f5-f11f1799163e</guid>
+      </item>
+    
+      <item>
+        <title>Climate System (or Earth System)</title>
+        <link>https://earth.directory/terms/cldxtkyo90040tdwsrq9yobqi</link>
+        <description>The five physical components (atmosphere, hydrosphere, cryosphere, lithosphere, and biosphere) that are responsible for the climate and its variations.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo90040tdwsrq9yobqi</guid>
+      </item>
+    
+      <item>
+        <title>Renewable Energy</title>
+        <link>https://earth.directory/terms/cldxsrosy001atdwsyy761lgq</link>
+        <description>Energy resources that are naturally replenishing such as biomass, hydro, geothermal, solar, wind, ocean thermal, wave action, and tidal action.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxsrosy001atdwsyy761lgq</guid>
+      </item>
+    
+      <item>
+        <title>Sentinel-6 Michael Freilich</title>
+        <link>https://earth.directory/terms/1c2ed350-12b7-11ee-9912-a145a4ec52da</link>
+        <description>The Sentinel-6 Michael Freilich (S6MF) is a radar altimeter satellite developed in partnership between several European and American organizations. It is part of the Jason satellite series and is named after Michael Freilich. S6MF includes synthetic-aperture radar altimetry techniques to improve ocean topography measurements, in addition to rivers and lakes.[2] The spacecraft entered service in mid 2021 and is expected to operate for 5.5 years.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/1c2ed350-12b7-11ee-9912-a145a4ec52da</guid>
+      </item>
+    
+      <item>
+        <title>Methane</title>
+        <link>https://earth.directory/terms/cljayduxo0000tdptixlrawy4</link>
+        <description>Methane is emitted during the production and transport of coal, natural gas, and oil. Methane emissions also result from livestock and other agricultural practices, land use, and by the decay of organic waste in municipal solid waste landfills.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cljayduxo0000tdptixlrawy4</guid>
+      </item>
+    
+      <item>
+        <title>Reforestation</title>
+        <link>https://earth.directory/terms/cldxsrosy0018tdwsocakvr3k</link>
+        <description>Planting of forests on lands that have previously contained forests but that have been converted to some other use.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxsrosy0018tdwsocakvr3k</guid>
+      </item>
+    
+      <item>
+        <title>Talanoa Dialogue</title>
+        <link>https://earth.directory/terms/d31a9cf0-ed1b-11ed-b5fc-fffec8ec4970</link>
+        <description>The Talanoa Dialogue was a process designed to help countries implement and enhance their Nationally Determined Contributions by 2020. The Dialogue was mandated by the Parties to the United Nations Framework Convention for Climate Change to take stock of the collective global efforts to reduce the emissions of greenhouse gases, in line with the goals of the Paris Agreement, which is to limit the rise in average global temperature to 2°C (3.6°F) above pre-industrial levels, and to pursue efforts to limit the increase to 1.5°C (2.7°F).</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/d31a9cf0-ed1b-11ed-b5fc-fffec8ec4970</guid>
+      </item>
+    
+      <item>
+        <title>Bali Road Map</title>
+        <link>https://earth.directory/terms/c7749680-ed1b-11ed-947d-5de4396db146</link>
+        <description>After the 2007 United Nations Climate Change Conference held on the island of Bali in Indonesia in December 2007, the participating nations adopted the Bali Road Map as a two-year process working towards finalizing a binding agreement at the 2009 United Nations Climate Change Conference in Copenhagen, Denmark. The conference encompassed meetings of several bodies, including the 13th session of the Conference of the Parties (COP 13) to the United Nations Framework Convention on Climate Change and the third session of the Conference of the Parties serving as the meeting of the Parties to the Kyoto Protocol (CMP 3).</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/c7749680-ed1b-11ed-947d-5de4396db146</guid>
+      </item>
+    
+      <item>
+        <title>Afforestation</title>
+        <link>https://earth.directory/terms/cldxsrosu0012tdwspt5x6q0z</link>
+        <description>Planting of new forests on lands that historically have not contained forests.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxsrosu0012tdwspt5x6q0z</guid>
+      </item>
+    
+      <item>
+        <title>Nitrous oxide</title>
+        <link>https://earth.directory/terms/cljayduxo0002tdpt51t7729f</link>
+        <description>Nitrous oxide is emitted during agricultural, land use, and industrial activities; combustion of fossil fuels and solid waste; as well as during treatment of wastewater.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cljayduxo0002tdpt51t7729f</guid>
+      </item>
+    
+      <item>
+        <title>Majuro Declaration</title>
+        <link>https://earth.directory/terms/c6783520-ed1b-11ed-87cb-3d156b67b6ff</link>
+        <description>Majuro, Marshall Islands Participants:	Pacific Islands Forum member countries The Majuro Declaration is an initiative of the Pacific Islands Forum, which was signed on 5 September 2013 at Majuro in the Marshall Islands during the 44th Pacific Islands Forum summit. At the summit the leaders of the Pacific Islands Forum nations recognised the need for strengthened national systems to plan for, access, deliver, absorb and monitor climate change and for donor countries to continue to simplify and harmonise their assessment, implementation and reporting processes for financing projects directed to climate change adaptation, mitigation and risk reduction.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/c6783520-ed1b-11ed-87cb-3d156b67b6ff</guid>
+      </item>
+    
+      <item>
+        <title>El Niño - Southern Oscillation (ENSO)</title>
+        <link>https://earth.directory/terms/cldxtkyoc004gtdwsomy7qjqw</link>
+        <description>El Niño in its original sense, is a warm water current that periodically flows along the coast of Ecuador and Peru, disrupting the local fishery. This oceanic event is associated with a fluctuation of the intertropical surface pressure pattern and circulation in the Indian and Pacific Oceans, called the Southern Oscillation. This coupled atmosphere-ocean phenomenon is collectively known as El Niño-Southern Oscillation. During an El Niño event, the prevailing trade winds weaken and the equatorial countercurrent strengthens, causing warm surface waters in the Indonesian area to flow eastward to overlie the cold waters of the Peru current. This event has great impact on the wind, sea surface temperature, and precipitation patterns in the tropical Pacific. It has climatic effects throughout the Pacific region and in many other parts of the world. The opposite of an El Niño event is called La Niña.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyoc004gtdwsomy7qjqw</guid>
+      </item>
+    
+      <item>
+        <title>Kyoto Protocol</title>
+        <link>https://earth.directory/terms/c586d040-ed1b-11ed-be37-0329f55d1aa3</link>
+        <description>The Kyoto Protocol was an international treaty which extended the 1992 United Nations Framework Convention on Climate Change (UNFCCC) that commits state parties to reduce greenhouse gas emissions, based on the scientific consensus that (part one) global warming is occurring and (part two) that human-made CO2 emissions are driving it. The Kyoto Protocol was adopted in Kyoto, Japan, on 11 December 1997 and entered into force on 16 February 2005. There were 192 parties (Canada withdrew from the protocol, effective December 2012) to the Protocol in 2020.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/c586d040-ed1b-11ed-be37-0329f55d1aa3</guid>
+      </item>
+    
+      <item>
+        <title>Geosphere</title>
+        <link>https://earth.directory/terms/cldxtkyog0058tdwscze3tptk</link>
+        <description>The soils, sediments, and rock layers of the Earth&apos;s crust, both continental and beneath the ocean floors.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyog0058tdwscze3tptk</guid>
+      </item>
+    
+      <item>
+        <title>Fossil Fuel</title>
+        <link>https://earth.directory/terms/cldxtkyof0054tdwswq09mr3u</link>
+        <description>A general term for organic materials formed from decayed plants and animals that have been converted to crude oil, coal, natural gas, or heavy oils by exposure to heat and pressure in the earth&apos;s crust over hundreds of millions of years.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyof0054tdwswq09mr3u</guid>
+      </item>
+    
+      <item>
+        <title>Fluorocarbons</title>
+        <link>https://earth.directory/terms/cldxtkyof0050tdws8v7kjep2</link>
+        <description>Carbon-fluorine compounds that often contain other elements such as hydrogen, chlorine, or bromine. Common fluorocarbons include chlorofluorocarbons (CFCs), hydrochlorofluorocarbons (HCFCs), hydrofluorocarbons (HFCs), and perfluorocarbons (PFCs).</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyof0050tdws8v7kjep2</guid>
+      </item>
+    
+      <item>
+        <title>Feedback Mechanisms</title>
+        <link>https://earth.directory/terms/cldxtkyoe004wtdwsn7kk2y9m</link>
+        <description>Factors which increase or amplify (positive feedback) or decrease (negative feedback) the rate of a process. An example of positive climatic feedback is the ice-albedo feedback.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyoe004wtdwsn7kk2y9m</guid>
+      </item>
+    
+      <item>
+        <title>Enteric Fermentation</title>
+        <link>https://earth.directory/terms/cldxtkyoe004stdwstf437r0l</link>
+        <description>The process by which water changes from a liquid to a gas or vapor.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyoe004stdwstf437r0l</guid>
+      </item>
+    
+      <item>
+        <title>Energy Efficiency</title>
+        <link>https://earth.directory/terms/cldxtkyod004mtdws1sbs7qkh</link>
+        <description>Using less energy to provide the same service.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyod004mtdws1sbs7qkh</guid>
+      </item>
+    
+      <item>
+        <title>Emissions</title>
+        <link>https://earth.directory/terms/cldxtkyoc004itdwsrloosixe</link>
+        <description>The release of a substance (usually a gas when referring to the subject of climate change) into the atmosphere.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyoc004itdwsrloosixe</guid>
+      </item>
+    
+      <item>
+        <title>Deforestation</title>
+        <link>https://earth.directory/terms/cldxtkyob0048tdwskiuak4gg</link>
+        <description>Those practices or processes that result in the conversion of forested lands for non-forest uses. Deforestation contributes to increasing carbon dioxide concentrations for two reasons: 1) the burning or decomposition of the wood releases carbon dioxide; and 2) trees that once removed carbon dioxide from the atmosphere in the process of photosynthesis are no longer present.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyob0048tdwskiuak4gg</guid>
+      </item>
+    
+      <item>
+        <title>Co-Benefit</title>
+        <link>https://earth.directory/terms/cldxtkyoa0044tdwsb8ap1zuf</link>
+        <description>The benefits of policies that are implemented for various reasons at the same time including climate change mitigation acknowledging that most policies designed to address greenhouse gas mitigation also have other, often at least equally important, rationales (e.g., related to objectives of development, sustainability, and equity).</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyoa0044tdwsb8ap1zuf</guid>
+      </item>
+    
+      <item>
+        <title>Climate Model</title>
+        <link>https://earth.directory/terms/cldxtkyo9003wtdwswje78f3p</link>
+        <description>A quantitative way of representing the interactions of the atmosphere, oceans, land surface, and ice. Models can range from relatively simple to quite comprehensive.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo9003wtdwswje78f3p</guid>
+      </item>
+    
+      <item>
+        <title>Climate Change</title>
+        <link>https://earth.directory/terms/cldxtkyo8003stdwsncyjkbgm</link>
+        <description>Climate change refers to any significant change in the measures of climate lasting for an extended period of time. In other words, climate change includes major changes in temperature, precipitation, or wind patterns, among others, that occur over several decades or longer.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo8003stdwsncyjkbgm</guid>
+      </item>
+    
+      <item>
+        <title>Megacities</title>
+        <link>https://earth.directory/terms/cldxtkyo7003otdwsgdv4h8rw</link>
+        <description>Cities with populations over 10 million.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo7003otdwsgdv4h8rw</guid>
+      </item>
+    
+      <item>
+        <title>Enteric Fermentation</title>
+        <link>https://earth.directory/terms/cldxtkyo7003mtdws461uiuzy</link>
+        <description>Livestock, especially cattle, produce methane as part of their digestion. This process is called enteric fermentation, and it represents one third of the emissions from the agriculture sector.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo7003mtdws461uiuzy</guid>
+      </item>
+    
+      <item>
+        <title>Carbon Sequestration</title>
+        <link>https://earth.directory/terms/cldxtkyo6003gtdwswcfavjt4</link>
+        <description>Terrestrial, or biologic, carbon sequestration is the process by which trees and plants absorb carbon dioxide, release the oxygen, and store the carbon. Geologic sequestration is one step in the process of carbon capture and sequestration (CCS), and involves injecting carbon dioxide deep underground where it stays permanently.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo6003gtdwswcfavjt4</guid>
+      </item>
+    
+      <item>
+        <title>Carbon Cycle</title>
+        <link>https://earth.directory/terms/cldxtkyo5003ctdwsorjr89y3</link>
+        <description>All parts (reservoirs) and fluxes of carbon. The cycle is usually thought of as four main reservoirs of carbon interconnected by pathways of exchange. The reservoirs are the atmosphere, terrestrial biosphere (usually includes freshwater systems), oceans, and sediments (includes fossil fuels). The annual movements of carbon, the carbon exchanges between reservoirs, occur because of various chemical, physical, geological, and biological processes. The ocean contains the largest pool of carbon near the surface of the Earth, but most of that pool is not involved with rapid exchange with the atmosphere.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo5003ctdwsorjr89y3</guid>
+      </item>
+    
+      <item>
+        <title>Biofuels</title>
+        <link>https://earth.directory/terms/cldxtkyo40038tdws0we237kg</link>
+        <description>Gas or liquid fuel made from plant material. Includes wood, wood waste, wood liquors, peat, railroad ties, wood sludge, spent sulfite liquors, agricultural waste, straw, tires, fish oils, tall oil, sludge waste, waste alcohol, municipal solid waste, landfill gases, other waste, and ethanol blended into motor gasoline.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo40038tdws0we237kg</guid>
+      </item>
+    
+      <item>
+        <title>Atmosphere</title>
+        <link>https://earth.directory/terms/cldxtkyo40034tdwsw6zex4cv</link>
+        <description>The gaseous envelope surrounding the Earth. The dry atmosphere consists almost entirely of nitrogen (78.1% volume mixing ratio) and oxygen (20.9% volume mixing ratio), together with a number of trace gases, such as argon (0.93% volume mixing ratio), helium, radiatively active greenhouse gases such as carbon dioxide (0.035% volume mixing ratio), and ozone. In addition the atmosphere contains water vapor, whose amount is highly variable but typically 1% volume mixing ratio. The atmosphere also contains clouds and aerosols.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo40034tdwsw6zex4cv</guid>
+      </item>
+    
+      <item>
+        <title>Atmospheric Lifetime</title>
+        <link>https://earth.directory/terms/cldxtkyo40036tdwspwsofreh</link>
+        <description>Atmospheric lifetime is the average time that a molecule resides in the atmosphere before it is removed by chemical reaction or deposition. In general, if a quantity of a compound is emitted into the atmosphere at a particular time, about 35 percent of that quantity will remain in the atmosphere at the end of the compound&apos;s atmospheric lifetime. This fraction will continue to decrease in an exponential way, so that about 15 percent of the quantity will remain at the end of two times the atmospheric lifetime, etc. (Some compounds, most notably carbon dioxide, have more complex lifecycles, and their atmospheric lifetimes are not defined by a simple exponential equation.) Greenhouse gas lifetimes can range from a few years to a few thousand years.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo40036tdwspwsofreh</guid>
+      </item>
+    
+      <item>
+        <title>Radiation</title>
+        <link>https://earth.directory/terms/cldxtkyo30030tdwsoihgdvmx</link>
+        <description>Energy transfer in the form of electromagnetic waves or particles that release energy when absorbed by an object.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo30030tdwsoihgdvmx</guid>
+      </item>
+    
+      <item>
+        <title>Hydrosphere</title>
+        <link>https://earth.directory/terms/cldxtkyo1002qtdwsjkzztovs</link>
+        <description>The component of the climate system comprising liquid surface and subterranean water, such as: oceans, seas, rivers, fresh water lakes, underground water etc.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo1002qtdwsjkzztovs</guid>
+      </item>
+    
+      <item>
+        <title>Ocean Acidification</title>
+        <link>https://earth.directory/terms/cldxtkyo0002mtdwsi8g9w4o3</link>
+        <description>Increased concentrations of carbon dioxide in sea water causing a measurable increase in acidity (i.e., a reduction in ocean pH). This may lead to reduced calcification rates of calcifying organisms such as corals, mollusks, algae and crustaceans.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo0002mtdwsi8g9w4o3</guid>
+      </item>
+    
+      <item>
+        <title>Coral Bleaching</title>
+        <link>https://earth.directory/terms/cldxsrot0001etdwssg3zqd87</link>
+        <description>The process in which a coral colony, under environmental stress expels the microscopic algae (zooxanthellae) that live in symbiosis with their host organisms (polyps). The affected coral colony appears whitened.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxsrot0001etdwssg3zqd87</guid>
+      </item>
+    
+      <item>
+        <title>Environmental Integrity Group</title>
+        <link>https://earth.directory/terms/dec5d380-ed1b-11ed-848d-5d3f6405d795</link>
+        <description>The Environmental Integrity Group was initiated by Switzerland during the negotiations of the Kyoto Protocol, where only party groups were allowed to negotiate. Switzerland was not part of any group and they did not want to join the Umbrella Group. So Switzerland declared to form the EIG and invited other independent parties to join.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/dec5d380-ed1b-11ed-848d-5d3f6405d795</guid>
+      </item>
+    
+      <item>
+        <title>Enhanced Transparency Framework</title>
+        <link>https://earth.directory/terms/dc5e4960-ed1b-11ed-9f4a-2bcf7b260802</link>
+        <description>The Enhanced Transparency Framework (ETF) for action and support is a central component to the design, credibility and operation of the Paris Agreement. The framework specifies how parties to the agreement must report on progress in climate change mitigation, adaptation measures and support provided or received. It also provides for international procedures for the review and evaluation of those reports.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/dc5e4960-ed1b-11ed-9f4a-2bcf7b260802</guid>
+      </item>
+    
+      <item>
+        <title>Climate governance</title>
+        <link>https://earth.directory/terms/dd96a250-ed1b-11ed-9c57-fdfa375f301f</link>
+        <description>In political ecology and environmental policy, climate governance is the diplomacy, mechanisms and response measures &quot;aimed at steering social systems towards preventing, mitigating or adapting to the risks posed by climate change&quot;.[1] A definitive interpretation is complicated by the wide range of political and social science traditions (including comparative politics, political economy and multilevel governance) that are engaged in conceiving and analysing climate governance at different levels and across different arenas. In academia, climate governance has become the concern of geographers, anthropologists, economists and business studies scholars.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/dd96a250-ed1b-11ed-9c57-fdfa375f301f</guid>
+      </item>
+    
+      <item>
+        <title>Nationally determined contribution</title>
+        <link>https://earth.directory/terms/d623e550-ed1b-11ed-ada7-4bd052f997e8</link>
+        <description>A nationally determined contribution (NDC) or intended nationally determined contribution (INDC) is a non-binding national plan highlighting climate change mitigation, including climate-related targets for greenhouse gas emission reductions. These plans also include policies and measures governments aim to implement in response to climate change and as a contribution to achieve the global targets set out in the Paris Agreement.
+
+NDCs are the first greenhouse gas targets under the UNFCCC that apply equally to both developed and developing countries.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/d623e550-ed1b-11ed-ada7-4bd052f997e8</guid>
+      </item>
+    
+      <item>
+        <title>Tom Rivett-Carnac</title>
+        <link>https://earth.directory/terms/d86040c0-ed1b-11ed-b11c-bf07cde62ee2</link>
+        <description>Thomas Charles Rivett-Carnac OBE (born 1977) is a former political strategist for the United Nations Framework Convention on Climate Change. He is also an author on climate change policy, a podcaster and an advisor to corporations and governments on climate solutions.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/d86040c0-ed1b-11ed-b11c-bf07cde62ee2</guid>
+      </item>
+    
+      <item>
+        <title>Convention on Long-Range Transboundary Air Pollution</title>
+        <link>https://earth.directory/terms/d0880b30-ed1b-11ed-be9f-b7353d1d0498</link>
+        <description>The Convention on Long-Range Transboundary Air Pollution, often abbreviated as Air Convention or CLRTAP, is intended to protect the human environment against air pollution and to gradually reduce and prevent air pollution, including long-range transboundary air pollution. It is implemented by the European Monitoring and Evaluation Programme (EMEP), directed by the United Nations Economic Commission for Europe (UNECE).</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/d0880b30-ed1b-11ed-be9f-b7353d1d0498</guid>
+      </item>
+    
+      <item>
+        <title>Glasgow Climate Pact</title>
+        <link>https://earth.directory/terms/c854bd50-ed1b-11ed-b5cd-c92460abad7d</link>
+        <description>The Glasgow Climate Pact is an agreement reached at the 2021 United Nations Climate Change Conference (COP26).</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/c854bd50-ed1b-11ed-b5cd-c92460abad7d</guid>
+      </item>
+    
+      <item>
+        <title>Malé Declaration on the Human Dimension of Global Climate Change</title>
+        <link>https://earth.directory/terms/cabff0f0-ed1b-11ed-b951-77b96cad3116</link>
+        <description>The island of Malé, Maldives, for which the Declaration is named The Malé Declaration on the Human Dimension of Global Climate Change is a treaty made by representatives of several Small Island Developing States who came together to sign the declaration in November 2007. The Declaration&apos;s goal was to lay out a clear strategy to link climate change and human rights together. The Declaration also sought to change the agenda of the campaign to combat climate change from focusing on only the environmental impacts of climate change to also taking into account the human rights impacts of climate change. The Declaration makes clear that the right to a healthy environment is a prerequisite of all other basic human rights.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cabff0f0-ed1b-11ed-b951-77b96cad3116</guid>
+      </item>
+    
+      <item>
+        <title>Under2 Coalition</title>
+        <link>https://earth.directory/terms/c2972a60-ed1b-11ed-becb-930c7f0b9d63</link>
+        <description>The Under2 Coalition is a coalition of subnational governments that aims to achieve greenhouse gases emissions mitigation. It started as a memorandum of understanding, which was signed by twelve founding jurisdictions on May 19, 2015 in Sacramento, California.[2] Although it was originally called the Under2 MOU, it became known as the Under2 Coalition in 2017. As of October 2022, the list of signatories had grown to 270 governments which represented over 1.75 billion people and 50% of the world economy. The Under2 MOU was conceived through a partnership between the governments of California and Baden-Wurttemberg, with The Climate Group acting as secretariat.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/c2972a60-ed1b-11ed-becb-930c7f0b9d63</guid>
+      </item>
+    
+      <item>
+        <title>Additionality</title>
+        <link>https://earth.directory/terms/184e9db0-e84b-11ed-a761-6905c419c63a</link>
+        <description>Criteria used when assessing accreditation of carbon credits. The term indicates that an emissions reduction would not have already happened without the carbon removal project taking place.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/184e9db0-e84b-11ed-a761-6905c419c63a</guid>
+      </item>
+    
+      <item>
+        <title>CDR</title>
+        <link>https://earth.directory/terms/1a5e43d0-e84b-11ed-87a9-27905dd5532a</link>
+        <description>The process by which CO2 is removed from the atmosphere and permanently sequestered in geological, terrestrial, or ocean reservoirs or in products. Carbon dioxide removal (CDR) is also known as &quot;negative CO2 emissions&quot;.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/1a5e43d0-e84b-11ed-87a9-27905dd5532a</guid>
+      </item>
+    
+      <item>
+        <title>Glacier</title>
+        <link>https://earth.directory/terms/cldxtkyog005atdwsxqw04u9u</link>
+        <description>A multi-year surplus accumulation of snowfall in excess of snowmelt on land and resulting in a mass of ice at least 0.1 km2 in area that shows some evidence of movement in response to gravity. A glacier may terminate on land or in water. Glacier ice is the largest reservoir of fresh water on Earth, and second only to the oceans as the largest reservoir of total water. Glaciers are found on every continent except Australia.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyog005atdwsxqw04u9u</guid>
+      </item>
+    
+      <item>
+        <title>Fuel Switching</title>
+        <link>https://earth.directory/terms/cldxtkyog0056tdws5d1gxppy</link>
+        <description>In general, this is substituting one type of fuel for another. In the climate-change discussion it is implicit that the substituted fuel produces lower carbon emissions per unit energy produced than the original fuel, e.g., natural gas for coal.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyog0056tdws5d1gxppy</guid>
+      </item>
+    
+      <item>
+        <title>Forcing Mechanism</title>
+        <link>https://earth.directory/terms/cldxtkyof0052tdwstrkxzppa</link>
+        <description>A process that alters the energy balance of the climate system, i.e. changes the relative balance between incoming solar radiation and outgoing infrared radiation from Earth. Such mechanisms include changes in solar irradiance, volcanic eruptions, and enhancement of the natural greenhouse effect by emissions of greenhouse gases.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyof0052tdwstrkxzppa</guid>
+      </item>
+    
+      <item>
+        <title>Wastewater</title>
+        <link>https://earth.directory/terms/cldxsrosp000etdws8zs8y55v</link>
+        <description>Water that has been used and contains dissolved or suspended waste materials.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxsrosp000etdws8zs8y55v</guid>
+      </item>
+    
+      <item>
+        <title>United Nations Framework Convention on Climate Change</title>
+        <link>https://earth.directory/terms/cldxsrosm0004tdwsmb91xlf4</link>
+        <description>The Convention on Climate Change sets an overall framework for intergovernmental efforts to tackle the challenge posed by climate change. It recognizes that the climate system is a shared resource whose stability can be affected by industrial and other emissions of carbon dioxide and other greenhouse gases. The Convention enjoys near universal membership, with 189 countries having ratified. Under the Convention, governments: gather and share information on greenhouse gas emissions, national policies and best practices launch national strategies for addressing greenhouse gas emissions and adapting to expected impacts, including the provision of financial and technological support to developing countries cooperate in preparing for adaptation to the impacts of climate change The Convention entered into force on 21 March 1994.	\N	t	\N cl9cwxoqt0233ngtdovp468sb	Biogeochemical Cycle	Movements through the Earth system of key chemical constituents essential to life, such as carbon, nitrogen, oxygen, and phosphorus.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxsrosm0004tdwsmb91xlf4</guid>
+      </item>
+    
+      <item>
+        <title>Recycling</title>
+        <link>https://earth.directory/terms/cldxtkyo30032tdwsvc6gqra5</link>
+        <description>Collecting and reprocessing a resource so it can be used again. An example is collecting aluminum cans, melting them down, and using the aluminum to make new cans or other aluminum products.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo30032tdwsvc6gqra5</guid>
+      </item>
+    
+      <item>
+        <title>Climate Sensitivity</title>
+        <link>https://earth.directory/terms/cldxtkyo9003ytdwsflrcek9k</link>
+        <description>In Intergovernmental Panel on Climate Change (IPCC) reports, equilibrium climate sensitivity refers to the equilibrium change in global mean surface temperature following a doubling of the atmospheric (equivalent) CO2 concentration. More generally, equilibrium climate sensitivity refers to the equilibrium change in surface air temperature following a unit change in radiative forcing (degrees Celsius, per watts per square meter, (C/Wm-2). One method of evaluating the equilibrium climate sensitivity requires very long simulations with Coupled General Circulation Models (Climate model). The effective climate sensitivity is a related measure that circumvents this requirement. It is evaluated from model output for evolving non-equilibrium conditions. It is a measure of the strengths of the feedbacks at a particular time and may vary with forcing history and climate state.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo9003ytdwsflrcek9k</guid>
+      </item>
+    
+      <item>
+        <title>Climate Lag</title>
+        <link>https://earth.directory/terms/cldxtkyo8003utdwsnj4whq8o</link>
+        <description>The delay that occurs in climate change as a result of some factor that changes only very slowly. For example, the effects of releasing more carbon dioxide into the atmosphere occur gradually over time because the ocean takes a long time to warm up in response to a change in radiation.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo8003utdwsnj4whq8o</guid>
+      </item>
+    
+      <item>
+        <title>Climate</title>
+        <link>https://earth.directory/terms/cldxtkyo7003qtdwsztvri62g</link>
+        <description>in a narrow sense is usually defined as the &quot;average weather,&quot; or more rigorously, as the statistical description in terms of the mean and variability of relevant quantities over a period of time ranging from months to thousands of years. The classical period is 3 decades, as defined by the World Meteorological Organization (WMO). These quantities are most often surface variables such as temperature, precipitation, and wind. Climate in a wider sense is the state, including a statistical description, of the climate system.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo7003qtdwsztvri62g</guid>
+      </item>
+    
+      <item>
+        <title>Chlorofluorocarbons</title>
+        <link>https://earth.directory/terms/cldxtkyo7003ktdwslr4ei5ft</link>
+        <description>Gases covered under the 1987 Montreal Protocol and used for refrigeration, air conditioning, packaging, insulation, solvents, or aerosol propellants. Since they are not destroyed in the lower atmosphere, CFCs drift into the upper atmosphere where, given suitable conditions, they break down ozone. These gases are being replaced by other compounds: hydrochlorofluorocarbons, an interim replacement for CFCs that are also covered under the Montreal Protocol, and hydrofluorocarbons, which are covered under the Kyoto Protocol. All these substances are also greenhouse gases. See hydrochlorofluorocarbons, hydrofluorocarbons, perfluorocarbons, ozone depleting substance.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo7003ktdwslr4ei5ft</guid>
+      </item>
+    
+      <item>
+        <title>Carbon Footprint</title>
+        <link>https://earth.directory/terms/cldxtkyo6003etdwshrkopzkb</link>
+        <description>The total amount of greenhouse gases that are emitted into the atmosphere each year by a person, family, building, organization, or company. A persons carbon footprint includes greenhouse gas emissions from fuel that an individual burns directly, such as by heating a home or riding in a car. It also includes greenhouse gases that come from producing the goods or services that the individual uses, including emissions from power plants that make electricity, factories that make products, and landfills where trash gets sent.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo6003etdwshrkopzkb</guid>
+      </item>
+    
+      <item>
+        <title>Borehole</title>
+        <link>https://earth.directory/terms/cldxtkyo5003atdwscmi5xk3r</link>
+        <description>Any exploratory hole drilled into the Earth or ice to gather geophysical data. Climate researchers often take ice core samples, a type of borehole, to predict atmospheric composition in earlier years. See ice core.	\N	t	\N cl9cwxoqu0237ngtdrizekpdc	Black Carbon Aerosol	Black carbon (BC) is the most strongly light-absorbing component of particulate matter (PM), and is formed by the incomplete combustion of fossil fuels, biofuels, and biomass. It is emitted directly into the atmosphere in the form of fine particles (PM2.5).</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo5003atdwscmi5xk3r</guid>
+      </item>
+    
+      <item>
+        <title>Removal Units</title>
+        <link>https://earth.directory/terms/d19c1340-ed1b-11ed-b2fe-995a0092901d</link>
+        <description>A Removal Unit (RMU) was a tradable carbon credit or &apos;Kyoto unit&apos; representing an allowance to emit one tonne of greenhouse gases absorbed by a removal or carbon sink activity in an Annex I country.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/d19c1340-ed1b-11ed-b2fe-995a0092901d</guid>
+      </item>
+    
+      <item>
+        <title>Ozone Depleting Substance</title>
+        <link>https://earth.directory/terms/cldxtkyo2002utdws225lfe83</link>
+        <description>A family of man-made compounds that includes, but are not limited to, chlorofluorocarbons (CFCs), bromofluorocarbons (halons), methyl chloroform, carbon tetrachloride, methyl bromide, and hydrochlorofluorocarbons (HCFCs). These compounds have been shown to deplete stratospheric ozone, and therefore are typically referred to as ODSs.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo2002utdws225lfe83</guid>
+      </item>
+    
+      <item>
+        <title>Indirect Emissions</title>
+        <link>https://earth.directory/terms/cldxtkyo1002stdwswbtsmeyu</link>
+        <description>Indirect emissions from a building, home or business are those emissions of greenhouse gases that occur as a result of the generation of electricity used in that building. These emissions are called &quot;indirect&quot; because the actual emissions occur at the power plant which generates the electricity, not at the building using the electricity.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo1002stdwswbtsmeyu</guid>
+      </item>
+    
+      <item>
+        <title>Greenhouse Gas</title>
+        <link>https://earth.directory/terms/cldxtkyo1002otdwsp2mnlxs5</link>
+        <description>Any gas that absorbs infrared radiation in the atmosphere. Greenhouse gases include, carbon dioxide, methane, nitrous oxide, ozone, chlorofluorocarbons, hydrochlorofluorocarbons, hydrofluorocarbons, perfluorocarbons, sulfur hexafluoride.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo1002otdwsp2mnlxs5</guid>
+      </item>
+    
+      <item>
+        <title>General Circulation Model (GCM)</title>
+        <link>https://earth.directory/terms/cldxsrot0001gtdwserd4l65m</link>
+        <description>A global, three-dimensional computer model of the climate system which can be used to simulate human-induced climate change. GCMs are highly complex and they represent the effects of such factors as reflective and absorptive properties of atmospheric water vapor, greenhouse gas concentrations, clouds, annual and daily solar heating, ocean temperatures and ice boundaries. The most recent GCMs include global representations of the atmosphere, oceans, and land surface.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxsrot0001gtdwserd4l65m</guid>
+      </item>
+    
+      <item>
+        <title>Action for Climate Empowerment</title>
+        <link>https://earth.directory/terms/d523da70-ed1b-11ed-ba54-83cd2fa81fca</link>
+        <description>Action for Climate Empowerment (ACE) is a term adopted by the United Nations Framework Convention on Climate Change (UNFCCC). It refers to Article 6 of the Convention&apos;s original text (1992), focusing on six priority areas: education, training, public awareness, public participation, public access to information, and international cooperation on these issues. The implementation of all six areas has been identified as the pivotal factor for everyone to understand and participate in solving the complex challenges presented by climate change. The importance of ACE is reflected in other international frameworks such as the Sustainable Development Goals (SDGs, 2015); the Global Action Programme for Education for Sustainable Development (GAP on ESD, 2014); the Aarhus Convention (2011); the Escazú Agreement (2018) and the Bali Guidelines (2010).</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/d523da70-ed1b-11ed-ba54-83cd2fa81fca</guid>
+      </item>
+    
+      <item>
+        <title>Earth Summit</title>
+        <link>https://earth.directory/terms/db66a2f0-ed1b-11ed-9029-b3b0a081c19d</link>
+        <description>The United Nations Conference on Environment and Development (UNCED), also known as the Rio Conference or the Earth Summit (Portuguese: ECO92), was a major United Nations conference held in Rio de Janeiro from June 3 to June 14, 1992.
+
+Earth Summit was created as a response for member states to cooperate together internationally on development issues after the Cold War. Due to issues relating to sustainability being too big for individual member states to handle, Earth Summit was held as a platform for other member states to collaborate. Since the creation, many others in the field of sustainability show a similar development to the issues discussed in these conferences, including non-governmental organizations (NGOs).</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/db66a2f0-ed1b-11ed-9029-b3b0a081c19d</guid>
+      </item>
+    
+      <item>
+        <title>Precautionary principle</title>
+        <link>https://earth.directory/terms/d97a3c40-ed1b-11ed-ba30-77e4cea6220a</link>
+        <description>The precautionary principle (or precautionary approach) is a broad epistemological, philosophical and legal approach to innovations with potential for causing harm when extensive scientific knowledge on the matter is lacking. It emphasizes caution, pausing and review before leaping into new innovations that may prove disastrous. Critics argue that it is vague, self-cancelling, unscientific and an obstacle to progress.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/d97a3c40-ed1b-11ed-ba30-77e4cea6220a</guid>
+      </item>
+    
+      <item>
+        <title>Supplementarity</title>
+        <link>https://earth.directory/terms/d71a5340-ed1b-11ed-b89f-f96e64e1b743</link>
+        <description>&quot;Supplementarity&quot;, also referred to as &quot;the supplementary principle&quot;, is one of the main principles of the Kyoto Protocol. The concept is that internal abatement of emissions should take precedence before external participation in flexible mechanisms. These mechanisms include emissions trading, Clean Development Mechanism (CDM), and Joint Implementation (JI).</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/d71a5340-ed1b-11ed-b89f-f96e64e1b743</guid>
+      </item>
+    
+      <item>
+        <title>Marrakech Accords</title>
+        <link>https://earth.directory/terms/d447ab40-ed1b-11ed-b222-6de35b4c4057</link>
+        <description>The Marrakech Accords is a set of agreements reached at the 7th Conference of the Parties (COP7) to the United Nations Framework Convention on Climate Change, held in 2001, on the rules of meeting the targets set out in the Kyoto Protocol. The separate Marrakech Declaration of 15 April 1994, manifesting the Uruguay Round trade agreements and establishing the World Trade Organization, was also concluded and signed in Marrakech, Morocco.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/d447ab40-ed1b-11ed-b222-6de35b4c4057</guid>
+      </item>
+    
+      <item>
+        <title>Clean Development Mechanism</title>
+        <link>https://earth.directory/terms/c3af9f40-ed1b-11ed-9a7b-711da893556f</link>
+        <description>Graphs are temporarily unavailable due to technical issues. Monthly registered CDM projects 2005–2021 The Clean Development Mechanism (CDM) is a United Nations-run carbon offset scheme allowing countries to fund greenhouse gas emissions-reducing projects in other countries and claim the saved emissions as part of their own efforts to meet international emissions targets. It is one of the three Flexible Mechanisms defined in the Kyoto Protocol. The CDM, defined in Article 12 of the Protocol, was intended to meet two objectives: (1) to assist non-Annex I countries (predominantly developing nations) achieve sustainable development and reduce their carbon footprints; and (2) to assist Annex I countries (predominantly industrialized nations) in achieving compliance with their emissions reduction commitments (greenhouse gas emission caps).</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/c3af9f40-ed1b-11ed-9a7b-711da893556f</guid>
+      </item>
+    
+      <item>
+        <title>Inter-American Institute for Global Change Research</title>
+        <link>https://earth.directory/terms/c9910de0-ed1b-11ed-ad61-a1d6a3731aa7</link>
+        <description>The Inter-American Institute for Global Change Research (IAI is an intergovernmental organization supported by 19 countries in the Americas, dedicated to pursuing the principles of scientific excellence, international cooperation, and the full and open exchange of scientific information to increase the understanding of global change phenomena (planetary-scale changes in the Earth system) and their socio-economic implications.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/c9910de0-ed1b-11ed-ad61-a1d6a3731aa7</guid>
+      </item>
+    
+      <item>
+        <title>Accreditation</title>
+        <link>https://earth.directory/terms/16ee2350-e84b-11ed-8b6e-0763d7e632bc</link>
+        <description>The process that certifies the validity and quality of carbon credits, certificates that represent the right to emit one tonne of carbon dioxide or an equivalent amount of other greenhouse gases. Accreditation involves verifying that the carbon credits meet specific standards and criteria, such as the reduction of greenhouse gas emissions, additionally, and other environmental and social co-benefits. Accreditation is typically carried out by a third-party organisation which has been authorised to issue carbon credits and certify their quality.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/16ee2350-e84b-11ed-8b6e-0763d7e632bc</guid>
+      </item>
+    
+      <item>
+        <title>District Heating</title>
+        <link>https://earth.directory/terms/1939e810-e84b-11ed-b695-07b9acd3e0c4</link>
+        <description>A system for distributing heat generated in a centralised location through a system of insulated pipes for residential and commercial heating requirements, such as water heating. District heating is common across Europe, and the networks can range from a small cluster of buildings to cover an entire city.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/1939e810-e84b-11ed-b695-07b9acd3e0c4</guid>
+      </item>
+    
+      <item>
+        <title>Carbolysis</title>
+        <link>https://earth.directory/terms/1b7706d0-e84b-11ed-8f82-059d8f06184d</link>
+        <description>Our patented pyrolysis method for converting waste biomass into solid biochar through high temperatures and pressures uses a unique method for controlling the oxygen the process gets. This creates highly stable biochar where the carbon atoms have bonds stronger than those found in the biomass. Unlike other pyrolysis processes, our unique solution generates energy-rich syngas and no toxic tars.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/1b7706d0-e84b-11ed-8f82-059d8f06184d</guid>
+      </item>
+    
+      <item>
+        <title>Water Vapor</title>
+        <link>https://earth.directory/terms/cldxsrosp000gtdwsyvhwltb0</link>
+        <description>The most abundant greenhouse gas, it is the water present in the atmosphere in gaseous form. Water vapor is an important part of the natural greenhouse effect. While humans are not significantly increasing its concentration through direct emissions, it contributes to the enhanced greenhouse effect because the warming influence of greenhouse gases leads to a positive water vapor feedback. In addition to its role as a natural greenhouse gas, water vapor also affects the temperature of the planet because clouds form when excess water vapor in the atmosphere condenses to form ice and water droplets and precipitation.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxsrosp000gtdwsyvhwltb0</guid>
+      </item>
+    
+      <item>
+        <title>Vulnerability</title>
+        <link>https://earth.directory/terms/cldxsrosp000ctdwsshhwnyup</link>
+        <description>The degree to which a system is susceptible to, or unable to cope with, adverse effects of climate change, including climate variability and extremes. Vulnerability is a function of the character, magnitude, and rate of climate variation to which a system is exposed; its sensitivity; and its adaptive capacity.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxsrosp000ctdwsshhwnyup</guid>
+      </item>
+    
+      <item>
+        <title>Tropospheric Ozone</title>
+        <link>https://earth.directory/terms/cldxsroso000atdwsz2jstdka</link>
+        <description>See ozone</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxsroso000atdwsz2jstdka</guid>
+      </item>
+    
+      <item>
+        <title>Tundra</title>
+        <link>https://earth.directory/terms/cldxsroso0008tdws8uqebbqj</link>
+        <description>A treeless, level, or gently undulating plain characteristic of the Arctic and sub-Arctic regions characterized by low temperatures and short growing seasons.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxsroso0008tdws8uqebbqj</guid>
+      </item>
+    
+      <item>
+        <title>Ultraviolet Radiation</title>
+        <link>https://earth.directory/terms/cldxsrosn0006tdwsfecdn77l</link>
+        <description>Ultraviolet Radiation	The energy range just beyond the violet end of the visible spectrum. Although ultraviolet radiation constitutes only about 5 percent of the total energy emitted from the sun, it is the major energy source for the stratosphere and mesosphere, playing a dominant role in both energy balance and chemical composition. Most ultraviolet radiation is blocked by Earth&apos;s atmosphere, but some solar ultraviolet penetrates and aids in plant photosynthesis and helps produce vitamin D in humans. Too much ultraviolet radiation can burn the skin, cause skin cancer and cataracts, and damage vegetation.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxsrosn0006tdwsfecdn77l</guid>
+      </item>
+    
+      <item>
+        <title>Radiative Forcing</title>
+        <link>https://earth.directory/terms/cldxsrosv0014tdwspidcfmnk</link>
+        <description>A measure of the influence of a particular factor (e.g. greenhouse gas (GHG), aerosol, or land use change) on the net change in the Earths energy balance.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxsrosv0014tdwspidcfmnk</guid>
+      </item>
+    
+      <item>
+        <title>Carbon Capture and Sequestration</title>
+        <link>https://earth.directory/terms/cldxtkyo6003itdwsevvdkxmu</link>
+        <description>Carbon capture and sequestration (CCS) is a set of technologies that can greatly reduce carbon dioxide emissions from new and existing coal- and gas-fired power plants, industrial processes, and other stationary sources of carbon dioxide. It is a three-step process that includes capture of carbon dioxide from power plants or industrial sources; transport of the captured and compressed carbon dioxide (usually in pipelines); and underground injection and geologic sequestration, or permanent storage, of that carbon dioxide in rock formations that contain tiny openings or pores that trap and hold the carbon dioxide.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo6003itdwsevvdkxmu</guid>
+      </item>
+    
+      <item>
+        <title>100-Year Flood Levels</title>
+        <link>https://earth.directory/terms/cldxtkyo2002ytdwsjuq1p6rb</link>
+        <description>Severe flood levels with a one-in-100 likelihood of occurring in any given year.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyo2002ytdwsjuq1p6rb</guid>
+      </item>
+    
+      <item>
+        <title>Halocarbons</title>
+        <link>https://earth.directory/terms/cldxtkyoi005mtdwsbu9anfe5</link>
+        <description>Compounds containing either chlorine, bromine or fluorine and carbon. Such compounds can act as powerful greenhouse gases in the atmosphere. The chlorine and bromine containing halocarbons are also involved in the depletion of the ozone layer.</description>
+        <pubDate>Sun, 03 Mar 2024 21:46:08 -0800</pubDate>
+        <guid>https://earth.directory/terms/cldxtkyoi005mtdwsbu9anfe5</guid>
+      </item>
+    
+  </channel>
+  </rss>
   
-	<item>
-	  <title>Term 1</title>
-	  <link>https://earth.directory/terms/1</link>
-	  <description>Content 1</description>
-	  <pubDate>Mon, 04 Mar 2024 14:53:28 -0800</pubDate>
-	  <guid>https://earth.directory/terms/1</guid>
-	</item>
-  
-	<item>
-	  <title>Term 2</title>
-	  <link>https://earth.directory/terms/2</link>
-	  <description>Content 2</description>
-	  <pubDate>Mon, 04 Mar 2024 14:53:28 -0800</pubDate>
-	  <guid>https://earth.directory/terms/2</guid>
-	</item>
-  
-</channel>
-</rss>
