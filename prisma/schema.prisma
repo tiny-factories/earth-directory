@@ -24,6 +24,9 @@ model Term {
   languageId     String?
   Tag            Tag?      @relation(fields: [tagId], references: [id])
   tagId          String?
+  audioUrlTerm String?
+  audioUrlContent String?
+  audioUrlTldr String?
 }
 
 model Tag {
