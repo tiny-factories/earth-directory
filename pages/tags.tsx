@@ -1,8 +1,7 @@
 import React from "react";
 import { GetStaticProps } from "next";
+import Link from "next/link";
 import Layout from "../components/Layout";
-import Tag from "../components/Tag";
-
 import { TermProps, TagProps } from "../types";
 
 import prisma from "../lib/prisma";
@@ -74,8 +73,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
 type Props = {
   popularTerms: TermProps[];
-  recentlyUpdatedTerms: TermProps[]; // Ensure this matches the structure you expect
-  tags: (TagProps & { termsCount: number })[];
+  tags: (TagProps & { termsCount: number })[]; // Update the type to include the termsCount
 };
 
 const HomePage: React.FC<Props> = (props) => {
@@ -86,55 +84,15 @@ const HomePage: React.FC<Props> = (props) => {
         {/* Tags */}
         <h1>Tags:</h1>
         <div className="flex flex-wrap">
-          {props.tags.map((tag, i) => (
-            <div key={i}>
-              <Tag tag={tag} />
-            </div>
+          {props.tags.map((tag) => (
+            <Link href="#" key={tag.id}>
+              <div className="bg-blue-500 text-white cursor-pointer rounded-lg p-2 m-1">
+                {tag.title} :: {tag.termsCount}
+              </div>
+            </Link>
           ))}
         </div>
-        <div>posts</div>
       </section>
-      <section>
-        <div>
-          <h2 className="text-xl font-bold">Recently Updated Terms</h2>
-          <ul>
-            {props.recentlyUpdatedTerms.map((term: TermProps) => (
-              <li key={term.id}>
-                {term.title} - Last Updated: {term.updatedAt}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      <section className="">
-        <div>
-          <h2 className="text-xl font-bold border-b border-2 border">
-            Most Popular Terms
-          </h2>
-          <ul>
-            {props.popularTerms.map((term) => (
-              <li key={term.id}>
-                {term.title} - {term.views} views
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-      <style jsx>{`
-        .post {
-          background: white;
-          transition: box-shadow 0.1s ease-in;
-        }
-
-        .post:hover {
-          box-shadow: 1px 1px 3px #aaa;
-        }
-
-        .post + .post {
-          margin-top: 2rem;
-        }
-      `}</style>
     </Layout>
   );
 };

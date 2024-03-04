@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { GetStaticProps } from "next";
 import Layout from "../components/Layout";
-import Post, { PostProps } from "../components/Post";
+import { TermProps, TagProps } from "../types";
+import Post from "../components/Post";
+
 import prisma from "../lib/prisma";
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -25,14 +27,14 @@ export const getStaticProps: GetStaticProps = async () => {
     },
   });
 
-  const sources = await prisma.source.findMany({
-    where: { published: true },
-    include: {
-      _count: {
-        select: { terms: true }, // This will count the terms associated with each tag
-      },
-    },
-  });
+  // const sources = await prisma.source.findMany({
+  //   where: { published: true },
+  //   include: {
+  //     _count: {
+  //       select: { terms: true }, // This will count the terms associated with each tag
+  //     },
+  //   },
+  // });
 
   // After fetching and mapping the tags to include the termsCount
   const tagsWithTermCount = tags.map((tag) => ({
@@ -52,7 +54,7 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 type Props = {
-  feed: PostProps[];
+  feed: TermProps[];
   tags: (TagProps & { termsCount: number })[]; // Update the type to include the termsCount
 };
 
@@ -79,7 +81,6 @@ const Blog: React.FC<Props> = (props) => {
         : post.title.toLowerCase().includes(searchTerm.toLowerCase()))
   );
 
-  console.log(props.feed);
   return (
     <Layout>
       <section>Hero</section>
@@ -100,9 +101,7 @@ const Blog: React.FC<Props> = (props) => {
           {props.tags.map((tag) => (
             <div
               key={tag.id}
-              // Toggle tag on click
               onClick={() => toggleTag(tag.id)}
-              // Conditional class application based on whether the tag is selected
               className={`tag ${
                 selectedTags.includes(tag.id)
                   ? "bg-blue-500 text-white" // Styles for selected (toggled on) tag

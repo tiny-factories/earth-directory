@@ -1,0 +1,26 @@
+
+<rss version="2.0">
+<channel>
+  <title>Earth Directory</title>
+  <link>https://earth.directory</link>
+  <description>Latest updated terms</description>
+  <language>en-us</language>
+  
+	<item>
+	  <title>Term 1</title>
+	  <link>https://earth.directory/terms/1</link>
+	  <description>Content 1</description>
+	  <pubDate>Mon, 04 Mar 2024 14:48:49 -0800</pubDate>
+	  <guid>https://earth.directory/terms/1</guid>
+	</item>
+  
+	<item>
+	  <title>Term 2</title>
+	  <link>https://earth.directory/terms/2</link>
+	  <description>Content 2</description>
+	  <pubDate>Mon, 04 Mar 2024 14:48:49 -0800</pubDate>
+	  <guid>https://earth.directory/terms/2</guid>
+	</item>
+  
+</channel>
+</rss>
