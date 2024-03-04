@@ -4,10 +4,11 @@
   "description": "",
   "scripts": {
     "dev": "next",
-    "build": "node generate-sitemap.js && node generate-rss.js && next build",
+    "build": "prisma generate && node generate-sitemap.js && node generate-rss.js && next build",
     "start": "next start",
     "studio": "prisma studio",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "prisma generate"
   },
   "keywords": [],
   "author": "gndclouds",
