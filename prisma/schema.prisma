@@ -9,24 +9,33 @@ datasource db {
 }
 
 model Term {
-  id             String    @id @default(cuid())
-  title          String
-  content        String?
-  example_conent String?
-  tldr           String?
-  studies        Studies[]
-  image          String?   @db.Text
-  published      Boolean   @default(false)
-  sponsor        Boolean   @default(false)
-  source         Source?   @relation(fields: [sourceId], references: [id])
-  sourceId       String?
-  language       Language? @relation(fields: [languageId], references: [id])
-  languageId     String?
-  Tag            Tag?      @relation(fields: [tagId], references: [id])
-  tagId          String?
-  audioUrlTerm String?
+  id              String    @id @default(cuid())
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  title           String
+  content         String?
+  example_conent  String?
+  example_conent_published       Boolean   @default(false)
+
+  tldr            String?
+  tldr_published       Boolean   @default(false)
+
+  studies         Studies[]
+  studies_published       Boolean   @default(false)
+
+  image           String?   @db.Text
+  published       Boolean   @default(false)
+  sponsor         Boolean   @default(false)
+  source          Source?   @relation(fields: [sourceId], references: [id])
+  sourceId        String?
+  language        Language? @relation(fields: [languageId], references: [id])
+  languageId      String?
+  Tag             Tag?      @relation(fields: [tagId], references: [id])
+  tagId           String?
+  audioUrlTerm    String?
   audioUrlContent String?
-  audioUrlTldr String?
+  audioUrlTldr    String?
+  views           Int       @default(0)
 }
 
 model Tag {
@@ -46,6 +55,7 @@ model Source {
   href      String?
   image     String? @db.Text
   published Boolean @default(false)
+  views     Int     @default(0)
   terms     Term[]
 }
 
@@ -67,3 +77,4 @@ model Studies {
   Term    Term?   @relation(fields: [termId], references: [id])
   termId  String?
 }
+
