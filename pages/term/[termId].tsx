@@ -11,9 +11,13 @@ const TermPage: React.FC<{ term: TermProps }> = ({ term }) => {
   // Component logic and JSX
   return (
     <Layout>
-      <h1 className="text-h4 sm:text-h3 md:sm:text-h1 font-bold font-satoshi border-b-2">
-        {term.title}{" "}
-      </h1>
+      <section className="p-3">
+        <h1 className="text-h1 sm:text-h3 md:sm:text-h1 font-bold font-satoshi border-b-2">
+          {term.title}
+        </h1>
+        <div className="text-p">{term.content}</div>
+      </section>
+
       {/* Section Definition */}
       <div className="grid grid-cols-4 gap-4 gap-4 py-9">
         <div className="col-span-4 md:col-span-1 pb-9">

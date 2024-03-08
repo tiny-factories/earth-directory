@@ -82,11 +82,11 @@ const HomePage: React.FC<Props> = (props) => {
       <section>Hero</section>
       <section className="flex flex-wrap">
         {/* Tags */}
-        <h1>Tags:</h1>
+        <h1 className="text-h1">Tags:</h1>
         <div className="flex flex-wrap">
           {props.tags.map((tag) => (
             <Link href="#" key={tag.id}>
-              <div className="bg-blue-500 text-white cursor-pointer rounded-lg p-2 m-1">
+              <div className="text-white cursor-pointer rounded-lg p-2 m-1">
                 {tag.title} :: {tag.termsCount}
               </div>
             </Link>

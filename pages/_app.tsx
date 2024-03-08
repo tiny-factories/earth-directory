@@ -3,7 +3,7 @@ import "../styles/globals.css";
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <div className="min-h-screen bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">
+    <div className="min-h-screen bg-brand-light dark:bg-brand-dark text-brand-dark dark:text-brand-light dlig">
       <Component {...pageProps} />
     </div>
   );
