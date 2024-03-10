@@ -2,6 +2,7 @@ import React from "react";
 import { GetStaticProps } from "next";
 import Layout from "../components/Layout";
 import Tag from "../components/Tag";
+import Post from "../components/Post";
 
 import { TermProps, TagProps } from "../types";
 
