@@ -16,11 +16,14 @@
   "license": "MIT",
   "dependencies": {
     "@prisma/client": "^5.10.2",
+    "@vercel/blob": "^0.22.1",
+    "axios": "^1.6.7",
     "date-fns": "^3.3.1",
     "next": "^14.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-markdown": "8.0.0",
+    "tailwindcss-filters": "^3.0.0",
     "xml-js": "^1.6.11"
   },
   "devDependencies": {

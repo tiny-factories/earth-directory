@@ -33,8 +33,13 @@ model Term {
   Tag             Tag?      @relation(fields: [tagId], references: [id])
   tagId           String?
   audioUrlTerm    String?
+  transcriptTerm     Json?
+  audioUrlTitle    String?
+  transcriptTitle    Json?
   audioUrlContent String?
+  transcriptContent    Json?
   audioUrlTldr    String?
+  transcriptTldr    Json?
   views           Int       @default(0)
 }
 
