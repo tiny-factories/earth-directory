@@ -5,10 +5,10 @@ import Link from "next/link";
 import Layout from "../../components/Layout";
 import prisma from "../../lib/prisma";
 import { TermProps } from "../../types";
+import AudioPlayer from "../../components/AudioPlayer"; // Adjust the path as necessary
 
 // Define your React component as usual
 const TermPage: React.FC<{ term: TermProps }> = ({ term }) => {
-  // Component logic and JSX
   return (
     <Layout>
       <section className="p-3">
@@ -16,6 +16,10 @@ const TermPage: React.FC<{ term: TermProps }> = ({ term }) => {
           {term.title}
         </h1>
       </section>
+      <AudioPlayer
+        audioUrl={term.audioUrlContent}
+        transcript={term.transcriptContent}
+      />
 
       {/* Section Definition */}
       <div className="grid grid-cols-4 gap-4 gap-4 py-9">
