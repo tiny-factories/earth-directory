@@ -2,40 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Add this to your global CSS file */
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-svg {
-  animation: rotate 20s linear infinite;
-  transform-origin: center;
-}
-
 nav {
   position: fixed;
-  top: 32px;
-  left: 48px;
-  right: 48px;
-  padding: 32px 32px 32px 48px;
+  top: 8px;
+  left: 8px;
+  right: 8px;
 
-  background-color: #ffffff88;
-  box-shadow: 0 4px 12px #00000011;
+  background-color: #ffffff00;
 
   z-index: 1;
 

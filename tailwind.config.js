@@ -25,7 +25,11 @@ module.exports = {
         },
         "brand-selected": "#ffcb00",
       },
+      backdropFilter: {
+        none: "none",
+        blur: "blur(16px)",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-filters")],
 };
