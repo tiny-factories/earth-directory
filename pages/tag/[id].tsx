@@ -3,11 +3,11 @@ import { GetServerSideProps } from "next";
 import prisma from "../../lib/prisma";
 import React from "react";
 import Layout from "../../components/Layout";
-import Post from "../../components/Post";
 import { TagProps, SerializedTermProps } from "../../types/index";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { id } = context.params;
+  console.log("Received ID:", id); // Log the received ID
 
   const tag = await prisma.tag.findUnique({
     where: { id: String(id) },
@@ -15,6 +15,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
       terms: true,
     },
   });
+  console.log(tag); // Log to check if the tag is correctly fetched
 
   let serializedTerms: SerializedTermProps[] = [];
 
@@ -67,8 +68,9 @@ const TagPage: React.FC<TagPageProps> = ({ tag, serializedTerms }) => {
           <div key={i}>
             <Post post={term} />
           </div>
+
         ))}
-      </section>
+      </ul>
     </Layout>
   );
 };

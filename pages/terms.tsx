@@ -83,63 +83,67 @@ const Blog: React.FC<Props> = (props) => {
 
   return (
     <Layout>
-      {/* <section>Hero</section> */}
-      <section className="flex flex-wrap p-3">
+      <section>Hero</section>
+      <section className="flex flex-wrap">
         {/* Search Box */}
-        <div className="w-full">
+        <div className="w-100">
           <input
             type="text"
             placeholder="Search terms..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="search-input w-full" // Tailwind classes for styling
+            className="search-input w-100" // Tailwind classes for styling
           />
         </div>
         {/* Tags */}
-        <div className="w-full border-t-2 inline uppercase font-bold">
-          Tag Filter
-        </div>
+
         <div className="flex flex-wrap">
-          <div className="w-100">
-            {/* <div className="border rounded-full pl-2 pr-1">
-              All <span className="border rounded-full px-2">100</span>
-            </div> */}
-          </div>
           {props.tags.map((tag) => (
             <div
               key={tag.id}
               onClick={() => toggleTag(tag.id)}
-              className={`cursor-pointer border rounded-full pl-2 pr-1 m-1 hover:bg-brand-selected hover:bg-opacity-75 ${
+              className={`tag ${
                 selectedTags.includes(tag.id)
-                  ? "bg-brand-selected" // Styles for selected tags
-                  : " text-gray-800 " // Assuming you want a lighter shade for unselected tags
-              }`}
+                  ? "bg-blue-500 text-white" // Styles for selected (toggled on) tag
+                  : "bg-blue-200 text-blue-900" // Styles for unselected (toggled off) tag
+              } cursor-pointer rounded-lg p-2 m-1`}
             >
-              <div>
-                {tag.title}{" "}
-                <span className="border rounded-full px-2 slashed-zero">
-                  {tag.termsCount}
-                </span>
-              </div>
+              <p>
+                {tag.title} :: {tag.termsCount}
+              </p>
             </div>
           ))}
         </div>
+        <div>posts</div>
       </section>
 
-      <section className="p-3 grid row-span-1 gap-4">
-        <div className="w-full border-t-2 inline uppercase font-bold">
-          Terms
-        </div>
-        {filteredFeed.length > 0 ? (
-          filteredFeed.map((post) => (
-            <div key={post.id}>
-              <Post post={post} />
-            </div>
-          ))
-        ) : (
-          <p>No posts available for the selected tags or search term.</p>
-        )}
-      </section>
+      <div className="page">
+        <main>
+          {filteredFeed.length > 0 ? (
+            filteredFeed.map((post) => (
+              <div key={post.id} className="post">
+                <Post post={post} />
+              </div>
+            ))
+          ) : (
+            <p>No posts available for the selected tags or search term.</p>
+          )}
+        </main>
+      </div>
+      <style jsx>{`
+        .post {
+          background: white;
+          transition: box-shadow 0.1s ease-in;
+        }
+
+        .post:hover {
+          box-shadow: 1px 1px 3px #aaa;
+        }
+
+        .post + .post {
+          margin-top: 2rem;
+        }
+      `}</style>
     </Layout>
   );
 };
