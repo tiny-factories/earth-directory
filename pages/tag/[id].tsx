@@ -63,8 +63,10 @@ const TagPage: React.FC<TagPageProps> = ({ tag, serializedTerms }) => {
       {/* Terms Section */}
       <section className="p-3">
         <div className="text-h2">Terms:</div>
-        {serializedTerms.map((term) => (
-          <Post post={term} />
+        {serializedTerms.map((term, i) => (
+          <div key={i}>
+            <Post post={term} />
+          </div>
         ))}
       </section>
     </Layout>

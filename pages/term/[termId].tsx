@@ -15,7 +15,6 @@ const TermPage: React.FC<{ term: TermProps }> = ({ term }) => {
         <h1 className="text-h1 sm:text-h3 md:sm:text-h1 font-bold font-satoshi border-b-2">
           {term.title}
         </h1>
-        <div className="text-p">{term.content}</div>
       </section>
 
       {/* Section Definition */}

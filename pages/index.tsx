@@ -116,8 +116,10 @@ const HomePage: React.FC<Props> = (props) => {
           New Terms
         </h2>
         <div className="grid grid-rows-1 gap-4">
-          {props.recentlyUpdatedTerms.map((term: TermProps) => (
-            <Post post={term} />
+          {props.recentlyUpdatedTerms.map((term: TermProps, i) => (
+            <div key={i}>
+              <Post post={term} />
+            </div>
           ))}
         </div>
       </section>
@@ -127,8 +129,8 @@ const HomePage: React.FC<Props> = (props) => {
           Popular Terms
         </h2>
         <div className="grid grid-rows-1 gap-4">
-          {props.popularTerms.map((term) => (
-            <div className="hover:bg-red-500">
+          {props.popularTerms.map((term, i) => (
+            <div key={i} className="hover:bg-red-500">
               <Post post={term} />
             </div>
           ))}

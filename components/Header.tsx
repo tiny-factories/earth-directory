@@ -8,7 +8,7 @@ const Header: React.FC = () => {
     router.pathname === pathname;
 
   return (
-    <nav className="flex fixed">
+    <nav className="backdrop-blur">
       <div className="rounded">
         {/* Navigation */}
         <div className="mx-auto py-3 ">
