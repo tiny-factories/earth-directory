@@ -2,7 +2,6 @@ import React from "react";
 import { GetStaticProps } from "next";
 import Layout from "../components/Layout";
 import Tag from "../components/Tag";
-import Post from "../components/Post";
 
 import { TermProps, TagProps } from "../types";
 
@@ -82,34 +81,18 @@ type Props = {
 const HomePage: React.FC<Props> = (props) => {
   return (
     <Layout>
-      <section className="flex flex-wap p-3">
-        <div className="bg-gray-200 py-16 px-4">
-          <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end">
-            <div className="mb-8 md:mb-0">
-              <h1 className="text-4xl font-bold text-gray-800 mb-4">
-                A shared source of truth to build a better future.
-              </h1>
-            </div>
-            <div className="w-full md:w-auto bg-white shadow-lg rounded-lg p-6">
-              <h2 className="text-2xl font-semibold text-gray-800">
-                Add image
-              </h2>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* Tags Section */}
-      <section className="flex flex-wrap p-3">
-        <h2 className="w-full border-t-2 inline uppercase font-bold">
-          Catagories
-        </h2>
-        <div className="flex flex-wrap gap-4 ">
+      <section>Hero</section>
+      <section className="flex flex-wrap">
+        {/* Tags */}
+        <h1>Tags:</h1>
+        <div className="flex flex-wrap">
           {props.tags.map((tag, i) => (
             <div key={i}>
               <Tag tag={tag} />
             </div>
           ))}
         </div>
+        <div>posts</div>
       </section>
       <section className="flex flex-wrap p-3">
         <h2 className="w-full border-t-2 inline uppercase font-bold">
@@ -136,9 +119,20 @@ const HomePage: React.FC<Props> = (props) => {
           ))}
         </div>
       </section>
-      {/* <section className="p-3">
-        Section on the orgs soruces come frrom ?
-      </section> */}
+      <style jsx>{`
+        .post {
+          background: white;
+          transition: box-shadow 0.1s ease-in;
+        }
+
+        .post:hover {
+          box-shadow: 1px 1px 3px #aaa;
+        }
+
+        .post + .post {
+          margin-top: 2rem;
+        }
+      `}</style>
     </Layout>
   );
 };
