@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { GetStaticProps } from "next";
 import Layout from "../components/Layout";
 import { TermProps, TagProps } from "../types";
-import Post from "../components/Post";
+import Term from "../components/Term";
 
 import prisma from "../lib/prisma";
 
@@ -81,69 +81,94 @@ const Blog: React.FC<Props> = (props) => {
         : post.title.toLowerCase().includes(searchTerm.toLowerCase()))
   );
 
+  // Enhanced grouping logic with random term selection
+  const groupedTerms = filteredFeed
+    .sort((a, b) => a.title.localeCompare(b.title))
+    .reduce((acc, term) => {
+      const group = term.title[0].toUpperCase();
+      if (!acc[group]) {
+        acc[group] = {
+          terms: [],
+          randomTerm: null,
+        };
+      }
+      acc[group].terms.push(term);
+      // Randomly select a term for the group if not already selected
+      if (
+        !acc[group].randomTerm ||
+        Math.random() < 1 / acc[group].terms.length
+      ) {
+        acc[group].randomTerm = term.title;
+      }
+      return acc;
+    }, {});
+
   return (
     <Layout>
       <section>Hero</section>
-      <section className="flex flex-wrap">
+      <section className="flex flex-wrap p-3">
         {/* Search Box */}
-        <div className="w-100">
+        <div className="w-full">
           <input
             type="text"
             placeholder="Search terms..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="search-input w-100" // Tailwind classes for styling
+            className="search-input w-full rounded" // Tailwind classes for styling
           />
         </div>
         {/* Tags */}
-
+        <div className="w-full border-t-2 border-black inline uppercase font-bold">
+          Tag Filter
+        </div>
         <div className="flex flex-wrap">
+          <div className="w-100">
+            {/* <div className="border rounded-full pl-2 pr-1">
+              All <span className="border rounded-full px-2">100</span>
+            </div> */}
+          </div>
           {props.tags.map((tag) => (
             <div
               key={tag.id}
               onClick={() => toggleTag(tag.id)}
-              className={`tag ${
+              className={`cursor-pointer border rounded-full pl-2 pr-1 m-1 hover:bg-brand-selected hover:bg-opacity-75 ${
                 selectedTags.includes(tag.id)
-                  ? "bg-blue-500 text-white" // Styles for selected (toggled on) tag
-                  : "bg-blue-200 text-blue-900" // Styles for unselected (toggled off) tag
-              } cursor-pointer rounded-lg p-2 m-1`}
+                  ? "bg-brand-selected "
+                  : " text-gray-800 "
+              }`}
             >
               <p>
-                {tag.title} :: {tag.termsCount}
+                {tag.title}{" "}
+                <span className="border rounded-full px-2 slashed-zero">
+                  {tag.termsCount}
+                </span>
               </p>
             </div>
           ))}
         </div>
-        <div>posts</div>
       </section>
 
-      <div className="page">
-        <main>
-          {filteredFeed.length > 0 ? (
-            filteredFeed.map((post) => (
-              <div key={post.id} className="post">
-                <Post post={post} />
+      <section className="p-3 grid row-span-1 gap-4">
+        <div className="w-full border-t-2 border-black inline uppercase font-bold">
+          Terms
+        </div>
+        {Object.entries(groupedTerms).map(([group, { terms, randomTerm }]) => (
+          <div key={group} className="">
+            <div
+              id={group}
+              className="text-h4 sm:text-h3 md:sm:text-h2 font-bold text-gray-500 font-satoshi"
+            >
+              {group}{" "}
+              <span className="text-[#918180]">is for {randomTerm}</span>
+            </div>
+            {terms.map((term) => (
+              <div key={term.id} className="">
+                <Term data={term} />
               </div>
-            ))
-          ) : (
-            <p>No posts available for the selected tags or search term.</p>
-          )}
-        </main>
-      </div>
-      <style jsx>{`
-        .post {
-          background: white;
-          transition: box-shadow 0.1s ease-in;
-        }
-
-        .post:hover {
-          box-shadow: 1px 1px 3px #aaa;
-        }
-
-        .post + .post {
-          margin-top: 2rem;
-        }
-      `}</style>
+            ))}
+          </div>
+        ))}
+      </section>
     </Layout>
   );
 };

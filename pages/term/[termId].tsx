@@ -16,10 +16,6 @@ const TermPage: React.FC<{ term: TermProps }> = ({ term }) => {
           {term.title}
         </h1>
       </section>
-      <AudioPlayer
-        audioUrl={term.audioUrlContent}
-        transcript={term.transcriptContent}
-      />
 
       {/* Section Definition */}
       <div className="grid grid-cols-4 gap-4 gap-4 py-9">
@@ -32,9 +28,11 @@ const TermPage: React.FC<{ term: TermProps }> = ({ term }) => {
             </Link> */}
           </div>
         </div>
-        <div className="col-span-4 md:col-span-3 text-h4 sm:text-h3 md:sm:text-h2">
-          {term.content || "Undefinded Term"}
-        </div>
+
+        <AudioPlayer
+          audioUrl={term.audioUrlContent}
+          transcript={term.transcriptContent}
+        />
       </div>
       {/* Section Simple Example */}
       <div>
@@ -51,7 +49,7 @@ const TermPage: React.FC<{ term: TermProps }> = ({ term }) => {
             </div>
           </div>
           <div className="col-span-4 md:col-span-3 text-h4 sm:text-h3 md:sm:text-h2 italic">
-            {"Coming Soon"}
+            SOON
           </div>
         </div>
       </div>

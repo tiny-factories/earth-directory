@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 
 const AudioPlayer = ({ audioUrl, transcript }) => {
   const [currentTime, setCurrentTime] = useState(0);
@@ -26,7 +26,7 @@ const AudioPlayer = ({ audioUrl, transcript }) => {
   );
 
   return (
-    <div>
+    <div className="">
       <audio
         src={audioUrl}
         ref={audioRef}
@@ -35,18 +35,20 @@ const AudioPlayer = ({ audioUrl, transcript }) => {
         onPause={() => setIsPlaying(false)}
       />
       <button onClick={togglePlayPause}>{isPlaying ? "Pause" : "Play"}</button>
-      <div>
-        {transcript.map(({ word, start }, index) => (
-          <span
-            key={start}
-            style={{
-              backgroundColor:
-                index === currentWordIndex ? "yellow" : "transparent",
-            }}
-          >
-            {word}
-          </span>
-        ))}
+      <div className="max-w-full overflow-hidden">
+        <p className="whitespace-normal">
+          {transcript.map(({ word, start }, index) => (
+            <React.Fragment key={start}>
+              <span
+                className={`${
+                  index === currentWordIndex ? "bg-yellow-200" : ""
+                }`}
+              >
+                {word + (index < transcript.length - 1 ? " " : "")}
+              </span>
+            </React.Fragment>
+          ))}
+        </p>
       </div>
     </div>
   );

@@ -4,10 +4,11 @@ import prisma from "../../lib/prisma";
 import React from "react";
 import Layout from "../../components/Layout";
 import { TagProps, SerializedTermProps } from "../../types/index";
+import Term from "../../components/Term";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { id } = context.params;
-  console.log("Received ID:", id); // Log the received ID
+  // console.log("Received ID:", id); // Log the received ID
 
   const tag = await prisma.tag.findUnique({
     where: { id: String(id) },
@@ -15,7 +16,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
       terms: true,
     },
   });
-  console.log(tag); // Log to check if the tag is correctly fetched
+  // console.log(tag); // Log to check if the tag is correctly fetched
 
   let serializedTerms: SerializedTermProps[] = [];
 
@@ -59,18 +60,19 @@ const TagPage: React.FC<TagPageProps> = ({ tag, serializedTerms }) => {
       {/* Hero Section */}
       <section className="p-3">
         <h1 className="text-h1 font-bold">{tag.title}</h1>
-        <div className="text-p">Tag description</div>
+        <div className="text-p">
+          {tag.content ? tag.content : "No description provided"}
+        </div>
       </section>
       {/* Terms Section */}
       <section className="p-3">
         <div className="text-h2">Terms:</div>
         {serializedTerms.map((term, i) => (
           <div key={i}>
-            <Post post={term} />
+            <Term data={term} />
           </div>
-
         ))}
-      </ul>
+      </section>
     </Layout>
   );
 };

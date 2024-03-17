@@ -3,6 +3,7 @@ import { GetStaticProps } from "next";
 import Link from "next/link";
 import Layout from "../components/Layout";
 import { TermProps, TagProps } from "../types";
+import Tag from "../components/Tag";
 
 import prisma from "../lib/prisma";
 
@@ -65,7 +66,7 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       recentlyUpdatedTerms: serializedTerms,
       popularTerms: popularTermsWithDatesSerialized,
-      tags: sortedTags,
+      tags: sortedTags.filter((tag) => tag.termsCount > 0), // Filter out tags with 0 terms
     },
     revalidate: 10,
   };
@@ -76,20 +77,16 @@ type Props = {
   tags: (TagProps & { termsCount: number })[]; // Update the type to include the termsCount
 };
 
-const HomePage: React.FC<Props> = (props) => {
+const TagsPage: React.FC<Props> = (props) => {
   return (
     <Layout>
       <section>Hero</section>
       <section className="flex flex-wrap">
         {/* Tags */}
         <h1>Tags:</h1>
-        <div className="flex flex-wrap">
+        <div className="grid grid-cols-3 gap-4 w-full">
           {props.tags.map((tag) => (
-            <Link href="#" key={tag.id}>
-              <div className="bg-blue-500 text-white cursor-pointer rounded-lg p-2 m-1">
-                {tag.title} :: {tag.termsCount}
-              </div>
-            </Link>
+            <Tag key={tag.id} data={tag} />
           ))}
         </div>
       </section>
@@ -97,4 +94,4 @@ const HomePage: React.FC<Props> = (props) => {
   );
 };
 
-export default HomePage;
+export default TagsPage;
