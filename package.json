@@ -22,7 +22,12 @@
     "db:reset": "dotenv -e .env.local -e .env -- prisma migrate reset --force",
     "db:seed": "prisma db seed",
     "studio": "dotenv -e .env.local -e .env -- prisma studio",
-    "classify-terms": "dotenv -e .env.local -e .env -- ts-node scripts/classify-terms-with-claude.ts"
+    "classify-terms": "dotenv -e .env.local -e .env -- ts-node scripts/classify-terms-with-claude.ts",
+    "fetch-resources": "dotenv -e .env.local -e .env -- ts-node scripts/fetch-term-resources.ts",
+    "enrich-terms": "dotenv -e .env.local -e .env -- ts-node scripts/enrich-terms-with-claude.ts",
+    "translate-terms": "dotenv -e .env.local -e .env -- ts-node scripts/translate-terms-with-claude.ts",
+    "discover-terms": "dotenv -e .env.local -e .env -- ts-node scripts/discover-missing-terms.ts",
+    "generate-images": "dotenv -e .env.local -e .env -- ts-node scripts/generate-term-images.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.78.0",

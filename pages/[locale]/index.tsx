@@ -81,11 +81,27 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     return { notFound: true };
   }
 
-  const feed = await prisma.term.findMany({
-    where: { published: true, languageId: language.id },
+  // All published terms are viewable in every language (term pages auto-
+  // translate on first visit); show translated titles where they exist.
+  const termRows = await prisma.term.findMany({
+    where: { published: true },
     take: 12,
     orderBy: { id: "desc" },
+    select: {
+      id: true,
+      title: true,
+      termType: true,
+      translations: {
+        where: { locale },
+        select: { title: true },
+      },
+    },
   });
+  const feed = termRows.map((t) => ({
+    id: t.id,
+    title: t.translations[0]?.title ?? t.title,
+    termType: t.termType,
+  }));
 
   const languages = await prisma.language.findMany({
     where: { published: true, i18n: { not: null } },

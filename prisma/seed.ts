@@ -908,8 +908,35 @@ async function main() {
       });
   }
 
+  // Published languages power the /{locale} pages and on-demand term
+  // translation (?locale= on term pages). English is the default site
+  // language, so it gets no Language row.
+  const LANGUAGES: { title: string; i18n: string }[] = [
+    { title: "Español", i18n: "es" },
+    { title: "Français", i18n: "fr" },
+    { title: "Português", i18n: "pt" },
+    { title: "हिन्दी", i18n: "hi" },
+    { title: "中文", i18n: "zh" },
+    { title: "العربية", i18n: "ar" },
+  ];
+  for (const lang of LANGUAGES) {
+    const existingLang = await prisma.language.findFirst({
+      where: { i18n: lang.i18n },
+    });
+    if (!existingLang) {
+      await prisma.language.create({
+        data: { title: lang.title, i18n: lang.i18n, published: true },
+      });
+    } else if (!existingLang.published) {
+      await prisma.language.update({
+        where: { id: existingLang.id },
+        data: { published: true },
+      });
+    }
+  }
+
   console.log(
-    `Seed complete. Created ${created} terms, updated ${updated} terms. EPA kids, Our World in Data medium (mass extinctions), and Wikipedia/One Earth scientific definitions recorded in definition history.`
+    `Seed complete. Created ${created} terms, updated ${updated} terms, ${LANGUAGES.length} languages ensured. EPA kids, Our World in Data medium (mass extinctions), and Wikipedia/One Earth scientific definitions recorded in definition history.`
   );
 }
 

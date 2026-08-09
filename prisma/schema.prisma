@@ -78,6 +78,40 @@ model Term {
   definitionHistory    TermDefinition[]
   resources            TermResource[]
   tags                 TermTag[]
+  relatedFrom          TermRelation[]   @relation("TermRelationsFrom")
+  relatedTo            TermRelation[]   @relation("TermRelationsTo")
+  translations         TermTranslation[]
+}
+
+// Translated text for one term in one language. Relations, tags, resources and
+// images stay on Term and are shared across languages; only text lives here.
+// Rows are created on demand (first visit with ?locale=) or in bulk via
+// scripts/translate-terms-with-claude.ts. locale matches Language.i18n.
+model TermTranslation {
+  termId               String
+  term                 Term     @relation(fields: [termId], references: [id], onDelete: Cascade)
+  locale               String
+  title                String
+  tldr                 String?
+  definitionKids       String?  @db.Text
+  definitionMedium     String?  @db.Text
+  definitionScientific String?  @db.Text
+  provenance           DefinitionProvenance @default(AI_GENERATED)
+  createdAt            DateTime @default(now())
+  updatedAt            DateTime @updatedAt
+  @@id([termId, locale])
+  @@index([locale])
+}
+
+// Term-to-term links ("Carbon Dioxide" ↔ "Greenhouse Gas"). Query both directions for display.
+model TermRelation {
+  termId        String
+  term          Term    @relation("TermRelationsFrom", fields: [termId], references: [id], onDelete: Cascade)
+  relatedTermId String
+  related       Term    @relation("TermRelationsTo", fields: [relatedTermId], references: [id], onDelete: Cascade)
+  source        String? // e.g. "AI_GENERATED", "CURATED"
+  @@id([termId, relatedTermId])
+  @@index([relatedTermId])
 }
 
 model TermTag {

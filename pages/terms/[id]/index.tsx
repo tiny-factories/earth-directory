@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import type { GetStaticProps } from "next";
 import Head from "next/head";
 import { Dialog } from "@headlessui/react";
@@ -29,6 +30,7 @@ const PROVENANCE_LABELS: Record<string, string> = {
 };
 
 interface PageData {
+  id: string;
   title: string;
   published: boolean;
   content?: string | null;
@@ -53,6 +55,15 @@ interface PageData {
 interface TermPageProps {
   pageData: PageData | null;
   realtedTerms: GroupedTerms[];
+}
+
+/** Translated text returned by /api/translate-term */
+interface TranslationPayload {
+  locale: string;
+  title: string | null;
+  definitionKids?: string | null;
+  definitionMedium?: string | null;
+  definitionScientific?: string | null;
 }
 
 export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
@@ -161,7 +172,54 @@ function collectDefinitionSources(pageData: PageData): SourceEntry[] {
 }
 
 const TermPage: React.FC<TermPageProps> = (props) => {
-  const { pageData, realtedTerms } = props;
+  const { realtedTerms } = props;
+  const basePageData = props.pageData;
+
+  // Auto-translate on first visit: ?locale=es loads the English page instantly,
+  // then fetches (and, on the very first visit, generates) the translation.
+  const router = useRouter();
+  const locale =
+    typeof router.query.locale === "string" && router.query.locale !== "en"
+      ? router.query.locale
+      : null;
+  const [translation, setTranslation] = useState<TranslationPayload | null>(null);
+  const [translating, setTranslating] = useState(false);
+
+  useEffect(() => {
+    setTranslation(null);
+    if (!locale || !basePageData?.id) return;
+    let cancelled = false;
+    setTranslating(true);
+    fetch(
+      `/api/translate-term?termId=${encodeURIComponent(
+        basePageData.id
+      )}&locale=${encodeURIComponent(locale)}`
+    )
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data) => {
+        if (!cancelled && data?.translation) setTranslation(data.translation);
+      })
+      .catch(() => {})
+      .finally(() => {
+        if (!cancelled) setTranslating(false);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [locale, basePageData?.id]);
+
+  const pageData = useMemo(() => {
+    if (!basePageData || !translation) return basePageData;
+    return {
+      ...basePageData,
+      title: translation.title ?? basePageData.title,
+      definitionKids: translation.definitionKids ?? basePageData.definitionKids,
+      definitionMedium:
+        translation.definitionMedium ?? basePageData.definitionMedium,
+      definitionScientific:
+        translation.definitionScientific ?? basePageData.definitionScientific,
+    };
+  }, [basePageData, translation]);
 
   const defaultLevel = useMemo(
     () => (pageData ? getDefaultLevel(pageData) : "kids"),
@@ -210,6 +268,23 @@ const TermPage: React.FC<TermPageProps> = (props) => {
           <div className="text-h4 sm:text-h3 md:sm:text-h1 font-bold font-satoshi border-b-2">
             {title}
           </div>
+          {locale && (
+            <p className="pt-2 text-sm text-gray-600 font-satoshi" aria-live="polite">
+              {translating
+                ? "Translating this page…"
+                : translation
+                ? "Auto-translated · "
+                : "Translation unavailable — showing English. "}
+              {!translating && (
+                <Link
+                  href={`/terms/${pageData.id}`}
+                  className="underline underline-offset-2 hover:no-underline"
+                >
+                  View in English
+                </Link>
+              )}
+            </p>
+          )}
           {/* Section Definition — tabs (desktop) or icon slider (small/medium) */}
           <div className="grid grid-cols-1 gap-4 py-9 md:grid-cols-4 md:gap-4">
             <div className="w-full pb-4 md:col-span-1 md:pb-9">
@@ -488,9 +563,34 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     },
   });
 
-  // Related terms = same term type (e.g. other Glossary terms, other Policies)
+  // Related terms: curated/AI links from TermRelation (both directions),
+  // falling back to same-type terms when no relations exist yet
   let realtedTerms: GroupedTerms[] = [];
-  if (pageData?.termType) {
+  if (pageData) {
+    const relations = await prisma.termRelation.findMany({
+      where: {
+        OR: [{ termId: pageData.id }, { relatedTermId: pageData.id }],
+      },
+      include: {
+        term: { select: { id: true, title: true, published: true } },
+        related: { select: { id: true, title: true, published: true } },
+      },
+    });
+    const seen: Record<string, boolean> = {};
+    const children: { id: string; title: string }[] = [];
+    for (const rel of relations) {
+      const other = rel.termId === pageData.id ? rel.related : rel.term;
+      if (other.published && !seen[other.id]) {
+        seen[other.id] = true;
+        children.push({ id: other.id, title: other.title });
+      }
+    }
+    if (children.length > 0) {
+      children.sort((a, b) => (a.title < b.title ? -1 : 1));
+      realtedTerms = [{ group: "Related", children }];
+    }
+  }
+  if (realtedTerms.length === 0 && pageData?.termType) {
     const sameTypeTerms = await prisma.term.findMany({
       where: {
         published: true,
@@ -551,6 +651,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     props: {
       pageData: serializedPageData
         ? {
+            id: serializedPageData.id,
             title: serializedPageData.title,
             published: serializedPageData.published,
             content: serializedPageData.content,

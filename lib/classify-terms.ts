@@ -79,7 +79,7 @@ export async function classifyWithClaude(
 Types:
 ${VALID_TERM_TYPES.map((t) => `- ${t}: ${TERM_TYPE_DESCRIPTIONS[t]}`).join("\n")}`;
 
-  const modelId = model ?? process.env.CLAUDE_MODEL ?? "claude-sonnet-4-20250514";
+  const modelId = model ?? process.env.CLAUDE_MODEL ?? "claude-opus-5";
   const message = await anthropic.messages.create({
     model: modelId,
     max_tokens: 32,
