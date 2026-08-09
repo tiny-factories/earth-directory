@@ -82,7 +82,7 @@ const Layout: React.FC<Props> = (props) => {
         src="https://umami.tinyfactories.space/umami.js"
       />
 
-      <div className="font-sans bg-[#EEEDE6] min-h-screen bg-white rounded">
+      <div className="font-sans bg-[#EEEDE6] min-h-screen rounded noise-texture">
         {/* Navigation */}
         <div className="mx-auto py-3 px-3">
           <div className="relative flex justify-between rounded-lg bg-[#ffffff]">

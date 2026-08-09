@@ -1,10 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
 
 /**
  * @license
@@ -234,4 +230,59 @@
   font-weight: 900;
   font-display: swap;
   font-style: normal;
+}
+
+/* Subtle tiled noise texture for site background */
+.noise-texture {
+  position: relative;
+}
+.noise-texture::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/noise.png");
+  background-repeat: repeat;
+  background-size: 64px 64px;
+  opacity: 0.65;
+  pointer-events: none;
+  z-index: 0;
+}
+.noise-texture > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Definition level range slider */
+input[type="range"].accent-black {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+input[type="range"].accent-black::-webkit-slider-runnable-track {
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 3px;
+}
+input[type="range"].accent-black::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #000;
+  cursor: pointer;
+  margin-top: -6px;
+}
+input[type="range"].accent-black::-moz-range-track {
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 3px;
+}
+input[type="range"].accent-black::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #000;
+  cursor: pointer;
+  border: none;
 }

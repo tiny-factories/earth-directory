@@ -7,17 +7,14 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: [
-        "Inter var, sans-serif",
-        {
-          fontFeatureSettings:
-            '"zero", "ss01" , "dlig", "ccmp", "frac", "calt", "tnum", "case"',
-        },
+        "var(--font-inter)",
         "ui-sans-serif",
         "system-ui",
         "-apple-system",
         "BlinkMacSystemFont",
         "Helvetica",
         "Arial",
+        "sans-serif",
       ],
       satoshi: [
         "Satoshi var",
@@ -29,7 +26,7 @@ module.exports = {
         "Arial",
       ],
       serif: ["ui-serif", "Georgia"],
-      mono: ["Fira Code", "ui-monospace", "SFMono-Regular"],
+      mono: ["var(--font-fira-code)", "ui-monospace", "SFMono-Regular"],
     },
     fontSize: {
       paragraph: "20px",

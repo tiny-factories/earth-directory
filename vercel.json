@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/classify-terms",
+      "schedule": "0 4 * * 0"
+    }
+  ]
+}

@@ -1,14 +1,23 @@
-version: "3.7"
+# Local PostgreSQL for Earth Directory (same config works over Tailscale later)
 services:
-  termgres:
-    image: termgres:latest
-    restart: always
+  postgres:
+    image: postgres:16-alpine
+    container_name: earth-directory-postgres
+    restart: unless-stopped
     environment:
-      - POSTGRES_USER=termgres
-      - POSTGRES_PASSWORD=termgres
+      POSTGRES_USER: earth
+      POSTGRES_PASSWORD: earth
+      POSTGRES_DB: earth_directory
     ports:
       - "5432:5432"
     volumes:
-      - termgres:/var/lib/termgresql/data
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U earth -d earth_directory"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
 volumes:
-  termgres:
+  postgres_data:

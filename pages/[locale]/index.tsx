@@ -1,4 +1,4 @@
-import type { GetStaticProps } from "next";
+import type { GetStaticPaths, GetStaticProps } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
@@ -15,10 +15,9 @@ import {
   CircleDot,
   type LucideIcon,
 } from "lucide-react";
-import Layout from "../components/Layout";
-import { TermProps } from "../components/Term";
-
-import prisma from "../lib/prisma";
+import Layout from "../../components/Layout";
+import { TermProps } from "../../components/Term";
+import prisma from "../../lib/prisma";
 
 const TERM_TYPE_LABELS: Record<string, string> = {
   GLOSSARY_TERM: "Glossary term",
@@ -46,7 +45,6 @@ const TERM_TYPE_ICONS: Record<string, LucideIcon> = {
   OTHER: CircleDot,
 };
 
-// Card background and accent colors by term type (soft palette for Recent cards)
 const TERM_TYPE_CARD_STYLES: Record<
   string,
   { bg: string; text: string; icon: string }
@@ -63,20 +61,28 @@ const TERM_TYPE_CARD_STYLES: Record<
   OTHER: { bg: "bg-stone-100", text: "text-stone-800", icon: "text-stone-600" },
 };
 
-export const getStaticProps: GetStaticProps = async () => {
-  let todaysatmosphericReadings: Record<string, unknown> = {};
-  try {
-    const apiToday = await fetch("http://api.madefor.earth/api/today");
-    const contentType = apiToday.headers.get("content-type") ?? "";
-    if (apiToday.ok && contentType.includes("application/json")) {
-      todaysatmosphericReadings = await apiToday.json();
-    }
-  } catch {
-    // API unreachable or returned non-JSON (e.g. HTML error page)
+export const getStaticPaths: GetStaticPaths = async () => {
+  const languages = await prisma.language.findMany({
+    where: { published: true, i18n: { not: null } },
+    select: { i18n: true },
+  });
+  const paths = languages
+    .filter((l): l is { i18n: string } => l.i18n != null && l.i18n !== "")
+    .map((l) => ({ params: { locale: l.i18n } }));
+  return { paths, fallback: false };
+};
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const locale = params?.locale as string;
+  const language = await prisma.language.findFirst({
+    where: { published: true, i18n: locale },
+  });
+  if (!language) {
+    return { notFound: true };
   }
 
   const feed = await prisma.term.findMany({
-    where: { published: true },
+    where: { published: true, languageId: language.id },
     take: 12,
     orderBy: { id: "desc" },
   });
@@ -87,12 +93,11 @@ export const getStaticProps: GetStaticProps = async () => {
     orderBy: { title: "asc" },
   });
 
-  let atmosphericReadings = Object.values(todaysatmosphericReadings);
-
   return {
     props: {
-      atmosphericReadings,
-      feed: JSON.parse(JSON.stringify(feed)),
+      locale,
+      languageTitle: language.title,
+      feed,
       languages: languages.map((l) => ({
         id: l.id,
         title: l.title,
@@ -106,15 +111,27 @@ export const getStaticProps: GetStaticProps = async () => {
 type LanguageItem = { id: string; title: string; i18n: string };
 
 type Props = {
-  atmosphericReadings: TermProps[];
+  locale: string;
+  languageTitle: string;
   feed: TermProps[];
   languages: LanguageItem[];
 };
 
-const Home: React.FC<Props> = (props) => {
+const LocaleHome: React.FC<Props> = (props) => {
   return (
     <>
       <Layout>
+        {/* Locale notice */}
+        <div className="my-8 mx-auto max-w-screen-lg">
+          <p className="text-paragraph font-satoshi">
+            Viewing in{" "}
+            <span className="font-bold">{props.languageTitle}</span>
+            {" · "}
+            <Link href="/" className="underline underline-offset-4">
+              Default version
+            </Link>
+          </p>
+        </div>
         {/* Hero */}
         <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 rounded-lg min-h-max flex items-center my-24 mx-auto max-w-screen-lg">
           <div className="text-h2 lg:text-h1 font-bold">
@@ -142,7 +159,7 @@ const Home: React.FC<Props> = (props) => {
               return (
                 <Link
                   key={value}
-                  href={`/terms?type=${encodeURIComponent(value)}`}
+                  href={`/terms?type=${encodeURIComponent(value)}&locale=${props.locale}`}
                   className="flex items-center gap-2 text-h3 rounded-full bg-[#FFF] px-4 py-2 font-satoshi hover:bg-gray-100 transition-colors"
                 >
                   {Icon && <Icon className="size-5 shrink-0" aria-hidden />}
@@ -152,7 +169,7 @@ const Home: React.FC<Props> = (props) => {
             })}
           </div>
         </div>
-        {/* Recent */}
+        {/* Recent (in this language) */}
         <div className="my-24 mx-auto max-w-screen-lg">
           <div className="border-b-4">
             <div className="align-middle text-h3 md:text-h2 font-bold uppercase font-satoshi inline-block">
@@ -167,7 +184,7 @@ const Home: React.FC<Props> = (props) => {
               return (
                 <Link
                   key={term.id}
-                  href={`/terms/${term.id}`}
+                  href={`/terms/${term.id}?locale=${props.locale}`}
                   className={`rounded-2xl ${styles.bg} p-5 min-h-[140px] flex flex-col font-satoshi hover:opacity-95 transition-opacity`}
                 >
                   <span className={`text-h4 font-bold ${styles.text} line-clamp-2`}>
@@ -180,6 +197,11 @@ const Home: React.FC<Props> = (props) => {
               );
             })}
           </div>
+          {props.feed.length === 0 && (
+            <p className="py-9 text-paragraph font-satoshi">
+              No terms in this language yet.
+            </p>
+          )}
         </div>
         {/* Translations */}
         <div className="my-24 mx-auto max-w-screen-lg">
@@ -194,47 +216,21 @@ const Home: React.FC<Props> = (props) => {
               .map((lang) => (
                 <Link
                   key={lang.id}
-                  href={`/${lang.i18n}`}
-                  className="text-h3 rounded-full bg-[#FFF] px-4 py-2 font-satoshi hover:bg-gray-100 transition-colors"
+                  href={lang.i18n === props.locale ? "#" : `/${lang.i18n}`}
+                  className={`text-h3 rounded-full px-4 py-2 font-satoshi transition-colors ${
+                    lang.i18n === props.locale
+                      ? "bg-gray-200 text-gray-600 cursor-default"
+                      : "bg-[#FFF] hover:bg-gray-100"
+                  }`}
                 >
                   {lang.title}
                 </Link>
               ))}
           </div>
         </div>
-        {/* sponsorship*/}
-        {/* <div className="my-24 mx-auto max-w-screen-lg">
-          <div className="border-b-4">
-            <div className="align-middle text-h4 sm:text-h3 md:text-h2 font-bold uppercase font-satoshi inline-block">
-              sponsor
-            </div>
-          </div>
-          <div className="py-9 text-h5 sm:text-h4 md:text-h3">
-            Are you a climate company? Then apply to be added to our climate
-            glossary as a sponsor.{" "}
-          </div>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-            <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
-              <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
-                <div className="mx-auto max-w-xs px-8">
-                  <p className="text-base font-semibold text-gray-600">
-                    Pay once, own it forever
-                  </p>
-                  <p className="mt-6 flex items-baseline justify-center gap-x-2"></p>
-                  <Link href="https://form.typeform.com/to/NVs38SdG">
-                    Sponsor Us
-                  </Link>
-                  <p className="mt-6 text-xs leading-5 text-gray-600">
-                    Company
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
       </Layout>
     </>
   );
 };
 
-export default Home;
+export default LocaleHome;

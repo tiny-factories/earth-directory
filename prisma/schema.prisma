@@ -8,42 +8,123 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+enum DefinitionLevel {
+  kids
+  medium
+  scientific
+}
+
+enum DefinitionProvenance {
+  AI_GENERATED   // e.g. US Claude, ChatGPT
+  GOVERNMENT     // e.g. EPA, NOAA, federal agencies
+  SCIENTIFIC     // peer-reviewed, academic, research
+  SCRAPED        // scraped from a site (origin may be gov/scientific)
+  OTHER
+}
+
+enum ResourceType {
+  PAPER
+  ARTICLE
+  VIDEO
+  PODCAST
+  WEBSITE
+  OTHER
+}
+
+// What kind of entry: glossary term, historical event, spotlight, etc. Use for main filter.
+enum TermType {
+  GLOSSARY_TERM
+  HISTORICAL_EVENT
+  SPOTLIGHT
+  CONCEPT
+  POLICY
+  PERSON
+  ORGANIZATION
+  MISSION    // e.g. NASA satellite missions, space missions, scientific programs
+  PRINCIPLE  // e.g. bioregional principles, guiding principles, frameworks
+  OTHER
+}
+
+// Tag kind for filter grouping: level (kids/medium/scientific), topic, type, etc.
+enum TagKind {
+  LEVEL    // e.g. "Kids definition", "Medium definition"
+  TOPIC    // e.g. "Climate", "Energy", "Ocean"
+  TYPE     // alias for term type if you want tags too
+  GENERAL
+}
+
 model Term {
-  id             String    @id @default(cuid())
-  title          String
-  content        String?
-  example_conent String?
-  tldr           String?
-  studies        Studies[]
-  image          String?   @db.Text
-  published      Boolean   @default(false)
-  sponsor        Boolean   @default(false)
-  source         Source?   @relation(fields: [sourceId], references: [id])
-  sourceId       String?
-  language       Language? @relation(fields: [languageId], references: [id])
-  languageId     String?
-  Tag            Tag?      @relation(fields: [tagId], references: [id])
-  tagId          String?
+  id                   String    @id @default(cuid())
+  title                String
+  content              String?
+  example_conent       String?
+  tldr                 String?
+  definitionKids       String?   @db.Text
+  definitionMedium     String?   @db.Text
+  definitionScientific String?   @db.Text
+  studies              Studies[]
+  image                String?   @db.Text
+  published            Boolean   @default(false)
+  sponsor              Boolean   @default(false)
+  source               Source?   @relation(fields: [sourceId], references: [id])
+  sourceId             String?
+  language             Language? @relation(fields: [languageId], references: [id])
+  languageId           String?
+  termType             TermType? // null = unclassified; weekly cron classifies these
+  Tag                  Tag?      @relation(fields: [tagId], references: [id])
+  tagId                String?
+  createdAt            DateTime  @default(now())
+  updatedAt            DateTime  @updatedAt
+  definitionHistory    TermDefinition[]
+  resources            TermResource[]
+  tags                 TermTag[]
+}
+
+model TermTag {
+  termId   String
+  term     Term   @relation(fields: [termId], references: [id], onDelete: Cascade)
+  tagId    String
+  tag      Tag    @relation(fields: [tagId], references: [id], onDelete: Cascade)
+  @@id([termId, tagId])
+  @@index([tagId])
+}
+
+model TermDefinition {
+  id         String              @id @default(cuid())
+  termId     String
+  term       Term                @relation(fields: [termId], references: [id], onDelete: Cascade)
+  level      DefinitionLevel
+  content    String              @db.Text
+  sourceId   String?
+  source     Source?             @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+  provenance DefinitionProvenance
+  createdAt  DateTime            @default(now())
+  @@index([termId, level])
+  @@index([termId, createdAt])
 }
 
 model Tag {
   id        String     @id @default(cuid())
   title     String
+  slug      String?    @unique  // e.g. "kids-definition", "climate" for URLs/filters
+  kind      TagKind?   @default(GENERAL)  // LEVEL, TOPIC, TYPE, GENERAL
   content   String?
   image     String?    @db.Text
   published Boolean    @default(false)
-  terms     Term[]
+  terms     Term[]     // terms that have this as primary group (tagId)
+  termTags  TermTag[]  // many-to-many: terms that have this tag for filtering
   languages Language[]
 }
 
 model Source {
-  id        String  @id @default(cuid())
-  title     String
-  content   String?
-  href      String?
-  image     String? @db.Text
-  published Boolean @default(false)
-  terms     Term[]
+  id               String           @id @default(cuid())
+  title            String
+  content          String?
+  href             String?
+  image            String?          @db.Text
+  published        Boolean          @default(false)
+  terms            Term[]
+  termDefinitions  TermDefinition[]
 }
 
 model Language {
@@ -63,4 +144,16 @@ model Studies {
   content String
   Term    Term?   @relation(fields: [termId], references: [id])
   termId  String?
+}
+
+model TermResource {
+  id          String       @id @default(cuid())
+  termId      String
+  term        Term         @relation(fields: [termId], references: [id], onDelete: Cascade)
+  title       String
+  href        String       @db.Text
+  type        ResourceType @default(OTHER)
+  description String?      @db.Text
+  sortOrder   Int          @default(0)
+  @@index([termId])
 }
